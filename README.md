@@ -166,22 +166,28 @@ konkurrerer med den gamle om den samme adresse.
 
 Begrundelsen i sin fulde længde står i `../SEO-OG-GEO.md`, trin 3.
 
-**Linkændringen her, 19-09-2026.** Begge sites havde — og site 2 har nu —
-en knap "Læs anmeldelserne på Google" under udtalelserne. Den pegede på en
-Maps-søgning efter **navnet** `Narrativ Samtale`. Den slags link dør i det
-sekund, profilen døbes om. Den søger nu på **adressen** i stedet:
+**Linket, 19-09-2026.** Begge sites har en knap "Læs anmeldelserne på
+Google" under udtalelserne. Den pegede på en Maps-søgning efter **navnet**
+`Narrativ Samtale` og ville være døet i det sekund, profilen blev døbt om.
+Den peger nu på profilens **place-id**, som aldrig ændrer sig:
 
-    https://www.google.com/maps/search/?api=1&query=Gevninge+Bygade+26+4000+Roskilde
+    https://www.google.com/maps/place/?q=place_id:ChIJ8W5MEKNhUkYRLoMqUvTlLY4
 
-Adressen skifter ikke, så linket overlever navneskiftet. Det er en
-midlertidig løsning, ikke den rigtige.
+Id'erne er hentet af profilens eget delelink 19-09-2026 og noteres her, så
+de ikke skal graves frem igen:
 
-- [ ] **Hent profilens eget delelink**, når der er adgang til
-      `business.google.com`: profilen → Del → kopiér. Det er et
-      `maps.app.goo.gl`- eller `g.page`-link bundet til profilens id, ikke til
-      dens navn eller adresse. Sæt det ind i ét felt i CMS'et —
-      **Indstillinger → Link til anmeldelserne på Google** — på begge sites.
-      Ingen kode skal røres
+| | |
+|---|---|
+| Place-id | `ChIJ8W5MEKNhUkYRLoMqUvTlLY4` |
+| CID | `10245097564851045166` |
+| Anmeld-link | `https://g.page/r/CS6DKlL05S2OEBM/review` |
+
+Maps-linket blev valgt frem for `search.google.com/local/reviews`, fordi
+den sidste viser tre konkurrenter som annoncer øverst, før Lottes egen
+profil. Maps åbner direkte på kortet med bedømmelsen og fanen Anmeldelser.
+
+Skal knappen ændres, er det ét felt i CMS'et — **Indstillinger → Link til
+anmeldelserne på Google** — på begge sites. Ingen kode skal røres.
 
 ---
 
