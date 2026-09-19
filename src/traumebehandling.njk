@@ -30,7 +30,9 @@ eleventyComputed:
     </div>
     <figure class="figur">
       <div class="hero__media" style="aspect-ratio: {{ traumebehandling.hero_billede | billedforhold }}">
+        {% if traumebehandling.hero_billede %}
         <img src="{{ traumebehandling.hero_billede }}" alt="{{ traumebehandling.hero_billede_alt }}">
+        {% endif %}
       </div>
       {% if traumebehandling.hero_billedtekst %}<figcaption>{{ traumebehandling.hero_billedtekst }}</figcaption>{% endif %}
     </figure>
@@ -60,9 +62,11 @@ eleventyComputed:
 
 <section class="section">
   <div class="wrap split">
-    <figure class="figur">
+    <figure class="figur" style="max-width: {{ traumebehandling.metode_billede | figurbredde }}">
       <div class="split__media" style="aspect-ratio: {{ traumebehandling.metode_billede | billedforhold }}">
+        {% if traumebehandling.metode_billede %}
         <img src="{{ traumebehandling.metode_billede }}" alt="{{ traumebehandling.metode_billede_alt }}">
+        {% endif %}
       </div>
       {% if traumebehandling.metode_billedtekst %}<figcaption>{{ traumebehandling.metode_billedtekst }}</figcaption>{% endif %}
     </figure>
@@ -84,9 +88,11 @@ eleventyComputed:
       <h2>{{ traumebehandling.etik_overskrift }}</h2>
       {{ traumebehandling.etik_tekst | afsnit | safe }}
     </div>
-    <figure class="figur">
+    <figure class="figur" style="max-width: {{ traumebehandling.etik_billede | figurbredde }}">
       <div class="split__media" style="aspect-ratio: {{ traumebehandling.etik_billede | billedforhold }}">
+        {% if traumebehandling.etik_billede %}
         <img src="{{ traumebehandling.etik_billede }}" alt="{{ traumebehandling.etik_billede_alt }}">
+        {% endif %}
       </div>
       {#- Kunstnerens navn SKAL blive staaende. Vaerket er gengivet med
           saerlig tilladelse, og den tilladelse er knyttet til krediteringen. -#}

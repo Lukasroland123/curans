@@ -24,7 +24,9 @@ eleventyComputed:
       {#- Portraettet er staaende. Rammen faar fotoets eget forhold, saa der
           ikke skaeres i ansigtet. Se billedforhold-filteret. -#}
       <div class="hero__media hero__media--portraet" style="aspect-ratio: {{ omlotte.hero_billede | billedforhold }}">
+        {% if omlotte.hero_billede %}
         <img src="{{ omlotte.hero_billede }}" alt="{{ omlotte.hero_billede_alt }}">
+        {% endif %}
       </div>
       {% if omlotte.hero_billedtekst %}<figcaption>{{ omlotte.hero_billedtekst }}</figcaption>{% endif %}
     </figure>
@@ -46,9 +48,11 @@ eleventyComputed:
 
 <section class="section">
   <div class="wrap split">
-    <figure class="figur">
+    <figure class="figur" style="max-width: {{ omlotte.erfaring_billede | figurbredde }}">
       <div class="split__media" style="aspect-ratio: {{ omlotte.erfaring_billede | billedforhold }}">
+        {% if omlotte.erfaring_billede %}
         <img src="{{ omlotte.erfaring_billede }}" alt="{{ omlotte.erfaring_billede_alt }}">
+        {% endif %}
       </div>
       {% if omlotte.erfaring_billedtekst %}<figcaption>{{ omlotte.erfaring_billedtekst }}</figcaption>{% endif %}
     </figure>
@@ -74,7 +78,7 @@ eleventyComputed:
       <h2>{{ omlotte.sparring_overskrift }}</h2>
       <p>{{ omlotte.sparring_intro }}</p>
     </div>
-    <div class="grid grid--2">
+    <div class="grid grid--4-fast">
       {% for p in omlotte.sparring_personer %}
       <article class="card card--flat">
         <h3>{{ p.navn }}</h3>

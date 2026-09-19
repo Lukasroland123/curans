@@ -30,7 +30,9 @@ eleventyComputed:
     </div>
     <figure class="figur">
       <div class="hero__media" style="aspect-ratio: {{ supervision.hero_billede | billedforhold }}">
+        {% if supervision.hero_billede %}
         <img src="{{ supervision.hero_billede }}" alt="{{ supervision.hero_billede_alt }}">
+        {% endif %}
       </div>
       {% if supervision.hero_billedtekst %}<figcaption>{{ supervision.hero_billedtekst }}</figcaption>{% endif %}
     </figure>
@@ -39,9 +41,11 @@ eleventyComputed:
 
 <section class="section section--sand">
   <div class="wrap split">
-    <figure class="figur">
+    <figure class="figur" style="max-width: {{ supervision.metode_billede | figurbredde }}">
       <div class="split__media" style="aspect-ratio: {{ supervision.metode_billede | billedforhold }}">
+        {% if supervision.metode_billede %}
         <img src="{{ supervision.metode_billede }}" alt="{{ supervision.metode_billede_alt }}">
+        {% endif %}
       </div>
       {% if supervision.metode_billedtekst %}<figcaption>{{ supervision.metode_billedtekst }}</figcaption>{% endif %}
     </figure>

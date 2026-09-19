@@ -1,25 +1,19 @@
 {
   "titel": "Kontakt | Curans v/ Lotte Stegeager, Gevninge ved Roskilde",
   "beskrivelse": "Ring 26 12 23 29 eller skriv. De første 20 minutter er uden beregning. Praksissen ligger i Gevninge, 10 km fra Roskilde, med gratis parkering.",
-
   "hero_mikrotekst": "Kontakt",
   "hero_overskrift": "Lad os tage en snak",
   "hero_tekst": "Ring eller skriv. De første 20 minutter er uden beregning, og du forpligter dig ikke til noget ved at spørge.",
-
   "svar": "Jeg sidder ofte i samtaler og kan derfor ikke altid tage telefonen. Læg en besked eller send en mail, så vender jeg tilbage.",
-
   "praktisk_overskrift": "Sådan finder du mig",
   "praktisk_tekst": "Praksissen ligger i Gevninge, 10 km fra Roskilde. Der er gratis parkering lige overfor, og du kan nemt komme hertil med offentlig transport fra både Roskilde og Lejre station.",
-  "praktisk_billede": "/billeder/forside-praksis.jpg",
-  "praktisk_billede_alt": "Stue med lavt bord, stole og store vinduer ud mod marker i vintersol.",
+  "praktisk_billede": "",
+  "praktisk_billede_alt": "",
   "praktisk_billedtekst": "",
-
   "aabningstider_overskrift": "Åbningstider",
   "aabningstider_tekst": "Mandag til fredag efter forudgående aftale.\n\nLørdag, søndag og helligdage er der mulighed for særaftaler med tillægspris. Der er også mulighed for besøg i hjemmet eller på institutionen med tillæg for udkørsel.",
-
   "tavshed_overskrift": "Tavshedspligt",
   "tavshed_tekst": "Alt, hvad du fortæller mig, er fortroligt. De sager, jeg får faglig sparring på hos mine samarbejdspartnere, er anonymiserede i en sådan grad, at tavshedspligten overholdes.",
-
   "cta_overskrift": "Er du i tvivl, om jeg er den rigtige?",
   "cta_tekst": "Så ring. 20 minutter uden beregning, og ingen forpligtelser bagefter."
 }

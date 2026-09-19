@@ -25,31 +25,31 @@
     {
       "overskrift": "Individuel terapi",
       "underrubrik": "Stress, angst, depression",
-      "tekst": "Noget spænder ben, eller du har bare en fornemmelse af ubehag uden helt at vide hvorfor. Gennem narrative samtaler undersøger vi dit livslandskab og finder de trædesten, hvor der er fodfæste.",
+      "tekst": "Noget spænder ben, eller du mærker et ubehag uden at vide hvorfra. Vi undersøger det sammen.",
       "url": "/terapi/"
     },
     {
       "overskrift": "Traumebehandling",
       "underrubrik": "PTSD og kompleks PTSD",
-      "tekst": "Går du konstant på vagt? Har du oplevet noget, der var for meget? Vi arbejder nænsomt og i dit tempo, og vi begynder med at finde de trygge steder at stå.",
+      "tekst": "Konstant på vagt? Vi arbejder nænsomt og i dit tempo, og vi begynder med de trygge steder.",
       "url": "/traumebehandling/"
     },
     {
       "overskrift": "Familiebehandling",
       "underrubrik": "Konflikter i familien",
-      "tekst": "Alle familier oplever anspændthed. Nogle gange bliver man rystet så meget, at det er svært at finde fælles fodfæste igen. Vi ser både på, hvad der ligger bag, og på alt det, I også kan som familie.",
+      "tekst": "Når familien er rystet så meget, at det er svært at finde fælles fodfæste igen.",
       "url": "/familiebehandling/"
     },
     {
       "overskrift": "Bisidderstøtte",
       "underrubrik": "Møder på kommunen",
-      "tekst": "Skal du til samtale i jobcentret, i PPR, på skolen eller i psykiatrien? Jeg går med, holder overblikket og hjælper dig med at få dine synspunkter frem — og med de skriftlige henvendelser bagefter.",
+      "tekst": "Jeg går med til mødet på kommunen, holder overblikket og hjælper med det skriftlige bagefter.",
       "url": "/bisidderstoette/"
     },
     {
       "overskrift": "Supervision",
       "underrubrik": "Faglig sparring i grupper",
-      "tekst": "Narrativ og systemisk supervision af mindre personalegrupper. Et trygt rum til at reflektere over praksis — og over de hverdagsbegivenheder, der fylder mest.",
+      "tekst": "Narrativ og systemisk supervision af mindre personalegrupper. Et trygt rum til at tænke højt i.",
       "url": "/supervision/"
     }
   ],
@@ -72,8 +72,8 @@
   "omlotte_overskrift": "Lotte Stegeager",
   "omlotte_tekst": "Cand.scient.soc. fra RUC, lektorgodkendt og specialistuddannet i narrativ psykoterapi fra DISPUK. Jeg har arbejdet med mennesker i vanskeligheder siden 1998 — først som underviser af pædagoger, siden som terapeut og supervisor.\n\nJeg er særligt optaget af, hvordan skam og udskamning kan spænde ben for deltagelse, og af hvordan man arbejder den anden vej.",
   "omlotte_knap": "Læs om min baggrund",
-  "omlotte_billede": "/billeder/omlotte-portraet.jpg",
-  "omlotte_billede_alt": "Portræt af Lotte Stegeager med briller og skulderlangt hår.",
+  "omlotte_billede": "",
+  "omlotte_billede_alt": "",
   "citat": "Det er ikke det enkelte menneske, som er problemet. Det er problemet, der er problemet.",
   "citat_kilde": "frit efter Michael White",
   "kryds_overskrift": "Jeg driver også Hesteassisteret Praksis",

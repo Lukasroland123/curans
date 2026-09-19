@@ -28,7 +28,9 @@ eleventyComputed:
     </div>
     <figure class="figur">
       <div class="hero__media" style="aspect-ratio: {{ forside.hero_billede | billedforhold }}">
+        {% if forside.hero_billede %}
         <img src="{{ forside.hero_billede }}" alt="{{ forside.hero_billede_alt }}">
+        {% endif %}
       </div>
       {% if forside.hero_billedtekst %}<figcaption>{{ forside.hero_billedtekst }}</figcaption>{% endif %}
     </figure>
@@ -36,12 +38,12 @@ eleventyComputed:
 </section>
 
 <section class="section">
-  <div class="wrap">
+  <div class="wrap wrap--bred">
     <div class="section-head">
       <h2>{{ forside.ydelser_overskrift }}</h2>
       <p>{{ forside.ydelser_intro }}</p>
     </div>
-    <div class="grid grid--3">
+    <div class="grid grid--5-fast">
       {% for k in forside.ydelser_kort %}
       <article class="card">
         <h3>{{ k.overskrift }}</h3>
@@ -72,9 +74,11 @@ eleventyComputed:
 
 <section class="section">
   <div class="wrap split">
-    <figure class="figur" style="max-width:340px">
+    <figure class="figur" style="max-width: {{ forside.omlotte_billede | figurbredde | default("340px", true) }}">
       <div class="split__media" style="aspect-ratio: {{ forside.omlotte_billede | billedforhold }}">
+        {% if forside.omlotte_billede %}
         <img src="{{ forside.omlotte_billede }}" alt="{{ forside.omlotte_billede_alt }}">
+        {% endif %}
       </div>
     </figure>
     <div>

@@ -51,9 +51,11 @@ eleventyComputed:
         <a class="btn btn--ghost" href="https://www.google.com/maps/search/?api=1&amp;query={{ site.adresse | urlencode }}+{{ site.postnr_by | urlencode }}" rel="noopener">Åbn i Google Maps</a>
       </p>
     </div>
-    <figure class="figur">
+    <figure class="figur" style="max-width: {{ kontakt.praktisk_billede | figurbredde }}">
       <div class="split__media" style="aspect-ratio: {{ kontakt.praktisk_billede | billedforhold }}">
+        {% if kontakt.praktisk_billede %}
         <img src="{{ kontakt.praktisk_billede }}" alt="{{ kontakt.praktisk_billede_alt }}">
+        {% endif %}
       </div>
       {% if kontakt.praktisk_billedtekst %}<figcaption>{{ kontakt.praktisk_billedtekst }}</figcaption>{% endif %}
     </figure>

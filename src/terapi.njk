@@ -30,7 +30,9 @@ eleventyComputed:
     </div>
     <figure class="figur">
       <div class="hero__media" style="aspect-ratio: {{ terapi.hero_billede | billedforhold }}">
+        {% if terapi.hero_billede %}
         <img src="{{ terapi.hero_billede }}" alt="{{ terapi.hero_billede_alt }}">
+        {% endif %}
       </div>
       {% if terapi.hero_billedtekst %}<figcaption>{{ terapi.hero_billedtekst }}</figcaption>{% endif %}
     </figure>
@@ -39,9 +41,11 @@ eleventyComputed:
 
 <section class="section section--sand">
   <div class="wrap split">
-    <figure class="figur">
+    <figure class="figur" style="max-width: {{ terapi.metode_billede | figurbredde }}">
       <div class="split__media" style="aspect-ratio: {{ terapi.metode_billede | billedforhold }}">
+        {% if terapi.metode_billede %}
         <img src="{{ terapi.metode_billede }}" alt="{{ terapi.metode_billede_alt }}">
+        {% endif %}
       </div>
       {% if terapi.metode_billedtekst %}<figcaption>{{ terapi.metode_billedtekst }}</figcaption>{% endif %}
     </figure>

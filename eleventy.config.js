@@ -130,6 +130,29 @@ module.exports = function (eleventyConfig) {
     return `${maal.bredde} / ${maal.hoejde}`;
   });
 
+  // Hvor bred en billedramme maa blive i en to-spaltet sektion.
+  //
+  // To problemer loeses paa en gang:
+  //   1. Et staaende foto i en spalte, der er halvt saa bred som siden,
+  //      bliver meterhoejt. Rammen SKAL foelge fotoet (ellers beskaeres
+  //      motivet), saa det er bredden, der skal ned - ikke formatet om.
+  //   2. Et lille foto maa aldrig skaleres OP. Flere af billederne fra den
+  //      gamle side er kun 400-600 px brede, og de bliver grimme, hvis de
+  //      straekkes ud over deres egen stoerrelse.
+  //
+  // Derfor: aldrig bredere end fotoet selv, og aldrig bredere end loftet
+  // for sin orientering.
+  eleventyConfig.addFilter("figurbredde", function (sti) {
+    const maal = billedMaal(sti);
+    // Tomt felt eller fil der ikke kan laeses: rammen staar tom og venter paa
+    // et foto. Den skal stadig have en bredde, ellers fylder den tomme,
+    // groenne kasse hele spalten.
+    if (!maal || !maal.bredde || !maal.hoejde) return "460px";
+    const staaende = maal.hoejde > maal.bredde;
+    const loft = staaende ? 400 : 640;
+    return Math.min(maal.bredde, loft) + "px";
+  });
+
   // Dato som ren YYYY-MM-DD til <lastmod> i sitemap'et. Soegemaskiner og
   // AI-crawlere bruger friskhed som signal, naar de vaelger hvad de skal
   // hente igen - og hvilken kilde de stoler mest paa.

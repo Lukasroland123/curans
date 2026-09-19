@@ -30,7 +30,7 @@ eleventyComputed:
     <div class="section-head">
       <h2>{{ priser.kort_overskrift }}</h2>
     </div>
-    <div class="grid grid--2">
+    <div class="grid grid--2-fast">
       {% for k in priser.kort %}
       <article class="price-card">
         <h3>{{ k.overskrift }}</h3>
@@ -64,9 +64,11 @@ eleventyComputed:
       {{ priser.beliggenhed_tekst | afsnit | safe }}
       <p><a class="btn btn--ghost" href="/kontakt/">Se rutevejledning</a></p>
     </div>
-    <figure class="figur">
+    <figure class="figur" style="max-width: {{ priser.beliggenhed_billede | figurbredde }}">
       <div class="split__media" style="aspect-ratio: {{ priser.beliggenhed_billede | billedforhold }}">
+        {% if priser.beliggenhed_billede %}
         <img src="{{ priser.beliggenhed_billede }}" alt="{{ priser.beliggenhed_billede_alt }}">
+        {% endif %}
       </div>
       {% if priser.beliggenhed_billedtekst %}<figcaption>{{ priser.beliggenhed_billedtekst }}</figcaption>{% endif %}
     </figure>

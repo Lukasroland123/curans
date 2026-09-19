@@ -678,6 +678,8 @@ blockquote {
 @media (min-width: 900px) {
   .grid--2-fast { grid-template-columns: repeat(2, 1fr); }
   .grid--3-fast { grid-template-columns: repeat(3, 1fr); }
+  /* Fire i bredden. Bruges til samarbejdspartnerne, der ellers bliver 3 + 1. */
+  .grid--4-fast { grid-template-columns: repeat(4, 1fr); gap: 1rem; }
 }
 
 .card {
@@ -962,4 +964,22 @@ blockquote {
 .visually-hidden {
   position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
   overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+}
+
+/* =========================================================
+   Fem kort paa stribe
+   =========================================================
+   Forsidens fem indgange skal staa som EN stribe. Med auto-fit faldt det
+   femte kort ned alene paa en raekke for sig, og saa ser det ud som om
+   supervision er noget, der er blevet til overs.
+
+   Det kraever to ting: en bredere ramme end tekstspalten, og kortere
+   tekster i kortene. Under 1200 px falder de tilbage til auto-fit. */
+.wrap--bred { max-width: var(--wrap-header); }
+
+@media (min-width: 1200px) {
+  .grid--5-fast { grid-template-columns: repeat(5, 1fr); gap: 1rem; }
+  .grid--5-fast .card { padding: 1.5rem 1.35rem; }
+  .grid--5-fast .card h3 { font-size: 1.125rem; }
+  .grid--5-fast .card p { font-size: .9375rem; }
 }

@@ -30,7 +30,9 @@ eleventyComputed:
     </div>
     <figure class="figur">
       <div class="hero__media" style="aspect-ratio: {{ bisidderstoette.hero_billede | billedforhold }}">
+        {% if bisidderstoette.hero_billede %}
         <img src="{{ bisidderstoette.hero_billede }}" alt="{{ bisidderstoette.hero_billede_alt }}">
+        {% endif %}
       </div>
       {% if bisidderstoette.hero_billedtekst %}<figcaption>{{ bisidderstoette.hero_billedtekst }}</figcaption>{% endif %}
     </figure>
@@ -39,9 +41,11 @@ eleventyComputed:
 
 <section class="section section--sand">
   <div class="wrap split">
-    <figure class="figur">
+    <figure class="figur" style="max-width: {{ bisidderstoette.metode_billede | figurbredde }}">
       <div class="split__media" style="aspect-ratio: {{ bisidderstoette.metode_billede | billedforhold }}">
+        {% if bisidderstoette.metode_billede %}
         <img src="{{ bisidderstoette.metode_billede }}" alt="{{ bisidderstoette.metode_billede_alt }}">
+        {% endif %}
       </div>
       {% if bisidderstoette.metode_billedtekst %}<figcaption>{{ bisidderstoette.metode_billedtekst }}</figcaption>{% endif %}
     </figure>

@@ -30,7 +30,9 @@ eleventyComputed:
     </div>
     <figure class="figur">
       <div class="hero__media" style="aspect-ratio: {{ familiebehandling.hero_billede | billedforhold }}">
+        {% if familiebehandling.hero_billede %}
         <img src="{{ familiebehandling.hero_billede }}" alt="{{ familiebehandling.hero_billede_alt }}">
+        {% endif %}
       </div>
       {% if familiebehandling.hero_billedtekst %}<figcaption>{{ familiebehandling.hero_billedtekst }}</figcaption>{% endif %}
     </figure>
@@ -39,9 +41,11 @@ eleventyComputed:
 
 <section class="section section--sand">
   <div class="wrap split">
-    <figure class="figur">
+    <figure class="figur" style="max-width: {{ familiebehandling.metode_billede | figurbredde }}">
       <div class="split__media" style="aspect-ratio: {{ familiebehandling.metode_billede | billedforhold }}">
+        {% if familiebehandling.metode_billede %}
         <img src="{{ familiebehandling.metode_billede }}" alt="{{ familiebehandling.metode_billede_alt }}">
+        {% endif %}
       </div>
       {% if familiebehandling.metode_billedtekst %}<figcaption>{{ familiebehandling.metode_billedtekst }}</figcaption>{% endif %}
     </figure>
