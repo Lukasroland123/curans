@@ -74,6 +74,9 @@ ENDELSER = [
     ("_indledning", "Indledende tekst"),
     ("_afslutning", "Afsluttende tekst"),
     ("_tekst", "Tekst"),
+    ("_billede2_alt", "Billede 2 · hvad ser man på det?"),
+    ("_billede2tekst", "Billede 2 · billedtekst"),
+    ("_billede2", "Billede 2 (kun hvis teksten er lang)"),
     ("_billede_alt", "Hvad ser man på billedet?"),
     ("_billedtekst", "Billedtekst (vises under billedet)"),
     ("_billede", "Billede"),
@@ -139,7 +142,7 @@ def etiket(noegle):
 
 
 def widget(noegle, vaerdi):
-    if noegle.endswith("_billede"):
+    if noegle.endswith("_billede") or noegle.endswith("_billede2"):
         return "image"
     if isinstance(vaerdi, str):
         if any(noegle.endswith(l) or noegle == l for l in LANGE):
@@ -155,12 +158,22 @@ def esc(s):
 
 def felt_linje(noegle, vaerdi, indryk):
     w = widget(noegle, vaerdi)
-    paakraevet = "" if vaerdi else ", required: false"
+    # Et billede maa ALTID kunne fjernes igen. Var feltet paakraevet, fordi
+    # der tilfaeldigvis ligger et foto i det i dag, kunne Lotte ikke tage
+    # fotoet ud og faa den groenne plads tilbage.
+    paakraevet = "" if vaerdi and w != "image" else ", required: false"
     hint = ""
     if noegle.endswith("_billede_alt"):
         hint = (', hint: "Læses højt for blinde og bruges af Google i stedet for '
                 'billedet. Beskriv hvad man SER, ikke stemningen."')
-    if noegle.endswith("_billedtekst"):
+    if noegle.endswith("_billede2"):
+        hint = (', hint: "Et billede mere i samme spalte. Brug det, når teksten '
+                'ved siden af er lang. Lad det stå tomt, og der vises en grøn '
+                'plads i stedet. Den vises kun, hvis billede 1 er udfyldt."')
+    elif noegle.endswith("_billede"):
+        hint = (', hint: "Lad feltet stå tomt, og der vises en grøn plads, '
+                'der venter på et foto. Siden går ikke i stykker af det."')
+    if noegle.endswith("_billede2tekst") or noegle.endswith("_billedtekst"):
         hint = (', hint: "Den kursive tekst under billedet. Lad feltet stå tomt, '
                 'hvis der ingen tekst skal være."')
     return "%s- { name: %s, label: %s, widget: %s%s%s }" % (
