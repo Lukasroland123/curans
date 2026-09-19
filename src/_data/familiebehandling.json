@@ -2,40 +2,51 @@
   "titel": "Familiebehandling ved Roskilde | Curans",
   "beskrivelse": "Narrativ familiebehandling ved konflikter, skilsmisse, kritisk sygdom eller handicap. Samtaler hvor alle i familien bliver hørt. Gevninge, 10 km fra Roskilde.",
   "ydelse_navn": "Familiebehandling",
-
   "hero_mikrotekst": "Forløb for familier",
   "hero_overskrift": "Når familien er kørt fast",
-  "hero_tekst": "Har I været under pres i kortere eller længere tid? Er presset kommet snigende og næsten ubemærket — eller er det slået ned som et lyn? Kritisk sygdom, en ulykke, en skilsmisse eller noget helt andet, der har slået jer ud af kurs.",
+  "hero_tekst": "Har I været under pres i kortere eller længere tid? Er presset kommet snigende og næsten ubemærket, eller er det slået ned som et lyn? Kritisk sygdom, en ulykke, en skilsmisse eller noget helt andet, der har slået jer ud af kurs.",
   "svar": "Familiebehandling foregår som en vekselvirkning mellem individuelle samtaler og familiesamtaler. Der afsættes 90 til 120 minutter, og der aftales oftest et forløb på tre til otte gange. De første 20 minutter er uden beregning.",
-
-  "hvad_tekst": "Alle familier oplever anspændthed og ubalance indimellem. Nogle gange bliver man rystet i en sådan grad, at det er svært at finde fælles fodfæste igen, og så melder afmagten sig.\n\nNår der opstår rystelser, virker de nærmest som en magnet for spændinger og ubehag, der klæber sig til familien. Det kan efterlade jer med en følelse af at være forkerte — og så begynder mange familier at isolere sig.",
+  "hvad_tekst": "Alle familier oplever anspændthed og ubalance indimellem. Nogle gange bliver man rystet i en sådan grad, at det er svært at finde fælles fodfæste igen, og så melder afmagten sig.\n\nNår der opstår rystelser, virker de nærmest som en magnet for spændinger og ubehag, der klæber sig til familien. Det kan efterlade jer med en følelse af at være forkerte, og så begynder mange familier at isolere sig.",
   "hvad_boks_titel": "Problemet er problemet.",
   "hvad_boks_tekst": "Ikke familien, og ikke det enkelte familiemedlem. I den narrative tilgang findes der kun problemer, fordi der er noget, som er vigtigt.",
-
   "hero_maerkater": [
-    { "tekst": "Hele familien eller dele af den" },
-    { "tekst": "90–120 min. pr. gang" },
-    { "tekst": "20 min. uden beregning" }
+    {
+      "tekst": "Hele familien eller dele af den"
+    },
+    {
+      "tekst": "90–120 min. pr. gang"
+    },
+    {
+      "tekst": "20 min. uden beregning"
+    }
   ],
-
   "hero_billede": "/billeder/familie-samtale-ved-bordet.jpg",
   "hero_billede_alt": "En ung person set bagfra sidder over for Lotte ved et bord med små figurer og et stearinlys.",
   "hero_billedtekst": "",
-
+  "hero_billede2": "/billeder/familie-haandaftryk-hjerte.jpg",
+  "hero_billede2_alt": "To orange håndaftryk malet på hvidt papir med et rødt hjerte imellem sig.",
+  "hero_billede2tekst": "",
   "metode_mikrotekst": "Sådan foregår det",
   "metode_overskrift": "Alle stemmer skal kunne høres",
-  "metode_indledning": "Virkeligheden opleves meget forskelligt. Derfor lægger jeg særlig vægt på at værne om hvert enkelt familiemedlems stemme — og på at understøtte de andres aktive lytning.\n\nDet er helt afgørende, at alle får mulighed for at fortælle deres version af, hvad der er foregået, og hvilken betydning det har haft.",
+  "metode_indledning": "Virkeligheden opleves meget forskelligt. Derfor lægger jeg særlig vægt på at værne om hvert enkelt familiemedlems stemme, og på at understøtte de andres aktive lytning.\n\nDet er helt afgørende, at alle får mulighed for at fortælle deres version af, hvad der er foregået, og hvilken betydning det har haft.",
   "metode_punkter": [
-    { "tekst": "Vi ser på de bagvedliggende begivenheder, der har skabt rystelserne." },
-    { "tekst": "Og på hvordan rystelserne kan stå i vejen for alt det konstruktive, I også har erfaringer med, ved noget om og vil noget med." },
-    { "tekst": "Bevidning: ét familiemedlem fortæller, mens de øvrige lytter — og genfortæller derefter det, der gjorde indtryk." },
-    { "tekst": "Opstillinger med figurer gør relationer og mønstre synlige på en måde, ord alene ikke kan." }
+    {
+      "tekst": "Vi ser på de bagvedliggende begivenheder, der har skabt rystelserne."
+    },
+    {
+      "tekst": "Og på hvordan rystelserne kan stå i vejen for alt det konstruktive, I også har erfaringer med, ved noget om og vil noget med."
+    },
+    {
+      "tekst": "Bevidning: ét familiemedlem fortæller, mens de øvrige lytter, og genfortæller derefter det, der gjorde indtryk."
+    },
+    {
+      "tekst": "Opstillinger med figurer gør relationer og mønstre synlige på en måde, ord alene ikke kan."
+    }
   ],
   "metode_afslutning": "Vi undersøger problemet sammen og finder frem til, hvad der er vigtigt for netop jer.",
   "metode_billede": "/billeder/opstilling-figurer-paa-bord.jpg",
   "metode_billede_alt": "Små træfigurer stillet op på et bord, mens flere hænder rækker ind over bordet.",
   "metode_billedtekst": "Systemisk opstilling: relationerne stilles op, så de kan ses udefra.",
-
   "hvem_overskrift": "Hvem kan henvende sig?",
   "hvem_intro": "Går I med en fornemmelse af, at noget trykker eller forstyrrer jeres indbyrdes relationer på en måde, der skaber ubehag, er det ofte en god idé at få ubehaget under lup.",
   "hvem_kort": [
@@ -54,15 +65,13 @@
   ],
   "hvem_boks_titel": "Jeg har samtaler med meget forskellige familier.",
   "hvem_boks_tekst": "De har det til fælles, at de bakser med noget, der går dem på i livet.",
-
   "etik_overskrift": "Mit etiske afsæt",
-  "etik_tekst": "I bliver mødt med en åben og spørgende tilgang, der tager afsæt i præcis det, I er optaget af.\n\nIntentionen er at understøtte ligeværdige relationer — om end med den forståelse, at det altid er den eller de voksne, der har ansvaret for at holde hånden under barnet.\n\nDet er helt afgørende, at ingen får en oplevelse af at blive gjort forkert som menneske.",
-
+  "etik_tekst": "I bliver mødt med en åben og spørgende tilgang, der tager afsæt i præcis det, I er optaget af.\n\nIntentionen er at understøtte ligeværdige relationer, om end med den forståelse, at det altid er den eller de voksne, der har ansvaret for at holde hånden under barnet.\n\nDet er helt afgørende, at ingen får en oplevelse af at blive gjort forkert som menneske.",
   "faq_overskrift": "Spørgsmål om familiebehandling",
   "faq": [
     {
       "spoergsmaal": "Hvad mener du med, at problemet er problemet?",
-      "svar": "Ved at eksternalisere det, der opleves som problemet — den dårlige stemning, ubehaget, stressen — gøres det til noget i sig selv, adskilt fra den person, der oplever det.\n\nI familiebehandlingen betyder det, at det enkelte familiemedlem ikke gøres forkert, hverken af de andre eller af sig selv. Når der skabes afstand mellem mennesket og det, der står i vejen, bliver der plads til at se sig selv gennem andre briller. Og den dårlige stemning kan komme under lup, uden at nogen føler sig spist op af den."
+      "svar": "Ved at eksternalisere det, der opleves som problemet, altså den dårlige stemning, ubehaget eller stressen, gøres det til noget i sig selv, adskilt fra den person, der oplever det.\n\nI familiebehandlingen betyder det, at det enkelte familiemedlem ikke gøres forkert, hverken af de andre eller af sig selv. Når der skabes afstand mellem mennesket og det, der står i vejen, bliver der plads til at se sig selv gennem andre briller. Og den dårlige stemning kan komme under lup, uden at nogen føler sig spist op af den."
     },
     {
       "spoergsmaal": "Hvad betyder narrativ familiebehandling?",
@@ -70,18 +79,16 @@
     },
     {
       "spoergsmaal": "Hvad er bevidning?",
-      "svar": "Bevidning er en af de metoder, jeg bruger. Ét familiemedlem fortæller om en hændelse til mig, mens de øvrige er i en lyttende position. Derefter genfortæller de lyttende det, de har hørt, fremhæver de udsagn, der gjorde indtryk, og inddrager egne relaterede fortællinger.\n\nDet handler om at anerkende, at der kan findes mange forskellige oplevelser af virkeligheden — og om at skabe resonans mellem jer, så der opstår en oplevelse af at være blevet hørt og genkendt."
+      "svar": "Bevidning er en af de metoder, jeg bruger. Ét familiemedlem fortæller om en hændelse til mig, mens de øvrige er i en lyttende position. Derefter genfortæller de lyttende det, de har hørt, fremhæver de udsagn, der gjorde indtryk, og inddrager egne relaterede fortællinger.\n\nDet handler om at anerkende, at der kan findes mange forskellige oplevelser af virkeligheden, og om at skabe resonans mellem jer, så der opstår en oplevelse af at være blevet hørt og genkendt."
     },
     {
       "spoergsmaal": "Skal hele familien med hver gang?",
       "svar": "Nej. Det kan foregå i en vekselvirkning mellem individuelle samtaler og familiesamtaler. Hvordan det tilrettelægges, aftaler vi undervejs."
     }
   ],
-
   "kryds_overskrift": "Er det et barn eller en ung, der har det svært?",
   "kryds_tekst": "Jeg driver også Hesteassisteret Praksis, hvor samspillet med hesten kan være vejen ind, når ord er svære.",
   "kryds_knap": "Læs om hesteassisteret praksis",
-
   "cta_overskrift": "Skal vi tale om, hvad der er på spil hos jer?",
   "cta_tekst": "Ring og få 20 minutter uden beregning. Fortæl om situationen, så finder vi ud af, hvordan et forløb kunne se ud."
 }

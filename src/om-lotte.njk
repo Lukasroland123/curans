@@ -48,14 +48,26 @@ eleventyComputed:
 
 <section class="section">
   <div class="wrap split">
-    <figure class="figur" style="max-width: {{ omlotte.erfaring_billede | figurbredde }}">
-      <div class="split__media" style="aspect-ratio: {{ omlotte.erfaring_billede | billedforhold }}">
-        {% if omlotte.erfaring_billede %}
-        <img src="{{ omlotte.erfaring_billede }}" alt="{{ omlotte.erfaring_billede_alt }}">
-        {% endif %}
-      </div>
-      {% if omlotte.erfaring_billedtekst %}<figcaption>{{ omlotte.erfaring_billedtekst }}</figcaption>{% endif %}
-    </figure>
+    <div class="billedstak">
+      <figure class="figur" style="max-width: {{ omlotte.erfaring_billede | figurbredde }}">
+        <div class="split__media" style="aspect-ratio: {{ omlotte.erfaring_billede | billedforhold }}">
+          {% if omlotte.erfaring_billede %}
+          <img src="{{ omlotte.erfaring_billede }}" alt="{{ omlotte.erfaring_billede_alt }}">
+          {% endif %}
+        </div>
+        {% if omlotte.erfaring_billedetekst %}<figcaption>{{ omlotte.erfaring_billedetekst }}</figcaption>{% endif %}
+      </figure>
+      {#- Andet billede. Er feltet tomt, staar rammen tom og venter paa et
+          foto. Det er bedre end at laane et billede fra en anden side. -#}
+      <figure class="figur" style="max-width: {{ omlotte.erfaring_billede2 | figurbredde }}">
+        <div class="split__media" style="aspect-ratio: {{ omlotte.erfaring_billede2 | billedforhold }}">
+          {% if omlotte.erfaring_billede2 %}
+          <img src="{{ omlotte.erfaring_billede2 }}" alt="{{ omlotte.erfaring_billede2_alt }}">
+          {% endif %}
+        </div>
+        {% if omlotte.erfaring_billede2tekst %}<figcaption>{{ omlotte.erfaring_billede2tekst }}</figcaption>{% endif %}
+      </figure>
+    </div>
     <div>
       <span class="eyebrow">{{ omlotte.erfaring_mikrotekst }}</span>
       <h2>{{ omlotte.erfaring_overskrift }}</h2>

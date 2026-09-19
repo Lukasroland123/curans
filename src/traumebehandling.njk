@@ -28,14 +28,26 @@ eleventyComputed:
         {% endfor %}
       </div>
     </div>
-    <figure class="figur">
-      <div class="hero__media" style="aspect-ratio: {{ traumebehandling.hero_billede | billedforhold }}">
-        {% if traumebehandling.hero_billede %}
-        <img src="{{ traumebehandling.hero_billede }}" alt="{{ traumebehandling.hero_billede_alt }}">
-        {% endif %}
-      </div>
-      {% if traumebehandling.hero_billedtekst %}<figcaption>{{ traumebehandling.hero_billedtekst }}</figcaption>{% endif %}
-    </figure>
+    <div class="billedstak">
+      <figure class="figur" style="max-width: {{ traumebehandling.hero_billede | herobredde }}">
+        <div class="hero__media" style="aspect-ratio: {{ traumebehandling.hero_billede | billedforhold }}">
+          {% if traumebehandling.hero_billede %}
+          <img src="{{ traumebehandling.hero_billede }}" alt="{{ traumebehandling.hero_billede_alt }}">
+          {% endif %}
+        </div>
+        {% if traumebehandling.hero_billedetekst %}<figcaption>{{ traumebehandling.hero_billedetekst }}</figcaption>{% endif %}
+      </figure>
+      {#- Andet billede. Er feltet tomt, staar rammen tom og venter paa et
+          foto. Det er bedre end at laane et billede fra en anden side. -#}
+      <figure class="figur" style="max-width: {{ traumebehandling.hero_billede2 | herobredde }}">
+        <div class="hero__media" style="aspect-ratio: {{ traumebehandling.hero_billede2 | billedforhold }}">
+          {% if traumebehandling.hero_billede2 %}
+          <img src="{{ traumebehandling.hero_billede2 }}" alt="{{ traumebehandling.hero_billede2_alt }}">
+          {% endif %}
+        </div>
+        {% if traumebehandling.hero_billede2tekst %}<figcaption>{{ traumebehandling.hero_billede2tekst }}</figcaption>{% endif %}
+      </figure>
+    </div>
   </div>
 </section>
 

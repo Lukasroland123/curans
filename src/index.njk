@@ -26,13 +26,13 @@ eleventyComputed:
         {% endfor %}
       </div>
     </div>
-    <figure class="figur">
+    <figure class="figur" style="max-width: {{ forside.hero_billede | herobredde }}">
       <div class="hero__media" style="aspect-ratio: {{ forside.hero_billede | billedforhold }}">
         {% if forside.hero_billede %}
         <img src="{{ forside.hero_billede }}" alt="{{ forside.hero_billede_alt }}">
         {% endif %}
       </div>
-      {% if forside.hero_billedtekst %}<figcaption>{{ forside.hero_billedtekst }}</figcaption>{% endif %}
+      {% if forside.hero_billedetekst %}<figcaption>{{ forside.hero_billedetekst }}</figcaption>{% endif %}
     </figure>
   </div>
 </section>

@@ -983,3 +983,18 @@ blockquote {
   .grid--5-fast .card h3 { font-size: 1.125rem; }
   .grid--5-fast .card p { font-size: .9375rem; }
 }
+
+/* =========================================================
+   To billeder i en spalte
+   =========================================================
+   Nogle tekstspalter er dobbelt saa hoeje som billedet ved siden af, og saa
+   staar der et stort hul. Loesningen er et billede mere i samme spalte -
+   ikke at straekke det foerste, for saa bliver motivet beskaaret.
+
+   Er det andet felt tomt, staar rammen tom og venter paa et foto. Det er
+   bevidst: hellere en tom ramme end det samme billede to steder paa sitet. */
+.billedstak {
+  display: grid;
+  gap: 1.25rem;
+  align-content: start;
+}

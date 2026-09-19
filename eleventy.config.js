@@ -124,9 +124,10 @@ module.exports = function (eleventyConfig) {
   // og falder tilbage til stylesheetets standardformat, hvis filen mangler.
   eleventyConfig.addFilter("billedforhold", function (sti) {
     const maal = billedMaal(sti);
-    // Tom vaerdi giver en ugyldig CSS-regel, som browseren kasserer. Dermed
-    // gaelder stylesheetets eget format, og intet gaar i stykker.
-    if (!maal || !maal.bredde || !maal.hoejde) return "";
+    // Tomt felt: rammen staar tom og venter paa et foto. Den faar et liggende
+    // format, for en tom ramme paa hoejkant goer billedspalten dobbelt saa
+    // hoej som teksten ved siden af.
+    if (!maal || !maal.bredde || !maal.hoejde) return "4 / 3";
     return `${maal.bredde} / ${maal.hoejde}`;
   });
 
@@ -149,8 +150,18 @@ module.exports = function (eleventyConfig) {
     // groenne kasse hele spalten.
     if (!maal || !maal.bredde || !maal.hoejde) return "460px";
     const staaende = maal.hoejde > maal.bredde;
-    const loft = staaende ? 400 : 640;
+    const loft = staaende ? 320 : 640;
     return Math.min(maal.bredde, loft) + "px";
+  });
+
+  // Samme idé for billederne oeverst paa siden. Her er spalten bredere, saa
+  // loftet er hoejere - men et staaende foto i fuld spaltebredde bliver
+  // stadig hoejere end teksten ved siden af.
+  eleventyConfig.addFilter("herobredde", function (sti) {
+    const maal = billedMaal(sti);
+    if (!maal || !maal.bredde || !maal.hoejde) return "";
+    const staaende = maal.hoejde > maal.bredde;
+    return Math.min(maal.bredde, staaende ? 440 : 900) + "px";
   });
 
   // Dato som ren YYYY-MM-DD til <lastmod> i sitemap'et. Soegemaskiner og

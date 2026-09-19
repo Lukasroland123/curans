@@ -1,57 +1,79 @@
 {
   "titel": "Om Lotte Stegeager | Curans",
   "beskrivelse": "Narrativ psykoterapeut og supervisor i Gevninge ved Roskilde. Cand.scient.soc. fra RUC, lektorgodkendt, specialistuddannet i narrativ psykoterapi fra DISPUK.",
-
   "hero_mikrotekst": "Om mig",
   "hero_overskrift": "Lotte Stegeager",
-  "hero_tekst": "Narrativ psykoterapeut og supervisor. Jeg har arbejdet med mennesker i vanskeligheder siden 1998 — først som underviser, siden som terapeut og supervisor.",
+  "hero_tekst": "Narrativ psykoterapeut og supervisor. Jeg har arbejdet med mennesker i vanskeligheder siden 1998. Først som underviser, siden som terapeut og supervisor.",
   "hero_billede": "/billeder/omlotte-portraet.jpg",
   "hero_billede_alt": "Portræt af Lotte Stegeager med briller og skulderlangt hår.",
   "hero_billedtekst": "",
-
-  "intro_tekst": "Nedenfor kan du læse om min uddannelsesbaggrund, mit faglige afsæt og min erfaring. Vil du hellere have en fornemmelse af, hvordan en samtale mellem os kunne foregå, så ring — de første 20 minutter er uden beregning.",
-
+  "intro_tekst": "Nedenfor kan du læse om min uddannelsesbaggrund, mit faglige afsæt og min erfaring. Vil du hellere have en fornemmelse af, hvordan en samtale mellem os kunne foregå, så ring. De første 20 minutter er uden beregning.",
   "uddannelser_overskrift": "Uddannelse",
   "uddannelser_intro": "Jeg er kandidat fra Roskilde Universitet i 1998 (cand.scient.soc.) med baggrund i det samfundsvidenskabelige og det pædagogisk-psykologiske felt, og jeg er lektorgodkendt inden for det pædagogiske og psykologiske fagområde.",
   "uddannelser": [
-    { "tekst": "Cand.scient.soc., Roskilde Universitet, 1998" },
-    { "tekst": "Lektorgodkendt inden for det pædagogiske og psykologiske fagområde" },
-    { "tekst": "Specialistuddannelse i narrativ psykoterapi, DISPUK — godkendt af Dansk Psykolog Forening og Dansk Psykiatrisk Selskab" },
-    { "tekst": "Traumeuddannelsen, DISPUK" },
-    { "tekst": "Coach- og vejlederuddannelsen, DISPUK" },
-    { "tekst": "Marte Meo-uddannelsen — udviklingsstøttende samspil" },
-    { "tekst": "Uddannelse i systemisk opstilling — mønstre på tværs af generationer" },
-    { "tekst": "Certificeret funktionel neuroterapeut" }
+    {
+      "tekst": "Cand.scient.soc., Roskilde Universitet, 1998"
+    },
+    {
+      "tekst": "Lektorgodkendt inden for det pædagogiske og psykologiske fagområde"
+    },
+    {
+      "tekst": "Specialistuddannelse i narrativ psykoterapi, DISPUK, godkendt af Dansk Psykolog Forening og Dansk Psykiatrisk Selskab"
+    },
+    {
+      "tekst": "Traumeuddannelsen, DISPUK"
+    },
+    {
+      "tekst": "Coach- og vejlederuddannelsen, DISPUK"
+    },
+    {
+      "tekst": "Marte Meo-uddannelsen i udviklingsstøttende samspil"
+    },
+    {
+      "tekst": "Uddannelse i systemisk opstilling, om mønstre på tværs af generationer"
+    },
+    {
+      "tekst": "Certificeret funktionel neuroterapeut"
+    }
   ],
   "uddannelser_boks_titel": "Også:",
   "uddannelser_boks_tekst": "Censor på diplomuddannelsen i familieterapi og relationel praksis. Medlem af Dansk Psykoterapeutforening og af Rideterapeutforeningen.",
-
   "erfaring_mikrotekst": "Erfaring",
   "erfaring_overskrift": "Fra undervisning til terapi",
-  "erfaring_tekst": "Siden 1998 har jeg blandt andet uddannet pædagoger og undervist i socialfag, pædagogik, kommunikation og psykologi. Jeg har deltaget i udviklingsprojekter om forandringer i organisationer og teams, undervist på efter- og videreuddannelser og været censor på bachelorniveau. Jeg har været formand for lektorbedømmelsesudvalget.\n\nDe sidste cirka ti år har jeg arbejdet med at kvalificere uddannelsers tilgang til studerende, som af forskellige årsager er kommet i vanskeligheder. I den forbindelse har jeg udviklet supervisionsmetoder, der integrerer en faglig, metodisk og terapeutisk tilgang.\n\nJeg har særligt haft fokus på, hvordan skam og udskamning kan skabe barrierer for deltagelse — for studerende og for andre mennesker, børn såvel som voksne. Jeg er optaget af, hvordan vi kan skabe forudsætninger for øget selvagtelse og handlekraft ved at arbejde med skamreducering. Jeg var initiativtager til et forskningsprojekt om emnet og er medforfatter på den forskningsgodkendte artikel »Jeg er ikke bange for at blive set, men…« (Dansk Psykoterapeutisk Tidsskrift nr. 3, 2020, af S. og L. Stegeager).\n\nDe seneste år er jeg blevet mere optaget af supervision af mindre personalegrupper og af terapeutisk arbejde med børn, unge, voksne og familier, der er ramt af mistrivsel.",
+  "erfaring_tekst": "Siden 1998 har jeg blandt andet uddannet pædagoger og undervist i socialfag, pædagogik, kommunikation og psykologi. Jeg har deltaget i udviklingsprojekter om forandringer i organisationer og teams, undervist på efter- og videreuddannelser og været censor på bachelorniveau. Jeg har været formand for lektorbedømmelsesudvalget.\n\nDe sidste cirka ti år har jeg arbejdet med at kvalificere uddannelsers tilgang til studerende, som af forskellige årsager er kommet i vanskeligheder. I den forbindelse har jeg udviklet supervisionsmetoder, der integrerer en faglig, metodisk og terapeutisk tilgang.\n\nJeg har særligt haft fokus på, hvordan skam og udskamning kan skabe barrierer for deltagelse, både for studerende og for andre mennesker, børn såvel som voksne. Jeg er optaget af, hvordan vi kan skabe forudsætninger for øget selvagtelse og handlekraft ved at arbejde med skamreducering. Jeg var initiativtager til et forskningsprojekt om emnet og er medforfatter på den forskningsgodkendte artikel »Jeg er ikke bange for at blive set, men…« (Dansk Psykoterapeutisk Tidsskrift nr. 3, 2020, af S. og L. Stegeager).\n\nDe seneste år er jeg blevet mere optaget af supervision af mindre personalegrupper og af terapeutisk arbejde med børn, unge, voksne og familier, der er ramt af mistrivsel.",
   "erfaring_billede": "/billeder/terapi-tavle-ung-skriver.jpg",
   "erfaring_billede_alt": "Et barn skriver på en whiteboardtavle, mens to voksne sidder ved siden af og kigger med.",
   "erfaring_billedtekst": "",
-
+  "erfaring_billede2": "",
+  "erfaring_billede2_alt": "",
+  "erfaring_billede2tekst": "",
   "tilgang_overskrift": "Mine faglige tilgange",
-  "tilgang_tekst": "I min praksis har jeg primært afsæt i narrativ terapi og supervision. Mit etiske afsæt er at støtte dig i at få blik for dine intentioner og det, der er vigtigt for netop dig — så du kan træffe beslutninger i overensstemmelse med det, du tillægger værdi.\n\nDerudover trækker jeg på viden om det udviklingsstøttende samspil. Jeg er optaget af, hvordan mønstre kan gennemsætte sig på tværs af generationer, og bruger systemisk opstilling til at få en mere kropslig fornemmelse af, hvad vi bærer med os fra tidligere.\n\nEndelig er jeg optaget af kontekstens betydning — af steder og stedstilknytning. Alle vores oplevelser og erfaringer foregår på steder, og derfor betragter jeg vores selvfortællinger som kontekstbundne. At nærme sig et bestemt fysisk sted gennem sine fortællinger kan ofte hjælpe os med at mærke os selv, og det vi enten ønsker at stå for eller frigøre os fra.",
-
+  "tilgang_tekst": "I min praksis har jeg primært afsæt i narrativ terapi og supervision. Mit etiske afsæt er at støtte dig i at få blik for dine intentioner og det, der er vigtigt for netop dig, så du kan træffe beslutninger i overensstemmelse med det, du tillægger værdi.\n\nDerudover trækker jeg på viden om det udviklingsstøttende samspil. Jeg er optaget af, hvordan mønstre kan gennemsætte sig på tværs af generationer, og bruger systemisk opstilling til at få en mere kropslig fornemmelse af, hvad vi bærer med os fra tidligere.\n\nEndelig er jeg optaget af kontekstens betydning, nemlig af steder og stedstilknytning. Alle vores oplevelser og erfaringer foregår på steder, og derfor betragter jeg vores selvfortællinger som kontekstbundne. At nærme sig et bestemt fysisk sted gennem sine fortællinger kan ofte hjælpe os med at mærke os selv, og det vi enten ønsker at stå for eller frigøre os fra.",
   "sparring_overskrift": "Sparring og samarbejdspartnere",
   "sparring_intro": "For at sikre den bedst mulige terapi og supervision har jeg en gruppe af kvalificerede samarbejdspartnere, der kan bidrage med andre perspektiver på de temaer og problemstillinger, som kommer frem i vores dialog. De sager, jeg får sparring på, er anonymiseret i en sådan grad, at tavshedspligten overholdes.",
   "sparring_personer": [
-    { "navn": "Gabriele Leth", "rolle": "Børne- og ungdomspsykiater" },
-    { "navn": "Kristina Garth-Grüner", "rolle": "Jurist og konfliktmægler" },
-    { "navn": "Peter R. Christensen", "rolle": "Cand.mag. i pædagogik og filosofi" },
-    { "navn": "Simone Stegeager", "rolle": "Ph.d.-studerende i socialpsykologi, RUC" }
+    {
+      "navn": "Gabriele Leth",
+      "rolle": "Børne- og ungdomspsykiater"
+    },
+    {
+      "navn": "Kristina Garth-Grüner",
+      "rolle": "Jurist og konfliktmægler"
+    },
+    {
+      "navn": "Peter R. Christensen",
+      "rolle": "Cand.mag. i pædagogik og filosofi"
+    },
+    {
+      "navn": "Simone Stegeager",
+      "rolle": "Ph.d.-studerende i socialpsykologi, RUC"
+    }
   ],
-
-  "citat": "Det er ikke det enkelte menneske, som er problemet. Det er problemet, der er problemet — og et problem er kun et problem, fordi der er noget, som er vigtigt.",
+  "citat": "Det er ikke det enkelte menneske, som er problemet. Det er problemet, der er problemet, og et problem er kun et problem, fordi der er noget, som er vigtigt.",
   "citat_kilde": "frit efter Michael White",
-
   "kryds_overskrift": "Jeg arbejder også med heste",
   "kryds_tekst": "Hesteassisteret Praksis er en selvstændig praksis, hvor samspillet mellem menneske og hest er omdrejningspunktet.",
   "kryds_knap": "Læs om hesteassisteret praksis",
-
   "cta_overskrift": "Skal vi tage en snak?",
   "cta_tekst": "Ring og få 20 minutter uden beregning. Fortæl om situationen, så finder vi ud af, om jeg er den rigtige."
 }

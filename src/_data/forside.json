@@ -16,11 +16,11 @@
       "tekst": "Gevninge ved Roskilde"
     }
   ],
-  "hero_billede": "/billeder/terapi-samtale-to-kvinder.jpg",
-  "hero_billede_alt": "To kvinder sidder og taler sammen i to stole ved et vindue med udsigt over marker.",
-  "hero_billedtekst": "Samtalerne foregår i rolige omgivelser i Gevninge.",
+  "hero_billede": "/billeder/forside-omfavnelse.jpg",
+  "hero_billede_alt": "En voksen holder om et barn, der lægger hovedet ind mod skulderen.",
+  "hero_billedtekst": "",
   "ydelser_overskrift": "Det tilbyder jeg",
-  "ydelser_intro": "Fem indgange. De hænger sammen, og de kan kombineres — mange forløb starter ét sted og bevæger sig et andet hen.",
+  "ydelser_intro": "Fem indgange. De hænger sammen, og de kan kombineres. Mange forløb starter ét sted og bevæger sig et andet hen.",
   "ydelser_kort": [
     {
       "overskrift": "Individuel terapi",
@@ -70,7 +70,7 @@
   ],
   "omlotte_mikrotekst": "Hvem møder du?",
   "omlotte_overskrift": "Lotte Stegeager",
-  "omlotte_tekst": "Cand.scient.soc. fra RUC, lektorgodkendt og specialistuddannet i narrativ psykoterapi fra DISPUK. Jeg har arbejdet med mennesker i vanskeligheder siden 1998 — først som underviser af pædagoger, siden som terapeut og supervisor.\n\nJeg er særligt optaget af, hvordan skam og udskamning kan spænde ben for deltagelse, og af hvordan man arbejder den anden vej.",
+  "omlotte_tekst": "Cand.scient.soc. fra RUC, lektorgodkendt og specialistuddannet i narrativ psykoterapi fra DISPUK. Jeg har arbejdet med mennesker i vanskeligheder siden 1998. Først som underviser af pædagoger, siden som terapeut og supervisor.\n\nJeg er særligt optaget af, hvordan skam og udskamning kan spænde ben for deltagelse, og af hvordan man arbejder den anden vej.",
   "omlotte_knap": "Læs om min baggrund",
   "omlotte_billede": "",
   "omlotte_billede_alt": "",

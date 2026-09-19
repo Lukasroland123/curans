@@ -2,40 +2,51 @@
   "titel": "Narrativ supervision af personalegrupper | Curans",
   "beskrivelse": "Narrativ og systemisk supervision af mindre personalegrupper. Reflekterende team, stafetmodel og systemiske opstillinger. Roskilde, Lejre og Holbæk.",
   "ydelse_navn": "Supervision og faglig sparring",
-
   "hero_mikrotekst": "For arbejdspladser",
   "hero_overskrift": "Supervision af mindre personalegrupper",
-  "hero_tekst": "Et trygt og professionelt rum, hvor en personalegruppe kan udforske og reflektere over sin egen praksis — de konkrete hverdagsbegivenheder, udfordringerne og det, der faktisk lykkes.",
+  "hero_tekst": "Et trygt og professionelt rum, hvor en personalegruppe kan udforske og reflektere over sin egen praksis: de konkrete hverdagsbegivenheder, udfordringerne og det, der faktisk lykkes.",
   "svar": "Supervisionsforløb kan have meget forskellige formål og tilrettelægges derfor i tæt dialog med deltagerne. Der er mulighed for supervision i mindre grupper eller individuelt. Prisen aftales fra gang til gang, fordi omfanget varierer.",
-
   "hvad_tekst": "Med afsæt i en narrativ og systemisk optik arbejder vi med at understøtte personalegruppens mulighed for at reflektere over egen praksis.\n\nNarrativ supervision handler om at identificere og udfolde de historier, vi fortæller om os selv, vores arbejde og de relationer, vi indgår i. Ved at undersøge de fortællinger skabes der plads til nye perspektiver og nye handlemuligheder.",
   "hvad_boks_titel": "Målet er ikke at finde fejl.",
-  "hvad_boks_tekst": "Det er at styrke personalets forståelse af egne ressourcer og handlemuligheder i mødet med de mennesker, de arbejder med — og at have fokus på trivsel og faglig udvikling samtidig.",
-
+  "hvad_boks_tekst": "Det er at styrke personalets forståelse af egne ressourcer og handlemuligheder i mødet med de mennesker, de arbejder med, og at have fokus på trivsel og faglig udvikling samtidig.",
   "hero_maerkater": [
-    { "tekst": "Grupper eller individuelt" },
-    { "tekst": "Narrativ og systemisk" },
-    { "tekst": "Pris efter aftale" }
+    {
+      "tekst": "Grupper eller individuelt"
+    },
+    {
+      "tekst": "Narrativ og systemisk"
+    },
+    {
+      "tekst": "Pris efter aftale"
+    }
   ],
-
   "hero_billede": "/billeder/supervision-postits-gruppe.jpg",
   "hero_billede_alt": "Flere personer sidder omkring et bord dækket af gule post-it-sedler og skriver.",
   "hero_billedtekst": "",
-
+  "hero_billede2": "",
+  "hero_billede2_alt": "",
+  "hero_billede2tekst": "",
   "metode_mikrotekst": "Metoderne",
   "metode_overskrift": "Flere stemmer i samtalen",
   "metode_indledning": "Der inddrages forskellige metoder, som giver gruppen mulighed for at lytte til og spejle hinandens erfaringer på en måde, der åbner for nuancer.",
   "metode_punkter": [
-    { "tekst": "Reflekterende team — hvor en del af gruppen lytter og derefter taler sammen om det, de hørte, mens de andre lytter med." },
-    { "tekst": "Stafetmodellen — hvor ordet gives videre, så flere stemmer kommer i spil end de sædvanlige." },
-    { "tekst": "Systemiske opstillinger — et værktøj til at visualisere og forstå relationelle dynamikker og samspil." },
-    { "tekst": "Narrative spørgsmål, der udfolder de fortællinger, gruppen har om sig selv og sit arbejde." }
+    {
+      "tekst": "Reflekterende team: en del af gruppen lytter og derefter taler sammen om det, de hørte, mens de andre lytter med."
+    },
+    {
+      "tekst": "Stafetmodellen: ordet gives videre, så flere stemmer kommer i spil end de sædvanlige."
+    },
+    {
+      "tekst": "Systemiske opstillinger: et værktøj til at visualisere og forstå relationelle dynamikker og samspil."
+    },
+    {
+      "tekst": "Narrative spørgsmål, der udfolder de fortællinger, gruppen har om sig selv og sit arbejde."
+    }
   ],
-  "metode_afslutning": "Opstillinger er særligt hjælpsomme, når gruppen ønsker at arbejde med komplekse problemstillinger eller relationer — for eksempel i forhold til eleverne og deres familier. Tilgangen fremmer en fælles refleksion, som styrker både den kollektive læring og samarbejdet i gruppen.",
-  "metode_billede": "/billeder/supervision-postits-naer.jpg",
-  "metode_billede_alt": "Nærbillede af hænder, der flytter rundt på gule sedler på et bord med blå dug.",
+  "metode_afslutning": "Opstillinger er særligt hjælpsomme, når gruppen ønsker at arbejde med komplekse problemstillinger eller relationer, for eksempel i forhold til eleverne og deres familier. Tilgangen fremmer en fælles refleksion, som styrker både den kollektive læring og samarbejdet i gruppen.",
+  "metode_billede": "/billeder/supervision-moede-om-bord.jpg",
+  "metode_billede_alt": "Fire personer sidder omkring et bord og taler sammen.",
   "metode_billedtekst": "",
-
   "hvem_overskrift": "Hvem henvender det sig til?",
   "hvem_intro": "Jeg superviserer mindre personalegrupper. Erfaringen kommer især fra uddannelsesverdenen og fra arbejdet med børn og unge i vanskeligheder.",
   "hvem_kort": [
@@ -45,7 +56,7 @@
     },
     {
       "overskrift": "Uddannelsesinstitutioner",
-      "tekst": "Gennem cirka ti år har jeg arbejdet med at kvalificere uddannelsers tilgang til studerende, der er kommet i vanskeligheder — og udviklet supervisionsmetoder til netop det."
+      "tekst": "Gennem cirka ti år har jeg arbejdet med at kvalificere uddannelsers tilgang til studerende, der er kommet i vanskeligheder, og udviklet supervisionsmetoder til netop det."
     },
     {
       "overskrift": "Institutioner og personalegrupper",
@@ -53,14 +64,11 @@
     }
   ],
   "hvem_boks_titel": "Særligt om skam.",
-  "hvem_boks_tekst": "Jeg har i mange år arbejdet med, hvordan skam og udskamning kan skabe barrierer for deltagelse — og med hvordan man arbejder den anden vej, mod øget selvagtelse og handlekraft.",
-
+  "hvem_boks_tekst": "Jeg har i mange år arbejdet med, hvordan skam og udskamning kan skabe barrierer for deltagelse, og med hvordan man arbejder den anden vej, mod øget selvagtelse og handlekraft.",
   "etik_overskrift": "Mit etiske afsæt",
-  "etik_tekst": "Målet er at skabe et trygt og respektfuldt rum, hvor der er plads til at reflektere over konkrete hverdagsbegivenheder, udfordringer og succeser.\n\nOverordnet handler det om at anerkende, at der kan eksistere mange forskellige fortællinger om den samme virkelighed — og om at skabe resonans mellem deltagerne, så der opstår en oplevelse af at være blevet hørt.",
-
+  "etik_tekst": "Målet er at skabe et trygt og respektfuldt rum, hvor der er plads til at reflektere over konkrete hverdagsbegivenheder, udfordringer og succeser.\n\nOverordnet handler det om at anerkende, at der kan eksistere mange forskellige fortællinger om den samme virkelighed, og om at skabe resonans mellem deltagerne, så der opstår en oplevelse af at være blevet hørt.",
   "udtalelse": "Gennem supervisionsforløb med Lotte fik jeg og mine kollegaer brudt den dårlige spiral med en hård tone, og vi fik blik for barrierer, der spændte ben i vores organisation. Jeg følte mig fastlåst i min arbejdsfunktion. Det er der blevet blødt op på. Kan på det varmeste anbefale Lotte.",
   "udtalelse_hvem": "Heidi, 56 år, projektleder",
-
   "faq_overskrift": "Spørgsmål om supervision",
   "faq": [
     {
@@ -77,10 +85,9 @@
     },
     {
       "spoergsmaal": "Hvordan tilrettelægges et forløb?",
-      "svar": "I tæt dialog med deltagerne. Supervisionsforløb kan have meget forskellige formål, og formen følger formålet — ikke omvendt."
+      "svar": "I tæt dialog med deltagerne. Supervisionsforløb kan have meget forskellige formål, og formen følger formålet, ikke omvendt."
     }
   ],
-
   "cta_overskrift": "Skal vi tale om, hvad jeres gruppe har brug for?",
   "cta_tekst": "Ring, så finder vi ud af, om supervision er det rigtige, og hvordan et forløb kunne se ud hos jer."
 }

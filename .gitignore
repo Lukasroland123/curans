@@ -3,3 +3,6 @@ _site/
 .DS_Store
 Thumbs.db
 *.log
+
+# Lokalt vaerktoej, skal ikke i produktion
+src/billedoversigt.html

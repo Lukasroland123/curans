@@ -28,27 +28,51 @@ eleventyComputed:
         {% endfor %}
       </div>
     </div>
-    <figure class="figur">
-      <div class="hero__media" style="aspect-ratio: {{ terapi.hero_billede | billedforhold }}">
-        {% if terapi.hero_billede %}
-        <img src="{{ terapi.hero_billede }}" alt="{{ terapi.hero_billede_alt }}">
-        {% endif %}
-      </div>
-      {% if terapi.hero_billedtekst %}<figcaption>{{ terapi.hero_billedtekst }}</figcaption>{% endif %}
-    </figure>
+    <div class="billedstak">
+      <figure class="figur" style="max-width: {{ terapi.hero_billede | herobredde }}">
+        <div class="hero__media" style="aspect-ratio: {{ terapi.hero_billede | billedforhold }}">
+          {% if terapi.hero_billede %}
+          <img src="{{ terapi.hero_billede }}" alt="{{ terapi.hero_billede_alt }}">
+          {% endif %}
+        </div>
+        {% if terapi.hero_billedetekst %}<figcaption>{{ terapi.hero_billedetekst }}</figcaption>{% endif %}
+      </figure>
+      {#- Andet billede. Er feltet tomt, staar rammen tom og venter paa et
+          foto. Det er bedre end at laane et billede fra en anden side. -#}
+      <figure class="figur" style="max-width: {{ terapi.hero_billede2 | herobredde }}">
+        <div class="hero__media" style="aspect-ratio: {{ terapi.hero_billede2 | billedforhold }}">
+          {% if terapi.hero_billede2 %}
+          <img src="{{ terapi.hero_billede2 }}" alt="{{ terapi.hero_billede2_alt }}">
+          {% endif %}
+        </div>
+        {% if terapi.hero_billede2tekst %}<figcaption>{{ terapi.hero_billede2tekst }}</figcaption>{% endif %}
+      </figure>
+    </div>
   </div>
 </section>
 
 <section class="section section--sand">
   <div class="wrap split">
-    <figure class="figur" style="max-width: {{ terapi.metode_billede | figurbredde }}">
-      <div class="split__media" style="aspect-ratio: {{ terapi.metode_billede | billedforhold }}">
-        {% if terapi.metode_billede %}
-        <img src="{{ terapi.metode_billede }}" alt="{{ terapi.metode_billede_alt }}">
-        {% endif %}
-      </div>
-      {% if terapi.metode_billedtekst %}<figcaption>{{ terapi.metode_billedtekst }}</figcaption>{% endif %}
-    </figure>
+    <div class="billedstak">
+      <figure class="figur" style="max-width: {{ terapi.metode_billede | figurbredde }}">
+        <div class="split__media" style="aspect-ratio: {{ terapi.metode_billede | billedforhold }}">
+          {% if terapi.metode_billede %}
+          <img src="{{ terapi.metode_billede }}" alt="{{ terapi.metode_billede_alt }}">
+          {% endif %}
+        </div>
+        {% if terapi.metode_billedetekst %}<figcaption>{{ terapi.metode_billedetekst }}</figcaption>{% endif %}
+      </figure>
+      {#- Andet billede. Er feltet tomt, staar rammen tom og venter paa et
+          foto. Det er bedre end at laane et billede fra en anden side. -#}
+      <figure class="figur" style="max-width: {{ terapi.metode_billede2 | figurbredde }}">
+        <div class="split__media" style="aspect-ratio: {{ terapi.metode_billede2 | billedforhold }}">
+          {% if terapi.metode_billede2 %}
+          <img src="{{ terapi.metode_billede2 }}" alt="{{ terapi.metode_billede2_alt }}">
+          {% endif %}
+        </div>
+        {% if terapi.metode_billede2tekst %}<figcaption>{{ terapi.metode_billede2tekst }}</figcaption>{% endif %}
+      </figure>
+    </div>
     <div>
       <span class="eyebrow">{{ terapi.metode_mikrotekst }}</span>
       <h2>{{ terapi.metode_overskrift }}</h2>

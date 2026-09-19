@@ -2,105 +2,131 @@
   "titel": "Traumebehandling ved Roskilde | PTSD og kompleks PTSD | Curans",
   "beskrivelse": "Narrativ traumebehandling ved choktraumer (PTSD) og komplekse traumer (C-PTSD). Nænsomt og i dit tempo. Gevninge, 10 km fra Roskilde.",
   "ydelse_navn": "Traumebehandling",
-
   "hero_mikrotekst": "Individuelle forløb",
   "hero_overskrift": "Behandling af choktraumer og komplekse traumer",
   "hero_tekst": "Går du med en fornemmelse af at være konstant på vagt? Bliver du let forskrækket, udmattet eller irriteret? Oplever du dig gjort mindreværdig, skamfuld eller flov? Det kan være reaktioner på traumer.",
-  "svar": "Vi begynder altid med at finde et sikkert ståsted, før vi nærmer os det svære. Et forløb varer så længe, det skal — komplekse traumer kræver oftest længere tid end choktraumer. De første 20 minutter er uden beregning.",
-
+  "svar": "Vi begynder altid med at finde et sikkert ståsted, før vi nærmer os det svære. Et forløb varer så længe, det skal. Komplekse traumer kræver oftest længere tid end choktraumer. De første 20 minutter er uden beregning.",
   "hvad_tekst": "Vi er ikke altid klar over, at de reaktioner, vi har i nutiden, kan hænge sammen med traumer tidligere i livet. Vi kan blive væltet omkuld af en enkelt kommentar, fordi den aktiverer noget traumatisk i erindringen, og så reagerer vi, som om vi står i traumet igen.\n\nSådan kan man sige, at traumatiske hændelser træder ind i nutiden med en kraft fra fortiden.",
   "hvad_boks_titel": "Det er oplevelsen, der afgør det.",
-  "hvad_boks_tekst": "Ikke om der reelt var fare på færde. Et ungt menneske fortalte mig, at han blev truet med en pistol og tænkte: »Nu dør jeg.« Bagefter viste den sig at være en attrap. Det ændrer ingenting — i situationen var den livstruende.",
-
+  "hvad_boks_tekst": "Ikke om der reelt var fare på færde. Et ungt menneske fortalte mig, at han blev truet med en pistol og tænkte: »Nu dør jeg.« Bagefter viste den sig at være en attrap. Det ændrer ingenting. I situationen var den livstruende.",
   "hero_maerkater": [
-    { "tekst": "PTSD og kompleks PTSD" },
-    { "tekst": "Børn, unge og voksne" },
-    { "tekst": "Uddannet traumebehandler, DISPUK" }
+    {
+      "tekst": "PTSD og kompleks PTSD"
+    },
+    {
+      "tekst": "Børn, unge og voksne"
+    },
+    {
+      "tekst": "Uddannet traumebehandler, DISPUK"
+    }
   ],
-
   "hero_billede": "/billeder/traume-to-under-paraply.jpg",
   "hero_billede_alt": "To personer i silhuet står med en paraply under en mørk, tung himmel.",
   "hero_billedtekst": "",
-
+  "hero_billede2": "",
+  "hero_billede2_alt": "",
+  "hero_billede2tekst": "",
   "typer_mikrotekst": "To slags traumer",
   "typer_overskrift": "Frygt og skam er ikke det samme",
-  "typer_indledning": "Traumer deles almindeligvis i to. Forskellen er ikke akademisk — den afgør, hvordan behandlingen skal se ud.",
+  "typer_indledning": "Traumer deles almindeligvis i to. Forskellen er ikke akademisk. Den afgør, hvordan behandlingen skal se ud.",
   "typer_kort": [
     {
-      "overskrift": "Choktraumer — PTSD",
+      "overskrift": "Choktraumer (PTSD)",
       "tekst": "Opstår som noget totalt uventet, som når et lyn slår ned. En ulykke, et overfald, en trussel. Den følelsesmæssige respons er frygt, og den aktiverer kamp, flugt eller frys i nervesystemet.\n\nFrygten kan sætte sig fast, så kroppen bliver i alarmberedskab længe efter, at truslen er væk: uro, søvnløshed, konstant på vagt. Det er de symptomer, der kan give diagnosen PTSD."
     },
     {
-      "overskrift": "Komplekse traumer — C-PTSD",
-      "tekst": "Opstår over lang tid, ofte uden en tydelig begyndelse eller slutning. Et barn, der vokser op i utrygge og uforudsigelige omgivelser og ikke mødes i sine behov. Vold, overgreb, misbrug eller omsorgssvigt i hverdagen.\n\nFordi et barn er afhængigt af sine voksne, retter det ofte kritikken mod sig selv frem for mod forældrene. Den følelsesmæssige respons er skam, ikke frygt — og der etableres let et negativt selvbillede, som præger både følelsesliv og relationer."
+      "overskrift": "Komplekse traumer (C-PTSD)",
+      "tekst": "Opstår over lang tid, ofte uden en tydelig begyndelse eller slutning. Et barn, der vokser op i utrygge og uforudsigelige omgivelser og ikke mødes i sine behov. Vold, overgreb, misbrug eller omsorgssvigt i hverdagen.\n\nFordi et barn er afhængigt af sine voksne, retter det ofte kritikken mod sig selv frem for mod forældrene. Den følelsesmæssige respons er skam, ikke frygt, og der etableres let et negativt selvbillede, som præger både følelsesliv og relationer."
     }
   ],
   "typer_boks_titel": "Ved komplekse traumer sker der et knæk på de værdier, man står på.",
-  "typer_boks_tekst": "Det er ikke nødvendigvis livet, der er akut truet, men ens selv — i form af en overskridelse af det, man står for.",
-
+  "typer_boks_tekst": "Det er ikke nødvendigvis livet, der er akut truet, men ens selv, i form af en overskridelse af det, man står for.",
   "metode_mikrotekst": "Sådan foregår det",
   "metode_overskrift": "Vi starter med det sikre sted",
-  "metode_indledning": "Jeg arbejder altid med først at skabe et safe space — et sikkert ståsted — hvorfra vi nænsomt kan nærme os det, der er eller har været traumatisk.",
+  "metode_indledning": "Jeg arbejder altid med først at skabe et safe space, et sikkert ståsted, hvorfra vi nænsomt kan nærme os det, der er eller har været traumatisk.",
   "metode_punkter": [
-    { "tekst": "Vi finder de steder i dit liv, hvor du har oplevet dig set som præcis den, du er. Dem bringer vi i spil undervejs." },
-    { "tekst": "Derfra undersøger vi, hvordan det traumatiske har indflydelse på nutiden." },
-    { "tekst": "Vi arbejder med de håb og drømme, du har for livet, så der bliver plads til at sigte efter dem." },
-    { "tekst": "Tempoet er dit. Vi stopper, når det er nok." }
+    {
+      "tekst": "Vi finder de steder i dit liv, hvor du har oplevet dig set som præcis den, du er. Dem bringer vi i spil undervejs."
+    },
+    {
+      "tekst": "Derfra undersøger vi, hvordan det traumatiske har indflydelse på nutiden."
+    },
+    {
+      "tekst": "Vi arbejder med de håb og drømme, du har for livet, så der bliver plads til at sigte efter dem."
+    },
+    {
+      "tekst": "Tempoet er dit. Vi stopper, når det er nok."
+    }
   ],
   "metode_afslutning": "Formålet er, at du kommer tættere på dig selv, så effekten af rystelserne kan aftage.",
   "metode_billede": "/billeder/traume-lys-for-enden.jpg",
   "metode_billede_alt": "Mennesker set i silhuet ved udgangen af en mørk tunnel med lys for enden.",
   "metode_billedtekst": "",
-
   "etik_overskrift": "Mit etiske afsæt",
   "etik_tekst": "Mit afsæt er at skabe stødpudezoner i traumebehandlingen. Det gøres ved at have opmærksomhed på dine intentioner og initiativer og derigennem understøtte din handlekraft.\n\nJeg talte for nylig med et barn, som satte disse ord på: »Det var, som om jeg var helt langt væk fra mig selv.« Det samme ligger i udtrykket at være ude af sig selv. Traumer trækker mennesker væk fra dem selv, og netop det kan virke skræmmende. Derfor har jeg særligt fokus på de processer, der bringer mennesker tættere på dem selv og deres værdier.",
   "etik_billede": "/billeder/traume-vaerk-alene.jpg",
   "etik_billede_alt": "Kunstværk med teksten »Leave me alone« skrevet i røde og sorte streger.",
   "etik_billedtekst": "Kunstværk af C. Barr (Instagram @coolcatcate). Gengivet med særlig tilladelse.",
-
   "faq_overskrift": "Spørgsmål om traumer",
   "faq": [
     {
       "spoergsmaal": "Hvem kan henvende sig?",
-      "svar": "Alle. Traumatiske hændelser kan opleves på tværs af alder, og de kan være invaliderende både for evnen til at indgå i relationer og for hverdagen. Jeg har erfaring med både chok- og komplekse traumer og med de tilstande, der kan opstå i kølvandet — stress, angst og depression."
+      "svar": "Alle. Traumatiske hændelser kan opleves på tværs af alder, og de kan være invaliderende både for evnen til at indgå i relationer og for hverdagen. Jeg har erfaring med både chok- og komplekse traumer og med de tilstande, der kan opstå i kølvandet: stress, angst og depression."
     },
     {
       "spoergsmaal": "Hvad kendetegner et choktraume nærmere?",
-      "svar": "Choktraumer er ofte enkeltstående eller kortvarige hændelser, der opstår helt uventet: ulykker, overfald, terrorhandlinger. Har du været i en alvorlig eller livstruende situation — eller oplevet den som livstruende — er der risiko for, at den sætter sig som et choktraume.\n\nDet afgørende er din oplevelse af situationen, ikke om der reelt var overhængende fare. Hvor meget behandling der skal til, er meget forskelligt fra menneske til menneske. I WHO's ICD-11 står den præcise beskrivelse under »6B40 Post traumatic stress disorder«."
+      "svar": "Choktraumer er ofte enkeltstående eller kortvarige hændelser, der opstår helt uventet: ulykker, overfald, terrorhandlinger. Har du været i en alvorlig eller livstruende situation, eller oplevet den som livstruende, er der risiko for, at den sætter sig som et choktraume.\n\nDet afgørende er din oplevelse af situationen, ikke om der reelt var overhængende fare. Hvor meget behandling der skal til, er meget forskelligt fra menneske til menneske. I WHO's ICD-11 står den præcise beskrivelse under »6B40 Post traumatic stress disorder«."
     },
     {
       "spoergsmaal": "Hvad kendetegner komplekse traumer nærmere?",
-      "svar": "Komplekse traumer er længerevarende og består ofte af en kombination af forskellige hændelser. De er knyttet til uhensigtsmæssige dynamikker i sociale sammenhænge og har sjældent en tydelig start eller slutning. De kan være svære at komme væk fra, fordi de er en del af hverdagslivet.\n\nDe kan foregå næsten usynligt: et familiemedlem, der igen og igen gøres til syndebuk, eller et barn, der konsekvent ignoreres. De er ofte knyttet til barndom og ungdom, men kan også opstå i voksenlivet — i parforhold med vold, eller ved mobning på arbejdet eller uddannelsen.\n\nI ICD-11 står beskrivelsen under »6B41 Complex post traumatic stress disorder«."
+      "svar": "Komplekse traumer er længerevarende og består ofte af en kombination af forskellige hændelser. De er knyttet til uhensigtsmæssige dynamikker i sociale sammenhænge og har sjældent en tydelig start eller slutning. De kan være svære at komme væk fra, fordi de er en del af hverdagslivet.\n\nDe kan foregå næsten usynligt: et familiemedlem, der igen og igen gøres til syndebuk, eller et barn, der konsekvent ignoreres. De er ofte knyttet til barndom og ungdom, men kan også opstå i voksenlivet, for eksempel i parforhold med vold, eller ved mobning på arbejdet eller uddannelsen.\n\nI ICD-11 står beskrivelsen under »6B41 Complex post traumatic stress disorder«."
     },
     {
       "spoergsmaal": "Hvilke former for komplekse traumer findes der?",
-      "svar": "Listen er ikke udtømmende, men de væsentligste er:\n\nUdviklingstraumer — gentagne krænkende og grænseoverskridende hændelser fra en eller flere primære omsorgspersoner, mens barnet er i udvikling. De kan geniscenesættes i adfærd og ses undertiden i børns leg.\n\nRelationelle traumer — traumatiske hændelser i relation til mennesker, man har stolet på: en ven, en forælder, en lærer, en træner.\n\nSekundær traumatisering og transgenerationelle traumer — når et barn traumatiseres som følge af forældrenes traumatisering. Krigstraumatiserede forældre kan risikere, at barnet viderefører deres psykiske tilstand.\n\nEtniske og kulturelle traumer — knyttet til diskrimination og udelukkelse fra fællesskaber på baggrund af tilhørsforhold til en minoritet."
+      "svar": "Listen er ikke udtømmende, men de væsentligste er:\n\nUdviklingstraumer: gentagne krænkende og grænseoverskridende hændelser fra en eller flere primære omsorgspersoner, mens barnet er i udvikling. De kan geniscenesættes i adfærd og ses undertiden i børns leg.\n\nRelationelle traumer: traumatiske hændelser i relation til mennesker, man har stolet på: en ven, en forælder, en lærer, en træner.\n\nSekundær traumatisering og transgenerationelle traumer: når et barn traumatiseres som følge af forældrenes traumatisering. Krigstraumatiserede forældre kan risikere, at barnet viderefører deres psykiske tilstand.\n\nEtniske og kulturelle traumer: knyttet til diskrimination og udelukkelse fra fællesskaber på baggrund af tilhørsforhold til en minoritet."
     },
     {
       "spoergsmaal": "Hvad betyder det, at en behandler er »traumeinformeret«?",
       "svar": "Flere behandlere beskriver sig som traumeinformeret, og det kan være uklart, hvad det dækker over. Spørg derfor gerne ind til, hvilken baggrund den enkelte behandler har i forbindelse med traumebehandling. Jeg har taget traumeuddannelsen og specialistuddannelsen i narrativ psykoterapi på DISPUK."
     }
   ],
-
   "litteratur_overskrift": "Litteratur om traumer",
   "litteratur_intro": "Vil du læse videre på egen hånd, kan jeg anbefale disse.",
   "litteratur": [
-    { "tekst": "Aidt, Naja Marie (2018): Har døden taget noget fra dig, så giv det tilbage. Gyldendal" },
-    { "tekst": "Perry, Bruce D. og Szalavitz, Maia (2006): Drengen der voksede op som hund. Hans Reitzels Forlag" },
-    { "tekst": "Holmgren, Anette (2019): Komplekse traumers psykologi – beretninger om det ubærlige. DISPUKs Forlag" },
-    { "tekst": "Holmgren, Anette (2010): »Alle kan tale om traumer«, kap. 8 i Fra terapi til pædagogik. Hans Reitzels Forlag" },
-    { "tekst": "Herman, Judith: I voldens kølvand. Hans Reitzels Forlag" },
-    { "tekst": "Gilligan, James (2003): Shame, Guilt and Violence" },
-    { "tekst": "Holmgren, Allan: »Når et barn eller en ung dør«. Omsorg nr. 4, 2013" },
-    { "tekst": "Birkmose, Dorthe (2013): Når gode mennesker handler ondt. Syddansk Universitetsforlag" },
-    { "tekst": "Sørensen, Lars J. (2013): Skam – medfødt og tillært. Når skam fører til sjælemord. Hans Reitzels Forlag" },
-    { "tekst": "Denborough, David (red.): Traumer – narrativ behandling af traumatiske oplevelser. Dansk Psykologisk Forlag" }
+    {
+      "tekst": "Aidt, Naja Marie (2018): Har døden taget noget fra dig, så giv det tilbage. Gyldendal"
+    },
+    {
+      "tekst": "Perry, Bruce D. og Szalavitz, Maia (2006): Drengen der voksede op som hund. Hans Reitzels Forlag"
+    },
+    {
+      "tekst": "Holmgren, Anette (2019): Komplekse traumers psykologi – beretninger om det ubærlige. DISPUKs Forlag"
+    },
+    {
+      "tekst": "Holmgren, Anette (2010): »Alle kan tale om traumer«, kap. 8 i Fra terapi til pædagogik. Hans Reitzels Forlag"
+    },
+    {
+      "tekst": "Herman, Judith: I voldens kølvand. Hans Reitzels Forlag"
+    },
+    {
+      "tekst": "Gilligan, James (2003): Shame, Guilt and Violence"
+    },
+    {
+      "tekst": "Holmgren, Allan: »Når et barn eller en ung dør«. Omsorg nr. 4, 2013"
+    },
+    {
+      "tekst": "Birkmose, Dorthe (2013): Når gode mennesker handler ondt. Syddansk Universitetsforlag"
+    },
+    {
+      "tekst": "Sørensen, Lars J. (2013): Skam – medfødt og tillært. Når skam fører til sjælemord. Hans Reitzels Forlag"
+    },
+    {
+      "tekst": "Denborough, David (red.): Traumer – narrativ behandling af traumatiske oplevelser. Dansk Psykologisk Forlag"
+    }
   ],
-
   "kryds_overskrift": "Er det svært at sætte ord på?",
   "kryds_tekst": "Jeg driver også Hesteassisteret Praksis, hvor noget af arbejdet foregår gennem kroppen og sanserne i stedet for gennem sproget.",
   "kryds_knap": "Læs om hesteassisteret praksis",
-
   "cta_overskrift": "Skal vi finde ud af, hvor vi begynder?",
   "cta_tekst": "Ring og få 20 minutter uden beregning. Du behøver ikke fortælle noget, du ikke har lyst til."
 }

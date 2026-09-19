@@ -51,7 +51,7 @@ collections:
               - { name: tekst, label: "Tekst", widget: string }
           - { name: hero_billede, label: "Øverst på siden · Billede", widget: image }
           - { name: hero_billede_alt, label: "Øverst på siden · Hvad ser man på billedet?", widget: string, hint: "Læses højt for blinde og bruges af Google i stedet for billedet. Beskriv hvad man SER, ikke stemningen." }
-          - { name: hero_billedtekst, label: "Øverst på siden · Billedtekst (vises under billedet)", widget: string, hint: "Den kursive tekst under billedet. Lad feltet stå tomt, hvis der ingen tekst skal være." }
+          - { name: hero_billedtekst, label: "Øverst på siden · Billedtekst (vises under billedet)", widget: string, required: false, hint: "Den kursive tekst under billedet. Lad feltet stå tomt, hvis der ingen tekst skal være." }
           - { name: ydelser_overskrift, label: "Ydelseskortene · Overskrift", widget: string }
           - { name: ydelser_intro, label: "Ydelseskortene · Introtekst", widget: text }
           - name: ydelser_kort
@@ -77,8 +77,8 @@ collections:
           - { name: omlotte_overskrift, label: "Om Lotte-afsnittet · Overskrift", widget: string }
           - { name: omlotte_tekst, label: "Om Lotte-afsnittet · Tekst", widget: text }
           - { name: omlotte_knap, label: "Om Lotte-afsnittet · Tekst på knappen", widget: string }
-          - { name: omlotte_billede, label: "Om Lotte-afsnittet · Billede", widget: image }
-          - { name: omlotte_billede_alt, label: "Om Lotte-afsnittet · Hvad ser man på billedet?", widget: string, hint: "Læses højt for blinde og bruges af Google i stedet for billedet. Beskriv hvad man SER, ikke stemningen." }
+          - { name: omlotte_billede, label: "Om Lotte-afsnittet · Billede", widget: image, required: false }
+          - { name: omlotte_billede_alt, label: "Om Lotte-afsnittet · Hvad ser man på billedet?", widget: string, required: false, hint: "Læses højt for blinde og bruges af Google i stedet for billedet. Beskriv hvad man SER, ikke stemningen." }
           - { name: citat, label: "Citat", widget: string }
           - { name: citat_kilde, label: "Hvem sagde det?", widget: string }
           - { name: kryds_overskrift, label: "Boks med link til den anden hjemmeside · Overskrift", widget: string }
@@ -112,6 +112,9 @@ collections:
           - { name: hero_billede, label: "Øverst på siden · Billede", widget: image }
           - { name: hero_billede_alt, label: "Øverst på siden · Hvad ser man på billedet?", widget: text, hint: "Læses højt for blinde og bruges af Google i stedet for billedet. Beskriv hvad man SER, ikke stemningen." }
           - { name: hero_billedtekst, label: "Øverst på siden · Billedtekst (vises under billedet)", widget: string, hint: "Den kursive tekst under billedet. Lad feltet stå tomt, hvis der ingen tekst skal være." }
+          - { name: hero_billede2, label: "Øverst på siden · Billede2", widget: string }
+          - { name: hero_billede2_alt, label: "Øverst på siden · Billede2 alt", widget: string }
+          - { name: hero_billede2tekst, label: "Øverst på siden · Billede2tekst", widget: string, required: false }
           - { name: metode_mikrotekst, label: "Sådan foregår det · Lille tekst over overskriften", widget: string }
           - { name: metode_overskrift, label: "Sådan foregår det · Overskrift", widget: string }
           - { name: metode_indledning, label: "Sådan foregår det · Indledende tekst", widget: text }
@@ -126,6 +129,9 @@ collections:
           - { name: metode_billede, label: "Sådan foregår det · Billede", widget: image }
           - { name: metode_billede_alt, label: "Sådan foregår det · Hvad ser man på billedet?", widget: string, hint: "Læses højt for blinde og bruges af Google i stedet for billedet. Beskriv hvad man SER, ikke stemningen." }
           - { name: metode_billedtekst, label: "Sådan foregår det · Billedtekst (vises under billedet)", widget: string, hint: "Den kursive tekst under billedet. Lad feltet stå tomt, hvis der ingen tekst skal være." }
+          - { name: metode_billede2, label: "Sådan foregår det · Billede2", widget: string, required: false }
+          - { name: metode_billede2_alt, label: "Sådan foregår det · Billede2 alt", widget: string, required: false }
+          - { name: metode_billede2tekst, label: "Sådan foregår det · Billede2tekst", widget: string, required: false }
           - { name: hvem_overskrift, label: "Hvem er det for · Overskrift", widget: string }
           - { name: hvem_intro, label: "Hvem er det for · Introtekst", widget: text }
           - name: hvem_kort
@@ -182,6 +188,9 @@ collections:
           - { name: hero_billede, label: "Øverst på siden · Billede", widget: image }
           - { name: hero_billede_alt, label: "Øverst på siden · Hvad ser man på billedet?", widget: string, hint: "Læses højt for blinde og bruges af Google i stedet for billedet. Beskriv hvad man SER, ikke stemningen." }
           - { name: hero_billedtekst, label: "Øverst på siden · Billedtekst (vises under billedet)", widget: string, required: false, hint: "Den kursive tekst under billedet. Lad feltet stå tomt, hvis der ingen tekst skal være." }
+          - { name: hero_billede2, label: "Øverst på siden · Billede2", widget: string, required: false }
+          - { name: hero_billede2_alt, label: "Øverst på siden · Billede2 alt", widget: string, required: false }
+          - { name: hero_billede2tekst, label: "Øverst på siden · Billede2tekst", widget: string, required: false }
           - { name: typer_mikrotekst, label: "De to slags traumer · Lille tekst over overskriften", widget: string }
           - { name: typer_overskrift, label: "De to slags traumer · Overskrift", widget: string }
           - { name: typer_indledning, label: "De to slags traumer · Indledende tekst", widget: text }
@@ -263,6 +272,9 @@ collections:
           - { name: hero_billede, label: "Øverst på siden · Billede", widget: image }
           - { name: hero_billede_alt, label: "Øverst på siden · Hvad ser man på billedet?", widget: text, hint: "Læses højt for blinde og bruges af Google i stedet for billedet. Beskriv hvad man SER, ikke stemningen." }
           - { name: hero_billedtekst, label: "Øverst på siden · Billedtekst (vises under billedet)", widget: string, required: false, hint: "Den kursive tekst under billedet. Lad feltet stå tomt, hvis der ingen tekst skal være." }
+          - { name: hero_billede2, label: "Øverst på siden · Billede2", widget: string }
+          - { name: hero_billede2_alt, label: "Øverst på siden · Billede2 alt", widget: string }
+          - { name: hero_billede2tekst, label: "Øverst på siden · Billede2tekst", widget: string, required: false }
           - { name: metode_mikrotekst, label: "Sådan foregår det · Lille tekst over overskriften", widget: string }
           - { name: metode_overskrift, label: "Sådan foregår det · Overskrift", widget: string }
           - { name: metode_indledning, label: "Sådan foregår det · Indledende tekst", widget: text }
@@ -331,6 +343,9 @@ collections:
           - { name: hero_billede, label: "Øverst på siden · Billede", widget: image }
           - { name: hero_billede_alt, label: "Øverst på siden · Hvad ser man på billedet?", widget: string, hint: "Læses højt for blinde og bruges af Google i stedet for billedet. Beskriv hvad man SER, ikke stemningen." }
           - { name: hero_billedtekst, label: "Øverst på siden · Billedtekst (vises under billedet)", widget: string, hint: "Den kursive tekst under billedet. Lad feltet stå tomt, hvis der ingen tekst skal være." }
+          - { name: hero_billede2, label: "Øverst på siden · Billede2", widget: string, required: false }
+          - { name: hero_billede2_alt, label: "Øverst på siden · Billede2 alt", widget: string, required: false }
+          - { name: hero_billede2tekst, label: "Øverst på siden · Billede2tekst", widget: string, required: false }
           - { name: metode_mikrotekst, label: "Sådan foregår det · Lille tekst over overskriften", widget: string }
           - { name: metode_overskrift, label: "Sådan foregår det · Overskrift", widget: string }
           - { name: metode_indledning, label: "Sådan foregår det · Indledende tekst", widget: text }
@@ -400,6 +415,9 @@ collections:
           - { name: hero_billede, label: "Øverst på siden · Billede", widget: image }
           - { name: hero_billede_alt, label: "Øverst på siden · Hvad ser man på billedet?", widget: string, hint: "Læses højt for blinde og bruges af Google i stedet for billedet. Beskriv hvad man SER, ikke stemningen." }
           - { name: hero_billedtekst, label: "Øverst på siden · Billedtekst (vises under billedet)", widget: string, required: false, hint: "Den kursive tekst under billedet. Lad feltet stå tomt, hvis der ingen tekst skal være." }
+          - { name: hero_billede2, label: "Øverst på siden · Billede2", widget: string, required: false }
+          - { name: hero_billede2_alt, label: "Øverst på siden · Billede2 alt", widget: string, required: false }
+          - { name: hero_billede2tekst, label: "Øverst på siden · Billede2tekst", widget: string, required: false }
           - { name: metode_mikrotekst, label: "Sådan foregår det · Lille tekst over overskriften", widget: string }
           - { name: metode_overskrift, label: "Sådan foregår det · Overskrift", widget: string }
           - { name: metode_indledning, label: "Sådan foregår det · Indledende tekst", widget: text }
@@ -521,6 +539,9 @@ collections:
           - { name: erfaring_billede, label: "Erfaring · Billede", widget: image }
           - { name: erfaring_billede_alt, label: "Erfaring · Hvad ser man på billedet?", widget: string, hint: "Læses højt for blinde og bruges af Google i stedet for billedet. Beskriv hvad man SER, ikke stemningen." }
           - { name: erfaring_billedtekst, label: "Erfaring · Billedtekst (vises under billedet)", widget: string, required: false, hint: "Den kursive tekst under billedet. Lad feltet stå tomt, hvis der ingen tekst skal være." }
+          - { name: erfaring_billede2, label: "Erfaring · Billede2", widget: string, required: false }
+          - { name: erfaring_billede2_alt, label: "Erfaring · Billede2 alt", widget: string, required: false }
+          - { name: erfaring_billede2tekst, label: "Erfaring · Billede2tekst", widget: string, required: false }
           - { name: tilgang_overskrift, label: "Faglige tilgange · Overskrift", widget: string }
           - { name: tilgang_tekst, label: "Faglige tilgange · Tekst", widget: text }
           - { name: sparring_overskrift, label: "Samarbejdspartnere · Overskrift", widget: string }
@@ -554,8 +575,8 @@ collections:
           - { name: svar, label: "Det korte svar (den grå boks øverst)", widget: text }
           - { name: praktisk_overskrift, label: "Sådan finder du mig · Overskrift", widget: string }
           - { name: praktisk_tekst, label: "Sådan finder du mig · Tekst", widget: text }
-          - { name: praktisk_billede, label: "Sådan finder du mig · Billede", widget: image }
-          - { name: praktisk_billede_alt, label: "Sådan finder du mig · Hvad ser man på billedet?", widget: string, hint: "Læses højt for blinde og bruges af Google i stedet for billedet. Beskriv hvad man SER, ikke stemningen." }
+          - { name: praktisk_billede, label: "Sådan finder du mig · Billede", widget: image, required: false }
+          - { name: praktisk_billede_alt, label: "Sådan finder du mig · Hvad ser man på billedet?", widget: string, required: false, hint: "Læses højt for blinde og bruges af Google i stedet for billedet. Beskriv hvad man SER, ikke stemningen." }
           - { name: praktisk_billedtekst, label: "Sådan finder du mig · Billedtekst (vises under billedet)", widget: string, required: false, hint: "Den kursive tekst under billedet. Lad feltet stå tomt, hvis der ingen tekst skal være." }
           - { name: aabningstider_overskrift, label: "Åbningstider · Overskrift", widget: string }
           - { name: aabningstider_tekst, label: "Åbningstider · Tekst", widget: text }
