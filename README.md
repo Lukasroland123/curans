@@ -79,8 +79,17 @@ for den bliver overskrevet.
       Cloudflare-workeren `sveltia-cms-auth`. Den matcher ikke underdomæner,
       og uden dem dør Lottes login uden en fejlbesked — den slags tog en time
       sidste gang
-- [ ] Nyt **offentligt** GitHub-repo `Lukasroland123/curans`. Navnet står
-      allerede i `config.yml`; ændres det, skal linjen rettes med
+- [x] ~~Nyt GitHub-repo `Lukasroland123/curans`.~~ Oprettet 19-09-2026.
+      **Det er privat**, ikke offentligt som site 1. Site 1 måtte være
+      offentligt på grund af Netlifys gratisgrænse på én bidragyder, og den
+      grænse gælder ikke længere, efter flytningen til Cloudflare.
+      To ting følger af, at det er privat:
+      - **Cloudflare Pages skal have adgang til netop dette repo.** GitHub-
+        appen giver ikke automatisk adgang til nye private repoer — det
+        vælges til under *Configure* på installationen
+      - **Workeren `sveltia-cms-auth` skal bede om `repo`-scope**, ikke
+        `public_repo`. Med `public_repo` kan Lotte logge ind, men CMS'et
+        finder ingen filer og viser en tom liste uden fejlbesked
 - [ ] `lotte@curans.dk` som **alias på den eksisterende Microsoft 365-postkasse**
       gennem DanDomain. Adressen står allerede i `site.json`, så den skal
       virke, før siden går i luften
