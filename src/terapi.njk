@@ -1,0 +1,128 @@
+---
+layout: base.njk
+permalink: /terapi/
+side: terapi
+eleventyComputed:
+  titel: "{{ terapi.titel }}"
+  beskrivelse: "{{ terapi.beskrivelse }}"
+  og_billede: "{{ terapi.hero_billede }}"
+---
+<section class="hero hero--top">
+  <div class="wrap hero__inner">
+    <div class="hero__text">
+      <span class="eyebrow">{{ terapi.hero_mikrotekst }}</span>
+      <h1>{{ terapi.hero_overskrift }}</h1>
+      <p class="lead">{{ terapi.hero_tekst }}</p>
+      <p class="svar">{{ terapi.svar }}</p>
+
+      <div class="hero__uddyb prose">
+        {{ terapi.hvad_tekst | afsnit | safe }}
+        <div class="note">
+          <strong>{{ terapi.hvad_boks_titel }}</strong> {{ terapi.hvad_boks_tekst }}
+        </div>
+      </div>
+
+      <div class="badges">
+        {% for m in terapi.hero_maerkater %}
+        <span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> {{ m.tekst }}</span>
+        {% endfor %}
+      </div>
+    </div>
+    <figure class="figur">
+      <div class="hero__media" style="aspect-ratio: {{ terapi.hero_billede | billedforhold }}">
+        <img src="{{ terapi.hero_billede }}" alt="{{ terapi.hero_billede_alt }}">
+      </div>
+      {% if terapi.hero_billedtekst %}<figcaption>{{ terapi.hero_billedtekst }}</figcaption>{% endif %}
+    </figure>
+  </div>
+</section>
+
+<section class="section section--sand">
+  <div class="wrap split">
+    <figure class="figur">
+      <div class="split__media" style="aspect-ratio: {{ terapi.metode_billede | billedforhold }}">
+        <img src="{{ terapi.metode_billede }}" alt="{{ terapi.metode_billede_alt }}">
+      </div>
+      {% if terapi.metode_billedtekst %}<figcaption>{{ terapi.metode_billedtekst }}</figcaption>{% endif %}
+    </figure>
+    <div>
+      <span class="eyebrow">{{ terapi.metode_mikrotekst }}</span>
+      <h2>{{ terapi.metode_overskrift }}</h2>
+      {{ terapi.metode_indledning | afsnit | safe }}
+      <ul>
+        {% for p in terapi.metode_punkter %}<li>{{ p.tekst }}</li>{% endfor %}
+      </ul>
+      {{ terapi.metode_afslutning | afsnit | safe }}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>{{ terapi.hvem_overskrift }}</h2>
+      <p>{{ terapi.hvem_intro }}</p>
+    </div>
+    <div class="grid grid--3">
+      {% for k in terapi.hvem_kort %}
+      <article class="card card--flat"><h3>{{ k.overskrift }}</h3><p>{{ k.tekst }}</p></article>
+      {% endfor %}
+    </div>
+    <div class="note" style="margin-top:2rem">
+      <strong>{{ terapi.hvem_boks_titel }}</strong> {{ terapi.hvem_boks_tekst }}
+    </div>
+  </div>
+</section>
+
+<section class="section section--tint">
+  <div class="wrap wrap--narrow prose">
+    <h2>{{ terapi.etik_overskrift }}</h2>
+    {{ terapi.etik_tekst | afsnit | safe }}
+    {% if terapi.citat %}
+    <blockquote>{{ terapi.citat }}<br><small>— {{ terapi.citat_kilde }}</small></blockquote>
+    {% endif %}
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap wrap--narrow">
+    <div class="section-head">
+      <h2>{{ terapi.faq_overskrift }}</h2>
+    </div>
+    <div class="faq">
+      {% for f in terapi.faq %}
+      <details>
+        <summary>{{ f.spoergsmaal }}</summary>
+        <div class="faq__body">{{ f.svar | afsnit | safe }}</div>
+      </details>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{#- Soesterblokken. Efter reglen i SEO-OG-GEO.md maa den naevne PRAKSISSEN,
+    ikke dens ydelser: en saetning og et link, aldrig en ydelsesliste. -#}
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="sister">
+      <div>
+        <h3>{{ terapi.kryds_overskrift }}</h3>
+        <p>{{ terapi.kryds_tekst }}</p>
+      </div>
+      <a class="btn btn--brand" href="{{ site.soestersite_url }}">{{ terapi.kryds_knap }}</a>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="cta">
+      <h2>{{ terapi.cta_overskrift }}</h2>
+      <p>{{ terapi.cta_tekst }}</p>
+      <div class="btn-row">
+        <a class="btn btn--light" href="tel:{{ site.telefon_link }}">Ring {{ site.telefon }}</a>
+        <a class="btn btn--outline-light" href="/priser/">Se priser</a>
+      </div>
+    </div>
+  </div>
+</section>

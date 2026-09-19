@@ -1,0 +1,84 @@
+{
+  "titel": "Curans | Narrativ terapi og supervision ved Roskilde",
+  "beskrivelse": "Narrativ psykoterapi, familiebehandling, traumebehandling, bisidderstøtte og supervision ved Lotte Stegeager. Gevninge, 10 km fra Roskilde. Første samtale uden beregning.",
+  "hero_mikrotekst": "Curans v/ Lotte Stegeager",
+  "hero_overskrift": "Når noget står i vejen for det liv, du gerne vil leve",
+  "hero_tekst": "Måske står angsten, stressen eller depressionen i vejen. Måske bærer du rundt på tyngende tanker. Måske er I som familie væltet omkuld af sygdom, tab eller uretfærdighed. Eller måske er det arbejdslivet, der presser sig på.",
+  "svar": "Jeg tilbyder narrativ terapi, familiebehandling, traumebehandling, bisidderstøtte og supervision i Gevninge, 10 km fra Roskilde. De første 20 minutter er uden beregning.",
+  "hero_maerkater": [
+    {
+      "tekst": "Børn, unge, voksne og familier"
+    },
+    {
+      "tekst": "20 min. uden beregning"
+    },
+    {
+      "tekst": "Gevninge ved Roskilde"
+    }
+  ],
+  "hero_billede": "/billeder/terapi-samtale-to-kvinder.jpg",
+  "hero_billede_alt": "To kvinder sidder og taler sammen i to stole ved et vindue med udsigt over marker.",
+  "hero_billedtekst": "Samtalerne foregår i rolige omgivelser i Gevninge.",
+  "ydelser_overskrift": "Det tilbyder jeg",
+  "ydelser_intro": "Fem indgange. De hænger sammen, og de kan kombineres — mange forløb starter ét sted og bevæger sig et andet hen.",
+  "ydelser_kort": [
+    {
+      "overskrift": "Individuel terapi",
+      "underrubrik": "Stress, angst, depression",
+      "tekst": "Noget spænder ben, eller du har bare en fornemmelse af ubehag uden helt at vide hvorfor. Gennem narrative samtaler undersøger vi dit livslandskab og finder de trædesten, hvor der er fodfæste.",
+      "url": "/terapi/"
+    },
+    {
+      "overskrift": "Traumebehandling",
+      "underrubrik": "PTSD og kompleks PTSD",
+      "tekst": "Går du konstant på vagt? Har du oplevet noget, der var for meget? Vi arbejder nænsomt og i dit tempo, og vi begynder med at finde de trygge steder at stå.",
+      "url": "/traumebehandling/"
+    },
+    {
+      "overskrift": "Familiebehandling",
+      "underrubrik": "Konflikter i familien",
+      "tekst": "Alle familier oplever anspændthed. Nogle gange bliver man rystet så meget, at det er svært at finde fælles fodfæste igen. Vi ser både på, hvad der ligger bag, og på alt det, I også kan som familie.",
+      "url": "/familiebehandling/"
+    },
+    {
+      "overskrift": "Bisidderstøtte",
+      "underrubrik": "Møder på kommunen",
+      "tekst": "Skal du til samtale i jobcentret, i PPR, på skolen eller i psykiatrien? Jeg går med, holder overblikket og hjælper dig med at få dine synspunkter frem — og med de skriftlige henvendelser bagefter.",
+      "url": "/bisidderstoette/"
+    },
+    {
+      "overskrift": "Supervision",
+      "underrubrik": "Faglig sparring i grupper",
+      "tekst": "Narrativ og systemisk supervision af mindre personalegrupper. Et trygt rum til at reflektere over praksis — og over de hverdagsbegivenheder, der fylder mest.",
+      "url": "/supervision/"
+    }
+  ],
+  "udtalelser_overskrift": "Hvad siger andre om min praksis?",
+  "udtalelser": [
+    {
+      "tekst": "Gennem supervisionsforløb med Lotte fik jeg og mine kollegaer brudt den dårlige spiral med en hård tone, og vi fik blik for barrierer, der spændte ben i vores organisation. Jeg følte mig fastlåst i min arbejdsfunktion. Det er der blevet blødt op på. Kan på det varmeste anbefale Lotte.",
+      "hvem": "Heidi, 56 år, projektleder"
+    },
+    {
+      "tekst": "Jeg var deprimeret. At møde Lotte var som at møde en ven, jeg ikke vidste jeg havde. Hun hjalp mig med at finde glæde og et handlekraftigt sted i mig selv. Hun har mine varmeste anbefalinger. Tusind tak.",
+      "hvem": "Jacob, 44 år, flyttemand"
+    },
+    {
+      "tekst": "Jeg var ved at blive smidt ud af min uddannelse, fordi jeg ikke havde fået afleveret min bachelor. Med hjælp fra Lotte, som ikke kun havde opgaven i fokus, men også min angst for ikke at slå til, lykkedes det mig at aflevere, og jeg bestod. Af hjertet tak.",
+      "hvem": "Emma, 27 år, lærer"
+    }
+  ],
+  "omlotte_mikrotekst": "Hvem møder du?",
+  "omlotte_overskrift": "Lotte Stegeager",
+  "omlotte_tekst": "Cand.scient.soc. fra RUC, lektorgodkendt og specialistuddannet i narrativ psykoterapi fra DISPUK. Jeg har arbejdet med mennesker i vanskeligheder siden 1998 — først som underviser af pædagoger, siden som terapeut og supervisor.\n\nJeg er særligt optaget af, hvordan skam og udskamning kan spænde ben for deltagelse, og af hvordan man arbejder den anden vej.",
+  "omlotte_knap": "Læs om min baggrund",
+  "omlotte_billede": "/billeder/omlotte-portraet.jpg",
+  "omlotte_billede_alt": "Portræt af Lotte Stegeager med briller og skulderlangt hår.",
+  "citat": "Det er ikke det enkelte menneske, som er problemet. Det er problemet, der er problemet.",
+  "citat_kilde": "frit efter Michael White",
+  "kryds_overskrift": "Jeg driver også Hesteassisteret Praksis",
+  "kryds_tekst": "En selvstændig praksis med hesteassisteret behandling og handicapridning.",
+  "kryds_knap": "Gå til hesteassisteret-praksis.dk",
+  "cta_overskrift": "Skal vi tage en uforpligtende snak?",
+  "cta_tekst": "Jeg tilbyder 20 minutters samtale uden beregning til alle, der overvejer et forløb. Det giver dig en fornemmelse af, hvem jeg er, og om det er det rigtige for dig."
+}

@@ -1,0 +1,192 @@
+{#- =====================================================================
+    STRUKTURERET DATA (JSON-LD) for Curans
+
+    Samme opbygning som paa soestersitet, og af de samme grunde:
+    EN samlet "@graph", absolutte "@id" med #fragment, og alle tekster
+    gennem "| dump" saa linjeskift og aeoeaa ikke braekker blokken.
+
+    VIGTIGT om personen: Lotte er EN person med TO praksisser. Derfor skal
+    begge sites pege paa det SAMME Person-"@id" - ellers ser en maskine to
+    forskellige mennesker. Det kanoniske id er valgt til at ligge her paa
+    curans.dk, fordi Curans er det juridiske firmanavn for begge grene.
+    Soestersitet bruger i dag "https://hesteassisteret-praksis.dk/#lotte"
+    og SKAL rettes til at pege herpaa, foer site 2 gaar i luften.
+   ===================================================================== -#}
+{#- Sidens egen datafil slaas op paa "side"-noeglen fra front matter. Nunjucks
+    kan ikke slaa en variabel op paa navn i datakaskaden, saa opslagstabellen
+    staar her. Tilfoejes en ny side, skal den skrives ind i listen - ellers
+    faar den hverken Service- eller FAQ-blok. -#}
+{%- set sidedata = {
+      forside: forside,
+      terapi: terapi,
+      traumebehandling: traumebehandling,
+      familiebehandling: familiebehandling,
+      bisidderstoette: bisidderstoette,
+      supervision: supervision,
+      priser: priser,
+      omlotte: omlotte,
+      kontakt: kontakt
+    } %}
+{%- set d = sidedata[side] %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+
+    {#- ---------- PERSONEN ---------- -#}
+    {
+      "@type": "Person",
+      "@id": {{ (site.domaene + "/#lotte") | dump | safe }},
+      "name": "Lotte Stegeager",
+      "givenName": "Lotte",
+      "familyName": "Stegeager",
+      "jobTitle": "Narrativ psykoterapeut og supervisor",
+      "description": {{ omlotte.beskrivelse | dump | safe }},
+      "url": {{ (site.domaene + "/om-lotte/") | dump | safe }},
+      "telephone": {{ site.telefon_link | dump | safe }},
+      "email": {{ site.email | dump | safe }},
+      "knowsLanguage": "da",
+      "worksFor": { "@id": {{ (site.domaene + "/#virksomhed") | dump | safe }} },
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "Roskilde Universitet"
+      },
+      "memberOf": {
+        "@type": "Organization",
+        "name": {{ site.forening_navn | dump | safe }},
+        "url": {{ site.forening_url | dump | safe }}
+      },
+      "hasCredential": [
+        {%- for u in omlotte.uddannelser %}
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "Uddannelse",
+          "name": {{ u.tekst | dump | safe }}
+        }{% if not loop.last %},{% endif %}
+        {%- endfor %}
+      ],
+      "knowsAbout": [
+        "Narrativ terapi",
+        "Psykoterapi",
+        "Traumebehandling",
+        "Kompleks PTSD",
+        "Familiebehandling",
+        "Bisidderstoette",
+        "Narrativ supervision",
+        "Systemisk opstilling",
+        "Marte Meo",
+        "Skam og udskamning"
+      ],
+      {#- Krydslinket til soesterpraksissen. Det er her, en maskine faar at
+          vide, at hestearbejdet og samtaleterapien er samme menneske. -#}
+      "sameAs": [
+        {{ (site.soestersite_url + "/om-lotte/") | dump | safe }},
+        {{ site.facebook | dump | safe }}
+      ]
+    },
+
+    {#- ---------- VIRKSOMHEDEN ----------
+        LocalBusiness, ikke MedicalBusiness: Lotte er psykoterapeut, ikke
+        autoriseret sundhedsperson. Det er det aerlige valg, og det er
+        ogsaa det, der holder i en gennemgang. -#}
+    {
+      "@type": "LocalBusiness",
+      "@id": {{ (site.domaene + "/#virksomhed") | dump | safe }},
+      "name": {{ site.navn | dump | safe }},
+      "legalName": {{ site.juridisk_navn | dump | safe }},
+      "description": {{ forside.beskrivelse | dump | safe }},
+      "url": {{ site.domaene | dump | safe }},
+      "telephone": {{ site.telefon_link | dump | safe }},
+      "email": {{ site.email | dump | safe }},
+      "vatID": {{ site.cvr | replace(" ", "") | dump | safe }},
+      "founder": { "@id": {{ (site.domaene + "/#lotte") | dump | safe }} },
+      "employee": { "@id": {{ (site.domaene + "/#lotte") | dump | safe }} },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": {{ site.adresse | dump | safe }},
+        "postalCode": "4000",
+        "addressLocality": "Roskilde",
+        "addressRegion": "Region Sjaelland",
+        "addressCountry": "DK"
+      },
+      "areaServed": [
+        { "@type": "AdministrativeArea", "name": "Roskilde Kommune" },
+        { "@type": "AdministrativeArea", "name": "Lejre Kommune" },
+        { "@type": "AdministrativeArea", "name": "Holbaek Kommune" },
+        { "@type": "AdministrativeArea", "name": "Region Sjaelland" }
+      ],
+      {#- Ydelserne staar eksplicit. Uden dem maa en maskine gaette sig til,
+          hvad praksissen tilbyder, ud fra broedteksten. -#}
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Ydelser",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Individuel psykoterapi" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Traumebehandling" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Familiebehandling" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Bisidderstoette" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Supervision og faglig sparring" } }
+        ]
+      },
+      "sameAs": [
+        {{ site.soestersite_url | dump | safe }},
+        {{ site.facebook | dump | safe }}
+      ]
+    },
+
+    {#- ---------- SIDEN SELV ---------- -#}
+    {
+      "@type": "WebPage",
+      "@id": {{ (site.domaene + page.url + "#side") | dump | safe }},
+      "url": {{ (site.domaene + page.url) | dump | safe }},
+      "name": {{ titel | dump | safe }},
+      "description": {{ beskrivelse | dump | safe }},
+      "inLanguage": "da-DK",
+      "isPartOf": { "@id": {{ (site.domaene + "/#website") | dump | safe }} },
+      "about": { "@id": {{ (site.domaene + "/#virksomhed") | dump | safe }} }
+    },
+
+    {
+      "@type": "WebSite",
+      "@id": {{ (site.domaene + "/#website") | dump | safe }},
+      "url": {{ site.domaene | dump | safe }},
+      "name": {{ site.navn | dump | safe }},
+      "inLanguage": "da-DK",
+      "publisher": { "@id": {{ (site.domaene + "/#virksomhed") | dump | safe }} }
+    }
+
+    {#- ---------- YDELSEN PAA DENNE SIDE ----------
+        Kun de sider, der saetter "ydelse_navn" i deres datafil, faar en
+        Service-blok. Resten springer den over. -#}
+    {%- if d and d.ydelse_navn %},
+    {
+      "@type": "Service",
+      "@id": {{ (site.domaene + page.url + "#ydelse") | dump | safe }},
+      "name": {{ d.ydelse_navn | dump | safe }},
+      "description": {{ beskrivelse | dump | safe }},
+      "serviceType": {{ d.ydelse_navn | dump | safe }},
+      "provider": { "@id": {{ (site.domaene + "/#virksomhed") | dump | safe }} },
+      "areaServed": { "@type": "AdministrativeArea", "name": "Region Sjaelland" }
+    }
+    {%- endif %}
+
+    {#- ---------- SPOERGSMAAL OG SVAR ----------
+        Bygges kun, hvis siden har en faq-liste i sin datafil. -#}
+    {%- if d and d.faq and d.faq.length %},
+    {
+      "@type": "FAQPage",
+      "@id": {{ (site.domaene + page.url + "#faq") | dump | safe }},
+      "mainEntity": [
+        {%- for f in d.faq %}
+        {
+          "@type": "Question",
+          "name": {{ f.spoergsmaal | dump | safe }},
+          "acceptedAnswer": { "@type": "Answer", "text": {{ f.svar | dump | safe }} }
+        }{% if not loop.last %},{% endif %}
+        {%- endfor %}
+      ]
+    }
+    {%- endif %}
+  ]
+}
+</script>

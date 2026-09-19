@@ -1,0 +1,13 @@
+{
+  "name": "curans",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Hjemmeside for Curans v/ Lotte Stegeager — psykoterapi, familiebehandling, bisidderstøtte og supervision",
+  "scripts": {
+    "start": "eleventy --serve --port=8013",
+    "build": "eleventy"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0"
+  }
+}

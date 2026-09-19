@@ -1,0 +1,125 @@
+---
+layout: base.njk
+permalink: /familiebehandling/
+side: familiebehandling
+eleventyComputed:
+  titel: "{{ familiebehandling.titel }}"
+  beskrivelse: "{{ familiebehandling.beskrivelse }}"
+  og_billede: "{{ familiebehandling.hero_billede }}"
+---
+<section class="hero hero--top">
+  <div class="wrap hero__inner">
+    <div class="hero__text">
+      <span class="eyebrow">{{ familiebehandling.hero_mikrotekst }}</span>
+      <h1>{{ familiebehandling.hero_overskrift }}</h1>
+      <p class="lead">{{ familiebehandling.hero_tekst }}</p>
+      <p class="svar">{{ familiebehandling.svar }}</p>
+
+      <div class="hero__uddyb prose">
+        {{ familiebehandling.hvad_tekst | afsnit | safe }}
+        <div class="note">
+          <strong>{{ familiebehandling.hvad_boks_titel }}</strong> {{ familiebehandling.hvad_boks_tekst }}
+        </div>
+      </div>
+
+      <div class="badges">
+        {% for m in familiebehandling.hero_maerkater %}
+        <span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> {{ m.tekst }}</span>
+        {% endfor %}
+      </div>
+    </div>
+    <figure class="figur">
+      <div class="hero__media" style="aspect-ratio: {{ familiebehandling.hero_billede | billedforhold }}">
+        <img src="{{ familiebehandling.hero_billede }}" alt="{{ familiebehandling.hero_billede_alt }}">
+      </div>
+      {% if familiebehandling.hero_billedtekst %}<figcaption>{{ familiebehandling.hero_billedtekst }}</figcaption>{% endif %}
+    </figure>
+  </div>
+</section>
+
+<section class="section section--sand">
+  <div class="wrap split">
+    <figure class="figur">
+      <div class="split__media" style="aspect-ratio: {{ familiebehandling.metode_billede | billedforhold }}">
+        <img src="{{ familiebehandling.metode_billede }}" alt="{{ familiebehandling.metode_billede_alt }}">
+      </div>
+      {% if familiebehandling.metode_billedtekst %}<figcaption>{{ familiebehandling.metode_billedtekst }}</figcaption>{% endif %}
+    </figure>
+    <div>
+      <span class="eyebrow">{{ familiebehandling.metode_mikrotekst }}</span>
+      <h2>{{ familiebehandling.metode_overskrift }}</h2>
+      {{ familiebehandling.metode_indledning | afsnit | safe }}
+      <ul>
+        {% for p in familiebehandling.metode_punkter %}<li>{{ p.tekst }}</li>{% endfor %}
+      </ul>
+      {{ familiebehandling.metode_afslutning | afsnit | safe }}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>{{ familiebehandling.hvem_overskrift }}</h2>
+      <p>{{ familiebehandling.hvem_intro }}</p>
+    </div>
+    <div class="grid grid--3">
+      {% for k in familiebehandling.hvem_kort %}
+      <article class="card card--flat"><h3>{{ k.overskrift }}</h3><p>{{ k.tekst }}</p></article>
+      {% endfor %}
+    </div>
+    <div class="note" style="margin-top:2rem">
+      <strong>{{ familiebehandling.hvem_boks_titel }}</strong> {{ familiebehandling.hvem_boks_tekst }}
+    </div>
+  </div>
+</section>
+
+<section class="section section--tint">
+  <div class="wrap wrap--narrow prose">
+    <h2>{{ familiebehandling.etik_overskrift }}</h2>
+    {{ familiebehandling.etik_tekst | afsnit | safe }}
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap wrap--narrow">
+    <div class="section-head">
+      <h2>{{ familiebehandling.faq_overskrift }}</h2>
+    </div>
+    <div class="faq">
+      {% for f in familiebehandling.faq %}
+      <details>
+        <summary>{{ f.spoergsmaal }}</summary>
+        <div class="faq__body">{{ f.svar | afsnit | safe }}</div>
+      </details>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{#- Soesterblokken. Efter reglen i SEO-OG-GEO.md maa den naevne PRAKSISSEN,
+    ikke dens ydelser: en saetning og et link, aldrig en ydelsesliste. -#}
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="sister">
+      <div>
+        <h3>{{ familiebehandling.kryds_overskrift }}</h3>
+        <p>{{ familiebehandling.kryds_tekst }}</p>
+      </div>
+      <a class="btn btn--brand" href="{{ site.soestersite_url }}">{{ familiebehandling.kryds_knap }}</a>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="cta">
+      <h2>{{ familiebehandling.cta_overskrift }}</h2>
+      <p>{{ familiebehandling.cta_tekst }}</p>
+      <div class="btn-row">
+        <a class="btn btn--light" href="tel:{{ site.telefon_link }}">Ring {{ site.telefon }}</a>
+        <a class="btn btn--outline-light" href="/priser/">Se priser</a>
+      </div>
+    </div>
+  </div>
+</section>

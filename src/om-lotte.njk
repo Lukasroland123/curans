@@ -1,0 +1,111 @@
+---
+layout: base.njk
+permalink: /om-lotte/
+side: omlotte
+eleventyComputed:
+  titel: "{{ omlotte.titel }}"
+  beskrivelse: "{{ omlotte.beskrivelse }}"
+  og_billede: "{{ omlotte.hero_billede }}"
+---
+<section class="hero hero--top">
+  <div class="wrap hero__inner">
+    <div class="hero__text">
+      <span class="eyebrow">{{ omlotte.hero_mikrotekst }}</span>
+      <h1>{{ omlotte.hero_overskrift }}</h1>
+      <p class="lead">{{ omlotte.hero_tekst }}</p>
+      <div class="hero__uddyb prose">
+        {{ omlotte.intro_tekst | afsnit | safe }}
+      </div>
+      <div class="btn-row">
+        <a class="btn btn--primary" href="/kontakt/">{{ site.cta_knap }}</a>
+      </div>
+    </div>
+    <figure class="figur">
+      {#- Portraettet er staaende. Rammen faar fotoets eget forhold, saa der
+          ikke skaeres i ansigtet. Se billedforhold-filteret. -#}
+      <div class="hero__media hero__media--portraet" style="aspect-ratio: {{ omlotte.hero_billede | billedforhold }}">
+        <img src="{{ omlotte.hero_billede }}" alt="{{ omlotte.hero_billede_alt }}">
+      </div>
+      {% if omlotte.hero_billedtekst %}<figcaption>{{ omlotte.hero_billedtekst }}</figcaption>{% endif %}
+    </figure>
+  </div>
+</section>
+
+<section class="section section--sand">
+  <div class="wrap wrap--narrow prose">
+    <h2>{{ omlotte.uddannelser_overskrift }}</h2>
+    {{ omlotte.uddannelser_intro | afsnit | safe }}
+    <ul>
+      {% for u in omlotte.uddannelser %}<li>{{ u.tekst }}</li>{% endfor %}
+    </ul>
+    <div class="note">
+      <strong>{{ omlotte.uddannelser_boks_titel }}</strong> {{ omlotte.uddannelser_boks_tekst }}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap split">
+    <figure class="figur">
+      <div class="split__media" style="aspect-ratio: {{ omlotte.erfaring_billede | billedforhold }}">
+        <img src="{{ omlotte.erfaring_billede }}" alt="{{ omlotte.erfaring_billede_alt }}">
+      </div>
+      {% if omlotte.erfaring_billedtekst %}<figcaption>{{ omlotte.erfaring_billedtekst }}</figcaption>{% endif %}
+    </figure>
+    <div>
+      <span class="eyebrow">{{ omlotte.erfaring_mikrotekst }}</span>
+      <h2>{{ omlotte.erfaring_overskrift }}</h2>
+      {{ omlotte.erfaring_tekst | afsnit | safe }}
+    </div>
+  </div>
+</section>
+
+<section class="section section--tint">
+  <div class="wrap wrap--narrow prose">
+    <h2>{{ omlotte.tilgang_overskrift }}</h2>
+    {{ omlotte.tilgang_tekst | afsnit | safe }}
+    <blockquote>{{ omlotte.citat }}<br><small>&mdash; {{ omlotte.citat_kilde }}</small></blockquote>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>{{ omlotte.sparring_overskrift }}</h2>
+      <p>{{ omlotte.sparring_intro }}</p>
+    </div>
+    <div class="grid grid--2">
+      {% for p in omlotte.sparring_personer %}
+      <article class="card card--flat">
+        <h3>{{ p.navn }}</h3>
+        <p>{{ p.rolle }}</p>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="sister">
+      <div>
+        <h3>{{ omlotte.kryds_overskrift }}</h3>
+        <p>{{ omlotte.kryds_tekst }}</p>
+      </div>
+      <a class="btn btn--brand" href="{{ site.soestersite_url }}/om-lotte/">{{ omlotte.kryds_knap }}</a>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="cta">
+      <h2>{{ omlotte.cta_overskrift }}</h2>
+      <p>{{ omlotte.cta_tekst }}</p>
+      <div class="btn-row">
+        <a class="btn btn--light" href="tel:{{ site.telefon_link }}">Ring {{ site.telefon }}</a>
+        <a class="btn btn--outline-light" href="/kontakt/">Skriv til mig</a>
+      </div>
+    </div>
+  </div>
+</section>

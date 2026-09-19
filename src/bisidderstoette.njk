@@ -1,0 +1,120 @@
+---
+layout: base.njk
+permalink: /bisidderstoette/
+side: bisidderstoette
+eleventyComputed:
+  titel: "{{ bisidderstoette.titel }}"
+  beskrivelse: "{{ bisidderstoette.beskrivelse }}"
+  og_billede: "{{ bisidderstoette.hero_billede }}"
+---
+<section class="hero hero--top">
+  <div class="wrap hero__inner">
+    <div class="hero__text">
+      <span class="eyebrow">{{ bisidderstoette.hero_mikrotekst }}</span>
+      <h1>{{ bisidderstoette.hero_overskrift }}</h1>
+      <p class="lead">{{ bisidderstoette.hero_tekst }}</p>
+      <p class="svar">{{ bisidderstoette.svar }}</p>
+
+      <div class="hero__uddyb prose">
+        {{ bisidderstoette.hvad_tekst | afsnit | safe }}
+        <div class="note">
+          <strong>{{ bisidderstoette.hvad_boks_titel }}</strong> {{ bisidderstoette.hvad_boks_tekst }}
+        </div>
+      </div>
+
+      <div class="badges">
+        {% for m in bisidderstoette.hero_maerkater %}
+        <span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> {{ m.tekst }}</span>
+        {% endfor %}
+      </div>
+    </div>
+    <figure class="figur">
+      <div class="hero__media" style="aspect-ratio: {{ bisidderstoette.hero_billede | billedforhold }}">
+        <img src="{{ bisidderstoette.hero_billede }}" alt="{{ bisidderstoette.hero_billede_alt }}">
+      </div>
+      {% if bisidderstoette.hero_billedtekst %}<figcaption>{{ bisidderstoette.hero_billedtekst }}</figcaption>{% endif %}
+    </figure>
+  </div>
+</section>
+
+<section class="section section--sand">
+  <div class="wrap split">
+    <figure class="figur">
+      <div class="split__media" style="aspect-ratio: {{ bisidderstoette.metode_billede | billedforhold }}">
+        <img src="{{ bisidderstoette.metode_billede }}" alt="{{ bisidderstoette.metode_billede_alt }}">
+      </div>
+      {% if bisidderstoette.metode_billedtekst %}<figcaption>{{ bisidderstoette.metode_billedtekst }}</figcaption>{% endif %}
+    </figure>
+    <div>
+      <span class="eyebrow">{{ bisidderstoette.metode_mikrotekst }}</span>
+      <h2>{{ bisidderstoette.metode_overskrift }}</h2>
+      {{ bisidderstoette.metode_indledning | afsnit | safe }}
+      <ul>
+        {% for p in bisidderstoette.metode_punkter %}<li>{{ p.tekst }}</li>{% endfor %}
+      </ul>
+      {{ bisidderstoette.metode_afslutning | afsnit | safe }}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>{{ bisidderstoette.hvem_overskrift }}</h2>
+      <p>{{ bisidderstoette.hvem_intro }}</p>
+    </div>
+    <div class="grid grid--3">
+      {% for k in bisidderstoette.hvem_kort %}
+      <article class="card card--flat"><h3>{{ k.overskrift }}</h3><p>{{ k.tekst }}</p></article>
+      {% endfor %}
+    </div>
+    <div class="note" style="margin-top:2rem">
+      <strong>{{ bisidderstoette.hvem_boks_titel }}</strong> {{ bisidderstoette.hvem_boks_tekst }}
+    </div>
+  </div>
+</section>
+
+<section class="section section--tint">
+  <div class="wrap wrap--narrow prose">
+    <h2>{{ bisidderstoette.lov_overskrift }}</h2>
+    <p>{{ bisidderstoette.lov_tekst }}</p>
+    {#- Lovteksten staar ordret. Den maa ikke omskrives eller forkortes. -#}
+    <blockquote>{{ bisidderstoette.lov_citat }}</blockquote>
+    {{ bisidderstoette.lov_efter | afsnit | safe }}
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap wrap--narrow">
+    <div class="section-head">
+      <h2>{{ bisidderstoette.faq_overskrift }}</h2>
+    </div>
+    <div class="faq">
+      {% for f in bisidderstoette.faq %}
+      <details>
+        <summary>{{ f.spoergsmaal }}</summary>
+        <div class="faq__body">{{ f.svar | afsnit | safe }}</div>
+      </details>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="wrap wrap--narrow prose center">
+    <blockquote>{{ bisidderstoette.citat }}<br><small>&mdash; {{ bisidderstoette.citat_kilde }}</small></blockquote>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="cta">
+      <h2>{{ bisidderstoette.cta_overskrift }}</h2>
+      <p>{{ bisidderstoette.cta_tekst }}</p>
+      <div class="btn-row">
+        <a class="btn btn--light" href="tel:{{ site.telefon_link }}">Ring {{ site.telefon }}</a>
+        <a class="btn btn--outline-light" href="/priser/">Se priser</a>
+      </div>
+    </div>
+  </div>
+</section>

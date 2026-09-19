@@ -1,0 +1,120 @@
+---
+layout: base.njk
+permalink: /supervision/
+side: supervision
+eleventyComputed:
+  titel: "{{ supervision.titel }}"
+  beskrivelse: "{{ supervision.beskrivelse }}"
+  og_billede: "{{ supervision.hero_billede }}"
+---
+<section class="hero hero--top">
+  <div class="wrap hero__inner">
+    <div class="hero__text">
+      <span class="eyebrow">{{ supervision.hero_mikrotekst }}</span>
+      <h1>{{ supervision.hero_overskrift }}</h1>
+      <p class="lead">{{ supervision.hero_tekst }}</p>
+      <p class="svar">{{ supervision.svar }}</p>
+
+      <div class="hero__uddyb prose">
+        {{ supervision.hvad_tekst | afsnit | safe }}
+        <div class="note">
+          <strong>{{ supervision.hvad_boks_titel }}</strong> {{ supervision.hvad_boks_tekst }}
+        </div>
+      </div>
+
+      <div class="badges">
+        {% for m in supervision.hero_maerkater %}
+        <span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> {{ m.tekst }}</span>
+        {% endfor %}
+      </div>
+    </div>
+    <figure class="figur">
+      <div class="hero__media" style="aspect-ratio: {{ supervision.hero_billede | billedforhold }}">
+        <img src="{{ supervision.hero_billede }}" alt="{{ supervision.hero_billede_alt }}">
+      </div>
+      {% if supervision.hero_billedtekst %}<figcaption>{{ supervision.hero_billedtekst }}</figcaption>{% endif %}
+    </figure>
+  </div>
+</section>
+
+<section class="section section--sand">
+  <div class="wrap split">
+    <figure class="figur">
+      <div class="split__media" style="aspect-ratio: {{ supervision.metode_billede | billedforhold }}">
+        <img src="{{ supervision.metode_billede }}" alt="{{ supervision.metode_billede_alt }}">
+      </div>
+      {% if supervision.metode_billedtekst %}<figcaption>{{ supervision.metode_billedtekst }}</figcaption>{% endif %}
+    </figure>
+    <div>
+      <span class="eyebrow">{{ supervision.metode_mikrotekst }}</span>
+      <h2>{{ supervision.metode_overskrift }}</h2>
+      {{ supervision.metode_indledning | afsnit | safe }}
+      <ul>
+        {% for p in supervision.metode_punkter %}<li>{{ p.tekst }}</li>{% endfor %}
+      </ul>
+      {{ supervision.metode_afslutning | afsnit | safe }}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>{{ supervision.hvem_overskrift }}</h2>
+      <p>{{ supervision.hvem_intro }}</p>
+    </div>
+    <div class="grid grid--3">
+      {% for k in supervision.hvem_kort %}
+      <article class="card card--flat"><h3>{{ k.overskrift }}</h3><p>{{ k.tekst }}</p></article>
+      {% endfor %}
+    </div>
+    <div class="note" style="margin-top:2rem">
+      <strong>{{ supervision.hvem_boks_titel }}</strong> {{ supervision.hvem_boks_tekst }}
+    </div>
+  </div>
+</section>
+
+<section class="section section--tint">
+  <div class="wrap wrap--narrow prose">
+    <h2>{{ supervision.etik_overskrift }}</h2>
+    {{ supervision.etik_tekst | afsnit | safe }}
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap wrap--narrow">
+    <div class="section-head">
+      <h2>{{ supervision.faq_overskrift }}</h2>
+    </div>
+    <div class="faq">
+      {% for f in supervision.faq %}
+      <details>
+        <summary>{{ f.spoergsmaal }}</summary>
+        <div class="faq__body">{{ f.svar | afsnit | safe }}</div>
+      </details>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="wrap wrap--narrow">
+    <article class="quote-card">
+      <p>{{ supervision.udtalelse }}</p>
+      <p class="quote-card__who">{{ supervision.udtalelse_hvem }}</p>
+    </article>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="cta">
+      <h2>{{ supervision.cta_overskrift }}</h2>
+      <p>{{ supervision.cta_tekst }}</p>
+      <div class="btn-row">
+        <a class="btn btn--light" href="tel:{{ site.telefon_link }}">Ring {{ site.telefon }}</a>
+        <a class="btn btn--outline-light" href="/kontakt/">Skriv til mig</a>
+      </div>
+    </div>
+  </div>
+</section>

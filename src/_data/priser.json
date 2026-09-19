@@ -1,0 +1,73 @@
+{
+  "titel": "Priser | Curans v/ Lotte Stegeager",
+  "beskrivelse": "Priser på terapi, familiebehandling, traumebehandling, bisidderstøtte og supervision. Første samtale på 20 minutter er uden beregning.",
+  "hero_mikrotekst": "Priser og praktisk",
+  "hero_overskrift": "Åbningstider, priser og beliggenhed",
+  "hero_tekst": "Her er tallene. Er økonomien presset, så sig det — nogle gange kan der findes en anden vej, og der findes også gratis tilbud andre steder.",
+  "betingelser": [
+    {
+      "tekst": "Åben mandag til fredag efter forudgående aftale."
+    },
+    {
+      "tekst": "Lørdag, søndag og helligdage er der mulighed for særaftaler med tillægspris."
+    },
+    {
+      "tekst": "Der er mulighed for besøg i hjemmet eller på institutionen med tillægspris for udkørsel."
+    },
+    {
+      "tekst": "Ved forløb finansieret af kommuner, forsikringsselskaber, virksomheder eller institutioner aftales prisen særskilt."
+    }
+  ],
+  "gratis_titel": "De første 20 minutter er uden beregning.",
+  "gratis_tekst": "Jeg tilbyder en uforpligtende samtale på 20 minutter til alle, der overvejer et forløb. Den giver dig en fornemmelse af, hvem jeg er, og om det er det rigtige for dig.",
+  "kort_overskrift": "Priser for privatbetalende",
+  "kort": [
+    {
+      "overskrift": "Individuel terapi, traumebehandling",
+      "beloeb": "965 kr.",
+      "enhed": "pr. time",
+      "tekst": "Samtaler med børn, unge eller voksne af cirka en time pr. gang. Almindeligvis aftales et forløb på tre til otte gange. Nogle forløb er en enkelt time, andre varer længere."
+    },
+    {
+      "overskrift": "Familiebehandling",
+      "beloeb": "1.900 kr.",
+      "enhed": "pr. gang, 90–120 min.",
+      "tekst": "Ved familieterapi afsættes 90 til 120 minutter. Også her aftales oftest et forløb på tre til otte gange."
+    },
+    {
+      "overskrift": "Bisidderstøtte",
+      "beloeb": "965 kr.",
+      "enhed": "pr. time",
+      "tekst": "Ud over selve mødet skal der regnes tid til samtale før og efter, og eventuelt til hjælp med skriftlige henvendelser. Vi forventningsafstemmer, inden processen sættes i gang."
+    },
+    {
+      "overskrift": "Supervision",
+      "beloeb": "Efter aftale",
+      "enhed": "timehonorar",
+      "tekst": "Supervisionsforløb har meget forskellige formål og omfang, og prisen aftales derfor i dialog med jer."
+    }
+  ],
+  "tilskud_overskrift": "Kan andre betale?",
+  "tilskud_intro": "Måske. Det er værd at undersøge, før du dropper et forløb af økonomiske grunde.",
+  "tilskud_kort": [
+    {
+      "overskrift": "Sundhedsforsikring",
+      "tekst": "Har du en privat sundhedsforsikring, eller har din arbejdsplads tegnet en, dækker den i nogle tilfælde en del af udgiften til psykoterapi. Spørg dit forsikringsselskab, inden du går i gang."
+    },
+    {
+      "overskrift": "Kommune, virksomhed eller institution",
+      "tekst": "Er forløbet finansieret af en kommune, en virksomhed eller en institution, aftales prisen særskilt. Kontakt mig, så sender jeg det, der skal bruges."
+    },
+    {
+      "overskrift": "Gratis tilbud andre steder",
+      "tekst": "Er økonomien presset, så husk, at der findes gratis tilbud. Krisecentre tilbyder støttende samtaler uden beregning, og mange foreninger tilbyder gratis hjælp og støtte."
+    }
+  ],
+  "beliggenhed_overskrift": "Beliggenhed",
+  "beliggenhed_tekst": "Min praksis ligger i Gevninge, kun 10 km fra Roskilde. Adressen er Gevninge Bygade 26, 4000 Roskilde.\n\nDu finder gratis parkering overfor, og du kan nemt ankomme med offentlig transport fra både Roskilde og Lejre station.",
+  "beliggenhed_billede": "/billeder/forside-praksis.jpg",
+  "beliggenhed_billede_alt": "Stue med lavt bord, stole og store vinduer ud mod marker i vintersol.",
+  "beliggenhed_billedtekst": "Praksissen i Gevninge.",
+  "cta_overskrift": "Er du i tvivl om, hvad et forløb vil koste?",
+  "cta_tekst": "Ring og spørg. De første 20 minutter er uden beregning, og så kan vi regne på det sammen."
+}

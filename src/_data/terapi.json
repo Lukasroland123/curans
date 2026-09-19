@@ -1,0 +1,98 @@
+{
+  "titel": "Narrativ terapi ved Roskilde | Curans",
+  "beskrivelse": "Individuelle samtaler for børn, unge og voksne ved stress, angst, depression og livskriser. Narrativ terapi i Gevninge, 10 km fra Roskilde.",
+  "ydelse_navn": "Individuel psykoterapi",
+
+  "hero_mikrotekst": "Individuelle forløb",
+  "hero_overskrift": "Terapi ved stress, angst og livskriser",
+  "hero_tekst": "Samtaleforløb for børn, unge og voksne. Vi undersøger sammen det, du oplever som et problem — og hvad der er vigtigt for netop dig.",
+  "svar": "En samtale varer cirka en time. De fleste forløb er på tre til otte gange, men nogle er en enkelt samtale, og andre varer længere. Første samtale på 20 minutter er uden beregning.",
+
+  "hvad_tekst": "Nogle af de mennesker, jeg taler med, synes ikke, at det, de tumler med, er 'alvorligt nok' til terapi. Ofte viser det sig ved den første samtale, at det er det.\n\nNår nogen er i tvivl om, hvorvidt de skal søge hjælp, hænger det tit sammen med, at de har været under stort pres længe. Presset kan gøre, at man mister fornemmelsen af sig selv i en sådan grad, at man ikke føler sig berettiget til at blive støttet.\n\nEr du i tvivl, så ring. Det koster ingenting at spørge.",
+  "hvad_boks_titel": "Det behøver ikke være stort nok.",
+  "hvad_boks_tekst": "Vi kommer nemt til at bagatellisere forhold, som faktisk er ret vigtige for os.",
+
+  "hero_maerkater": [
+    { "tekst": "Børn, unge og voksne" },
+    { "tekst": "20 min. uden beregning" },
+    { "tekst": "Gevninge ved Roskilde" }
+  ],
+
+  "hero_billede": "/billeder/terapi-samtale-ved-bordet.jpg",
+  "hero_billede_alt": "To kvinder sidder over for hinanden i to lænestole ved et lavt bord foran et vindue med udsigt over marker.",
+  "hero_billedtekst": "Samtalerne foregår i rolige omgivelser med udsigt over markerne.",
+
+  "metode_mikrotekst": "Sådan arbejder jeg",
+  "metode_overskrift": "Problemet er problemet — ikke dig",
+  "metode_indledning": "I de narrative samtaler arbejder jeg blandt andet med at eksternalisere det, der opleves vanskeligt. At eksternalisere vil sige at gøre problemet til noget i sig selv, adskilt fra den, der oplever det.\n\nAt være 'ramt af angst' er noget andet end at 'være' angsten. Den forskel er ikke ordkløveri — den skaber plads til mennesket bag diagnosen, ubehaget eller sorgen.",
+  "metode_punkter": [
+    { "tekst": "Tavlen. Jeg skriver dine fortællinger ned — med dine ord, ikke mine. Når de står uden for dig i stedet for inde i dig, kan du se på dem med et distanceret blik." },
+    { "tekst": "Opstillinger med figurer. Små figurer på bordet gør relationer og mønstre synlige. Det sætter ofte processer i gang, som ord alene ikke gør." },
+    { "tekst": "Undtagelserne. Vi leder efter de tidspunkter, hvor problemet ikke fyldte det hele. Der ligger de sprækker, der kan bygges videre på." },
+    { "tekst": "Dine egne værdier. Målet er ikke en bestemt endestation, men at du kommer tættere på at mærke, hvad du kan, ved og vil." }
+  ],
+  "metode_afslutning": "Der arbejdes ikke med at finde fejl og mangler hos det enkelte menneske. Fokus er at blive støttet i sin fornemmelse af at kunne noget, vide noget og ville noget.",
+  "metode_billede": "/billeder/terapi-tavle-eksternalisering.jpg",
+  "metode_billede_alt": "To kvinder står med hver sin kop foran en whiteboardtavle fuld af håndskrevne noter.",
+  "metode_billedtekst": "Tavlen bruges til at få fortællingerne uden for kroppen, hvor de kan ses på.",
+
+  "hvem_overskrift": "Hvem kan henvende sig?",
+  "hvem_intro": "Alle er velkomne. Jeg har samtaler med meget forskellige mennesker, som har det til fælles, at de bakser med noget, der går dem på i livet.",
+  "hvem_kort": [
+    {
+      "overskrift": "Når noget spænder ben",
+      "tekst": "Stress, angst, depression eller en fornemmelse af ubehag og anspændthed — uden helt at vide, hvad der presser sig på."
+    },
+    {
+      "overskrift": "Når livet vender",
+      "tekst": "Sygdom, ulykke, tab eller en livskrise, hvor det velkendte pludselig ikke holder længere."
+    },
+    {
+      "overskrift": "Når det er relationerne",
+      "tekst": "Dårlige stemninger i parforholdet, i familien, på arbejdet eller i andre relationer, der fylder mere, end de burde."
+    }
+  ],
+  "hvem_boks_titel": "En diagnose er ikke en forhindring.",
+  "hvem_boks_tekst": "Jeg har erfaring med narrativ terapi på tværs af alder og køn, også hvor der er en diagnose eller en senhjerneskade med i billedet.",
+
+  "etik_overskrift": "Mit etiske afsæt",
+  "etik_tekst": "Du bliver mødt med en nysgerrig, åben og spørgende tilgang. Den narrative tilgang værner om det enkelte menneskes ret til at leve det liv og træffe de valg, som er vigtige for netop dette menneske.\n\nIntentionen er at frisætte mennesket fra de usynlige normer om, hvordan vi 'bør' leve — når de bidrager til en oplevelse af at være gjort forkert som menneske. Sådan forstået er narrativ terapi forbundet med en samfunds- og kulturkritik.\n\nEr økonomien presset, så husk, at der også findes gratis tilbud. Krisecentre og mange foreninger tilbyder støttende samtaler uden beregning. Har du en sundhedsforsikring, dækker den måske en del af udgiften.",
+
+  "citat": "Why we do what we do matters. When we lose our why, we lose our way.",
+  "citat_kilde": "Michael White",
+
+  "faq_overskrift": "Spørgsmål om narrativ terapi",
+  "faq": [
+    {
+      "spoergsmaal": "Hvad betyder narrativ?",
+      "svar": "Narrativ betyder fortælling. Det narrative perspektiv indeholder en forståelse af, at livet får mening gennem fortællinger. Vi bruger hverdagssproget til at skabe fortællinger om både os selv og andre, og det er gennem dem, vi etablerer forståelser af, hvem vi er. Vores egne og andres fortællinger har derved afgørende indflydelse på vores selvforståelse — og dermed på det, mange kalder selvværd."
+    },
+    {
+      "spoergsmaal": "Er narrativ terapi det samme som positiv psykologi?",
+      "svar": "Nej. I narrativ terapi fokuseres der ikke ensidigt på det positive. Der arbejdes også med de problemstillinger, som presser sig på. Men samtidig ser vi på andre livssituationer og erfaringer, der kan fungere som modhistorier til den aktuelle krise. I dem opstår der sprækker, som du kan finde styrke i midt i noget overvældende."
+    },
+    {
+      "spoergsmaal": "Hvordan foregår det helt konkret?",
+      "svar": "Tag angsten som eksempel. Vi afdækker, hvornår og hvordan angsten flyttede ind, og skaber sammen din historie om den. Vi undersøger, om der er tidspunkter, hvor den fylder mere eller mindre. Ved at finde de øjeblikke, hvor angsten ikke fyldte det hele, får vi adgang til de steder, hvor du har stået tættere på dig selv.\n\nI stedet for angsten kunne vi lige så godt have talt om stressen, frygten, tvivlen, sorgen, ensomheden eller panikken."
+    },
+    {
+      "spoergsmaal": "Kan narrativ terapi bruges til traumer?",
+      "svar": "Ja. Narrativ terapi kan bruges ved mishandling, vold, omsorgssvigt og traumer efter ulykke eller sygdom. Her er det særligt vigtigt, at vi starter med at etablere trygge rammer og finde de steder i dit liv, hvor du har oplevet dig set som præcis den, du er. Dem bringer vi i spil undervejs, når vi undersøger det svære."
+    },
+    {
+      "spoergsmaal": "Har du et bestemt mål med terapien?",
+      "svar": "Mit mål er at støtte dig i at få blik for dine egne intentioner og forbinde dem med erfaringerne fra dit eget liv. Processen er forskellig fra menneske til menneske, og derfor har et narrativt forløb ikke en forudbestemt endestation."
+    },
+    {
+      "spoergsmaal": "Hvad koster det?",
+      "svar": "Den første samtale på 20 minutter er uden beregning. Derefter aftaler vi et forløb. Se priserne på prissiden."
+    }
+  ],
+
+  "kryds_overskrift": "Er det et barn eller en ung, der har svært ved at sætte ord på?",
+  "kryds_tekst": "Jeg driver også Hesteassisteret Praksis, en selvstændig praksis, hvor samspillet med hesten er omdrejningspunktet.",
+  "kryds_knap": "Læs om hesteassisteret praksis",
+
+  "cta_overskrift": "Er du i tvivl, om det er noget for dig?",
+  "cta_tekst": "Ring og få 20 minutter uden beregning. Så finder vi ud af, om det giver mening at gå videre."
+}

@@ -1,0 +1,83 @@
+---
+layout: base.njk
+permalink: /kontakt/
+side: kontakt
+eleventyComputed:
+  titel: "{{ kontakt.titel }}"
+  beskrivelse: "{{ kontakt.beskrivelse }}"
+---
+<section class="pagehead">
+  <div class="wrap wrap--narrow">
+    <span class="eyebrow">{{ kontakt.hero_mikrotekst }}</span>
+    <h1>{{ kontakt.hero_overskrift }}</h1>
+    <p class="lead">{{ kontakt.hero_tekst }}</p>
+    <p class="svar">{{ kontakt.svar }}</p>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="wrap wrap--narrow">
+    <ul class="contact-list">
+      <li>
+        <strong>Telefon</strong>
+        <a href="tel:{{ site.telefon_link }}">{{ site.telefon }}</a>
+      </li>
+      <li>
+        <strong>E-mail</strong>
+        <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+      </li>
+      <li>
+        <strong>Adresse</strong>
+        {{ site.adresse }}, {{ site.postnr_by }}
+      </li>
+      <li>
+        <strong>CVR</strong>
+        {{ site.cvr }}
+      </li>
+    </ul>
+    <div class="btn-row">
+      <a class="btn btn--primary" href="tel:{{ site.telefon_link }}">Ring {{ site.telefon }}</a>
+      <a class="btn btn--ghost" href="mailto:{{ site.email }}">Skriv en mail</a>
+    </div>
+  </div>
+</section>
+
+<section class="section section--sand">
+  <div class="wrap split">
+    <div>
+      <h2>{{ kontakt.praktisk_overskrift }}</h2>
+      {{ kontakt.praktisk_tekst | afsnit | safe }}
+      <p>
+        <a class="btn btn--ghost" href="https://www.google.com/maps/search/?api=1&amp;query={{ site.adresse | urlencode }}+{{ site.postnr_by | urlencode }}" rel="noopener">Åbn i Google Maps</a>
+      </p>
+    </div>
+    <figure class="figur">
+      <div class="split__media" style="aspect-ratio: {{ kontakt.praktisk_billede | billedforhold }}">
+        <img src="{{ kontakt.praktisk_billede }}" alt="{{ kontakt.praktisk_billede_alt }}">
+      </div>
+      {% if kontakt.praktisk_billedtekst %}<figcaption>{{ kontakt.praktisk_billedtekst }}</figcaption>{% endif %}
+    </figure>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap wrap--narrow prose">
+    <h2>{{ kontakt.aabningstider_overskrift }}</h2>
+    {{ kontakt.aabningstider_tekst | afsnit | safe }}
+    <h2>{{ kontakt.tavshed_overskrift }}</h2>
+    {{ kontakt.tavshed_tekst | afsnit | safe }}
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="cta">
+      <h2>{{ kontakt.cta_overskrift }}</h2>
+      <p>{{ kontakt.cta_tekst }}</p>
+      <div class="btn-row">
+        <a class="btn btn--light" href="tel:{{ site.telefon_link }}">Ring {{ site.telefon }}</a>
+        <a class="btn btn--outline-light" href="/priser/">Se priser</a>
+      </div>
+    </div>
+  </div>
+</section>

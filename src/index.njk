@@ -1,0 +1,120 @@
+---
+layout: base.njk
+permalink: /
+side: forside
+eleventyComputed:
+  titel: "{{ forside.titel }}"
+  beskrivelse: "{{ forside.beskrivelse }}"
+  og_billede: "{{ forside.hero_billede }}"
+---
+<section class="hero hero--top">
+  <div class="wrap hero__inner">
+    <div class="hero__text">
+      <span class="eyebrow">{{ forside.hero_mikrotekst }}</span>
+      <h1>{{ forside.hero_overskrift }}</h1>
+      <p class="lead">{{ forside.hero_tekst }}</p>
+      <p class="svar">{{ forside.svar }}</p>
+
+      <div class="btn-row">
+        <a class="btn btn--primary" href="/kontakt/">{{ site.cta_knap }}</a>
+        <a class="btn btn--ghost" href="/priser/">Se priser</a>
+      </div>
+
+      <div class="badges">
+        {% for m in forside.hero_maerkater %}
+        <span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> {{ m.tekst }}</span>
+        {% endfor %}
+      </div>
+    </div>
+    <figure class="figur">
+      <div class="hero__media" style="aspect-ratio: {{ forside.hero_billede | billedforhold }}">
+        <img src="{{ forside.hero_billede }}" alt="{{ forside.hero_billede_alt }}">
+      </div>
+      {% if forside.hero_billedtekst %}<figcaption>{{ forside.hero_billedtekst }}</figcaption>{% endif %}
+    </figure>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>{{ forside.ydelser_overskrift }}</h2>
+      <p>{{ forside.ydelser_intro }}</p>
+    </div>
+    <div class="grid grid--3">
+      {% for k in forside.ydelser_kort %}
+      <article class="card">
+        <h3>{{ k.overskrift }}</h3>
+        <p class="eyebrow">{{ k.underrubrik }}</p>
+        <p>{{ k.tekst }}</p>
+        <a class="card__link" href="{{ k.url }}">Læs mere</a>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section--sand">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>{{ forside.udtalelser_overskrift }}</h2>
+    </div>
+    <div class="grid grid--3">
+      {% for u in forside.udtalelser %}
+      <article class="quote-card">
+        <p>{{ u.tekst }}</p>
+        <p class="quote-card__who">{{ u.hvem }}</p>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap split">
+    <figure class="figur" style="max-width:340px">
+      <div class="split__media" style="aspect-ratio: {{ forside.omlotte_billede | billedforhold }}">
+        <img src="{{ forside.omlotte_billede }}" alt="{{ forside.omlotte_billede_alt }}">
+      </div>
+    </figure>
+    <div>
+      <span class="eyebrow">{{ forside.omlotte_mikrotekst }}</span>
+      <h2>{{ forside.omlotte_overskrift }}</h2>
+      {{ forside.omlotte_tekst | afsnit | safe }}
+      <p><a class="btn btn--ghost" href="/om-lotte/">{{ forside.omlotte_knap }}</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tint">
+  <div class="wrap wrap--narrow prose center">
+    <blockquote>{{ forside.citat }}<br><small>— {{ forside.citat_kilde }}</small></blockquote>
+  </div>
+</section>
+
+{#- Soesterblokken naevner praksissen, ikke dens ydelser. Se emnekortet i
+    SEO-OG-GEO.md: hestene ejes af site 1 og maa ikke staa som en ydelse her. -#}
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="sister">
+      <div>
+        <h3>{{ forside.kryds_overskrift }}</h3>
+        <p>{{ forside.kryds_tekst }}</p>
+      </div>
+      <a class="btn btn--brand" href="{{ site.soestersite_url }}">{{ forside.kryds_knap }}</a>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="cta">
+      <h2>{{ forside.cta_overskrift }}</h2>
+      <p>{{ forside.cta_tekst }}</p>
+      <div class="btn-row">
+        <a class="btn btn--light" href="tel:{{ site.telefon_link }}">Ring {{ site.telefon }}</a>
+        <a class="btn btn--outline-light" href="/kontakt/">Skriv til mig</a>
+      </div>
+    </div>
+  </div>
+</section>

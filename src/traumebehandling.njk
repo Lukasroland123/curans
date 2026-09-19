@@ -1,0 +1,147 @@
+---
+layout: base.njk
+permalink: /traumebehandling/
+side: traumebehandling
+eleventyComputed:
+  titel: "{{ traumebehandling.titel }}"
+  beskrivelse: "{{ traumebehandling.beskrivelse }}"
+  og_billede: "{{ traumebehandling.hero_billede }}"
+---
+<section class="hero hero--top">
+  <div class="wrap hero__inner">
+    <div class="hero__text">
+      <span class="eyebrow">{{ traumebehandling.hero_mikrotekst }}</span>
+      <h1>{{ traumebehandling.hero_overskrift }}</h1>
+      <p class="lead">{{ traumebehandling.hero_tekst }}</p>
+      <p class="svar">{{ traumebehandling.svar }}</p>
+
+      <div class="hero__uddyb prose">
+        {{ traumebehandling.hvad_tekst | afsnit | safe }}
+        <div class="note">
+          <strong>{{ traumebehandling.hvad_boks_titel }}</strong> {{ traumebehandling.hvad_boks_tekst }}
+        </div>
+      </div>
+
+      <div class="badges">
+        {% for m in traumebehandling.hero_maerkater %}
+        <span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> {{ m.tekst }}</span>
+        {% endfor %}
+      </div>
+    </div>
+    <figure class="figur">
+      <div class="hero__media" style="aspect-ratio: {{ traumebehandling.hero_billede | billedforhold }}">
+        <img src="{{ traumebehandling.hero_billede }}" alt="{{ traumebehandling.hero_billede_alt }}">
+      </div>
+      {% if traumebehandling.hero_billedtekst %}<figcaption>{{ traumebehandling.hero_billedtekst }}</figcaption>{% endif %}
+    </figure>
+  </div>
+</section>
+
+<section class="section section--sand">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">{{ traumebehandling.typer_mikrotekst }}</span>
+      <h2>{{ traumebehandling.typer_overskrift }}</h2>
+      <p>{{ traumebehandling.typer_indledning }}</p>
+    </div>
+    <div class="grid grid--2">
+      {% for k in traumebehandling.typer_kort %}
+      <article class="card card--flat">
+        <h3>{{ k.overskrift }}</h3>
+        {{ k.tekst | afsnit | safe }}
+      </article>
+      {% endfor %}
+    </div>
+    <div class="note" style="margin-top:2rem">
+      <strong>{{ traumebehandling.typer_boks_titel }}</strong> {{ traumebehandling.typer_boks_tekst }}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap split">
+    <figure class="figur">
+      <div class="split__media" style="aspect-ratio: {{ traumebehandling.metode_billede | billedforhold }}">
+        <img src="{{ traumebehandling.metode_billede }}" alt="{{ traumebehandling.metode_billede_alt }}">
+      </div>
+      {% if traumebehandling.metode_billedtekst %}<figcaption>{{ traumebehandling.metode_billedtekst }}</figcaption>{% endif %}
+    </figure>
+    <div>
+      <span class="eyebrow">{{ traumebehandling.metode_mikrotekst }}</span>
+      <h2>{{ traumebehandling.metode_overskrift }}</h2>
+      {{ traumebehandling.metode_indledning | afsnit | safe }}
+      <ul>
+        {% for p in traumebehandling.metode_punkter %}<li>{{ p.tekst }}</li>{% endfor %}
+      </ul>
+      {{ traumebehandling.metode_afslutning | afsnit | safe }}
+    </div>
+  </div>
+</section>
+
+<section class="section section--tint">
+  <div class="wrap split">
+    <div>
+      <h2>{{ traumebehandling.etik_overskrift }}</h2>
+      {{ traumebehandling.etik_tekst | afsnit | safe }}
+    </div>
+    <figure class="figur">
+      <div class="split__media" style="aspect-ratio: {{ traumebehandling.etik_billede | billedforhold }}">
+        <img src="{{ traumebehandling.etik_billede }}" alt="{{ traumebehandling.etik_billede_alt }}">
+      </div>
+      {#- Kunstnerens navn SKAL blive staaende. Vaerket er gengivet med
+          saerlig tilladelse, og den tilladelse er knyttet til krediteringen. -#}
+      {% if traumebehandling.etik_billedtekst %}<figcaption>{{ traumebehandling.etik_billedtekst }}</figcaption>{% endif %}
+    </figure>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap wrap--narrow">
+    <div class="section-head">
+      <h2>{{ traumebehandling.faq_overskrift }}</h2>
+    </div>
+    <div class="faq">
+      {% for f in traumebehandling.faq %}
+      <details>
+        <summary>{{ f.spoergsmaal }}</summary>
+        <div class="faq__body">{{ f.svar | afsnit | safe }}</div>
+      </details>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section--sand">
+  <div class="wrap wrap--narrow prose">
+    <h2>{{ traumebehandling.litteratur_overskrift }}</h2>
+    <p>{{ traumebehandling.litteratur_intro }}</p>
+    <ul>
+      {% for l in traumebehandling.litteratur %}<li>{{ l.tekst }}</li>{% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="sister">
+      <div>
+        <h3>{{ traumebehandling.kryds_overskrift }}</h3>
+        <p>{{ traumebehandling.kryds_tekst }}</p>
+      </div>
+      <a class="btn btn--brand" href="{{ site.soestersite_url }}">{{ traumebehandling.kryds_knap }}</a>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="cta">
+      <h2>{{ traumebehandling.cta_overskrift }}</h2>
+      <p>{{ traumebehandling.cta_tekst }}</p>
+      <div class="btn-row">
+        <a class="btn btn--light" href="tel:{{ site.telefon_link }}">Ring {{ site.telefon }}</a>
+        <a class="btn btn--outline-light" href="/priser/">Se priser</a>
+      </div>
+    </div>
+  </div>
+</section>

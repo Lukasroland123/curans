@@ -1,0 +1,96 @@
+{
+  "titel": "Professionel bisidder ved Roskilde, Lejre og Holbæk | Curans",
+  "beskrivelse": "Professionel bisidderstøtte ved møder på kommunen, i jobcentret, i PPR, på skolen og i psykiatrien. Hjælp til klager, aktindsigt og skriftlige henvendelser.",
+  "ydelse_navn": "Bisidderstøtte",
+
+  "hero_mikrotekst": "Støtte i mødet med systemet",
+  "hero_overskrift": "Professionel bisidder",
+  "hero_tekst": "Skal du til samtale i psykiatrien, på kommunen, på skolen, i institutionen eller på ældrecentret? Skal du til møde om en underretning? Gør det dig utryg, stresset eller presset?",
+  "svar": "Ud over selve mødet skal der regnes tid til en samtale før og efter. Nogle gange også til at hjælpe dig med skriftlige henvendelser eller klager. Timeforbruget afhænger af, hvor meget materiale jeg skal sætte mig ind i — derfor forventningsafstemmer vi, før vi går i gang.",
+
+  "hvad_tekst": "Borgere, der er i kontakt med for eksempel kommunen, kan i mange tilfælde have nytte af professionel rådgivning og støtte. Det kan være uoverskueligt at blive indkaldt til møde i jobcentret, i rehabiliteringsteamet eller i den pædagogisk-psykologiske rådgivning.\n\nJeg har en bred faglig viden inden for det sociale område og kendskab til en del af lovgivningen. Og jeg har erfaring med at deltage i møder, hvor der kan være mange forskellige interesser i spil.",
+  "hvad_boks_titel": "Du har altid ret til en bisidder.",
+  "hvad_boks_tekst": "Det står i forvaltningslovens kapitel 3. En myndighed kan ikke nægte dig at tage den bisidder med, du selv har valgt.",
+
+  "hero_maerkater": [
+    { "tekst": "Roskilde, Lejre og Holbæk" },
+    { "tekst": "Hjælp til klager og aktindsigt" },
+    { "tekst": "Forberedelse før og efter mødet" }
+  ],
+
+  "hero_billede": "/billeder/bisidder-to-skygger.jpg",
+  "hero_billede_alt": "Skyggerne af to personer, der står ved siden af hinanden på et asfalteret underlag.",
+  "hero_billedtekst": "En bisidder står ved din side — men overtager ikke din sag.",
+
+  "metode_mikrotekst": "Sådan foregår det",
+  "metode_overskrift": "Før, under og efter mødet",
+  "metode_indledning": "Vi holder et forberedende møde, hvor du giver mig indblik i, hvad der er særligt vigtigt for dig at få drøftet på den kommende samtale.",
+  "metode_punkter": [
+    { "tekst": "Til mødet støtter jeg dig i at få de pointer frem. Samtidig holder jeg styr på, hvilke andre perspektiver der bringes i spil." },
+    { "tekst": "En bisidder hjælper dig med at få overblik over, hvad der bliver sagt, og med at holde fokus — og med at få spurgt ind til det uafklarede." },
+    { "tekst": "Efter mødet kan vi holde et evalueringsmøde, så du er rustet til at holde overblikket fremadrettet." },
+    { "tekst": "Ønsker du et skriftligt referat af mødet, er det også en mulighed." }
+  ],
+  "metode_afslutning": "Det er ikke bisidderens rolle at føre, overtage eller styre din sag. En bisidder kan derfor ikke træffe beslutninger eller forhandle på dine vegne.",
+  "metode_billede": "/billeder/terapi-noter-flipover.jpg",
+  "metode_billede_alt": "Håndskrevne noter på et stykke flipoverpapir hængt op på en væg.",
+  "metode_billedtekst": "",
+
+  "hvem_overskrift": "Hvad kan jeg hjælpe med?",
+  "hvem_intro": "Ud over at gå med til selve mødet.",
+  "hvem_kort": [
+    {
+      "overskrift": "Skriftlige henvendelser og klager",
+      "tekst": "Jeg kan på baggrund af sagsakterne hjælpe dig med at formulere en fagligt begrundet klage — hvis der er grundlag for det. Du er part i sagen, så det er dig, der står som afsender."
+    },
+    {
+      "overskrift": "At oversætte myndighedssproget",
+      "tekst": "Breve fra myndigheder kan virke, som om de er skrevet på et andet sprog. Det kan jeg hjælpe med at oversætte til noget forståeligt."
+    },
+    {
+      "overskrift": "Kun forberedelse",
+      "tekst": "Vil du hellere klare mødet selv? Så sætter jeg mig ind i materialet og hjælper dig med at trække de væsentligste pointer frem inden."
+    }
+  ],
+  "hvem_boks_titel": "Husk retten til aktindsigt.",
+  "hvem_boks_tekst": "Som part i en sag har du ret til aktindsigt efter forvaltningslovens kapitel 4. Den ret giver dig indblik i den skriftlige dokumentation, der ligger til grund for din sag, så du kan forberede dig grundigt.",
+
+  "lov_overskrift": "Det står i loven",
+  "lov_tekst": "Forvaltningslovens kapitel 3:",
+  "lov_citat": "§ 8. Den, der er part i en sag, kan på ethvert tidspunkt af sagens behandling lade sig repræsentere eller bistå af andre. Myndigheden kan dog kræve, at parten medvirker personligt, når det er af betydning for sagens afgørelse.",
+  "lov_efter": "Det betyder, at alle har mulighed for at tage en bisidder med til en samtale.\n\nI sager med børn og unge vil det altid være optimering af barnets eller den unges trivsel, der er mit afsæt.",
+
+  "faq_overskrift": "Spørgsmål om bisidderstøtte",
+  "faq": [
+    {
+      "spoergsmaal": "Er der forskel på en bisidder og en partsrepræsentant?",
+      "svar": "Ja, og den er betydningsfuld. En bisidder er en støtteperson — uanset om det er en professionel eller en, der har en privat relation til borgeren. Som bisidder kan man ikke overtage sagen og træffe beslutninger på borgerens vegne.\n\nEn partsrepræsentant kan derimod godt, efter forudgående aftale med borgeren, handle på vedkommendes vegne. Det kan for eksempel være en advokat eller en revisor."
+    },
+    {
+      "spoergsmaal": "Kan en myndighed nægte mig at have en bisidder med?",
+      "svar": "Nej. En borger kan ikke nægtes at tage en bisidder med, som borgeren selv har valgt. Det gælder uanset om det er kommunen, skolen, socialforvaltningen, jobcentret eller ældrecentret.\n\nDet er god skik at orientere om, at man har en bisidder med, så alle parter på forhånd ved, hvem der deltager i mødet."
+    },
+    {
+      "spoergsmaal": "Hvem kan være bisidder?",
+      "svar": "Det bestemmer du selv. Det kan være en professionel med faglig viden inden for det område, sagen handler om. Det kan også være en ægtefælle, en ven eller lignende."
+    },
+    {
+      "spoergsmaal": "Kan du hjælpe mig med at forberede mig, uden at tage med til selve mødet?",
+      "svar": "Ja. Det kræver blot, at jeg får indsigt i de forhold og dokumenter, der er relevante for din sag. Så sætter jeg mig ind i materialet og hjælper dig med at trække de vigtigste pointer frem."
+    },
+    {
+      "spoergsmaal": "Jeg føler mig urimeligt behandlet — kan du hjælpe med en klage?",
+      "svar": "Det kræver, at jeg kan sætte mig ind i sagen og drøfte den grundigt med dig. Da det er dig, der er part i sagen, er det også dig, der skal stå som afsender. Jeg kan hjælpe dig med at formulere en fagligt begrundet klage, hvis der er grundlag for det."
+    },
+    {
+      "spoergsmaal": "Hvor dækker du geografisk?",
+      "svar": "Bisidderstøtte tilbydes primært i lokalområdet — Roskilde, Lejre og Holbæk — hvor jeg har praksis."
+    }
+  ],
+
+  "citat": "There is a crack, a crack in everything. That's how the light gets in.",
+  "citat_kilde": "Leonard Cohen",
+
+  "cta_overskrift": "Står du med et møde, du er utryg ved?",
+  "cta_tekst": "Ring og få 20 minutter uden beregning. Så finder vi ud af, hvad der skal til, og hvad det vil koste."
+}

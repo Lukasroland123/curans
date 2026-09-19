@@ -1,0 +1,87 @@
+---
+layout: base.njk
+permalink: /priser/
+side: priser
+eleventyComputed:
+  titel: "{{ priser.titel }}"
+  beskrivelse: "{{ priser.beskrivelse }}"
+---
+<section class="pagehead">
+  <div class="wrap wrap--narrow">
+    <span class="eyebrow">{{ priser.hero_mikrotekst }}</span>
+    <h1>{{ priser.hero_overskrift }}</h1>
+    <p class="lead">{{ priser.hero_tekst }}</p>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="wrap wrap--narrow">
+    <div class="note">
+      <strong>{{ priser.gratis_titel }}</strong> {{ priser.gratis_tekst }}
+    </div>
+    <ul style="margin-top:1.5rem">
+      {% for b in priser.betingelser %}<li>{{ b.tekst }}</li>{% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="section section--sand">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>{{ priser.kort_overskrift }}</h2>
+    </div>
+    <div class="grid grid--2">
+      {% for k in priser.kort %}
+      <article class="price-card">
+        <h3>{{ k.overskrift }}</h3>
+        <p class="price-card__amount">{{ k.beloeb }}</p>
+        <p class="price-card__unit">{{ k.enhed }}</p>
+        <p>{{ k.tekst }}</p>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>{{ priser.tilskud_overskrift }}</h2>
+      <p>{{ priser.tilskud_intro }}</p>
+    </div>
+    <div class="grid grid--3">
+      {% for k in priser.tilskud_kort %}
+      <article class="card card--flat"><h3>{{ k.overskrift }}</h3><p>{{ k.tekst }}</p></article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section--tint">
+  <div class="wrap split">
+    <div>
+      <h2>{{ priser.beliggenhed_overskrift }}</h2>
+      {{ priser.beliggenhed_tekst | afsnit | safe }}
+      <p><a class="btn btn--ghost" href="/kontakt/">Se rutevejledning</a></p>
+    </div>
+    <figure class="figur">
+      <div class="split__media" style="aspect-ratio: {{ priser.beliggenhed_billede | billedforhold }}">
+        <img src="{{ priser.beliggenhed_billede }}" alt="{{ priser.beliggenhed_billede_alt }}">
+      </div>
+      {% if priser.beliggenhed_billedtekst %}<figcaption>{{ priser.beliggenhed_billedtekst }}</figcaption>{% endif %}
+    </figure>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="cta">
+      <h2>{{ priser.cta_overskrift }}</h2>
+      <p>{{ priser.cta_tekst }}</p>
+      <div class="btn-row">
+        <a class="btn btn--light" href="tel:{{ site.telefon_link }}">Ring {{ site.telefon }}</a>
+        <a class="btn btn--outline-light" href="mailto:{{ site.email }}">Skriv til mig</a>
+      </div>
+    </div>
+  </div>
+</section>

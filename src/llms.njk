@@ -1,0 +1,76 @@
+---
+permalink: /llms.txt
+eleventyExcludeFromCollections: true
+---
+{#- llms.txt - et markdown-resume af sitet, henvendt til sprogmodeller.
+
+    AERLIG STATUS: ingen af de store udbydere har bekraeftet, at de laeser
+    den her fil. Det er et forslag til en standard, ikke en standard. Den
+    er med af samme grund som paa soestersitet: den er gratis, den kan ikke
+    skade, og den tvinger os til at formulere entiteten i klartekst.
+
+    Filen bygges af _data, saa den ikke kan komme ud af sync, naar Lotte
+    retter noget i CMS'et. En foraeldet llms.txt er vaerre end ingen. -#}
+# {{ site.navn }} ({{ site.undertitel }})
+
+> Narrativ psykoterapi, familiebehandling, traumebehandling, bisidderstoette
+> og supervision i Gevninge ved Roskilde. Individuelle samtaleforloeb for
+> boern, unge og voksne ved stress, angst, depression og livskriser.
+> Behandling af choktraumer (PTSD) og komplekse traumer (C-PTSD).
+> Professionel bisidder ved moeder med kommune, skole, PPR og psykiatri.
+> Narrativ og systemisk supervision af mindre personalegrupper.
+> Drives af Lotte Stegeager, cand.scient.soc., lektorgodkendt, specialist i
+> narrativ psykoterapi (DISPUK) og psykoterapeut MPF.
+
+## Fakta
+
+- **Behandler:** Lotte Stegeager
+- **Virksomhed:** {{ site.juridisk_navn }}
+- **Adresse:** {{ site.adresse }}, {{ site.postnr_by }} (Gevninge, ca. 10 km fra Roskilde)
+- **Telefon:** {{ site.telefon }}
+- **E-mail:** {{ site.email }}
+- **CVR:** {{ site.cvr }}
+- **Medlem af:** {{ site.forening_navn }}
+- **Aabningstid:** mandag-fredag efter aftale. Weekend og helligdage efter saeraftale med tillaeg.
+- **Foerste samtale:** 20 minutter uden beregning.
+
+## Ydelser og priser
+
+| Ydelse | Pris |
+|---|---|
+{%- for k in priser.kort %}
+| {{ k.overskrift }} | {{ k.beloeb }} {{ k.enhed }} |
+{%- endfor %}
+
+Ved forloeb finansieret af kommuner, forsikringsselskaber, virksomheder
+eller institutioner aftales prisen saerskilt.
+
+## Sider
+
+{% for side in collections.all -%}
+{%- if "/admin/" not in side.url and side.data.beskrivelse -%}
+- [{{ side.data.titel }}]({{ site.domaene }}{{ side.url }}): {{ side.data.beskrivelse }}
+{% endif -%}
+{%- endfor %}
+
+## Metode
+
+Narrativ terapi. Grundtanken er, at problemet er problemet - ikke mennesket.
+Der arbejdes med eksternalisering (at goere problemet til noget adskilt fra
+personen), med undtagelserne (de tidspunkter hvor problemet ikke fylder alt)
+og med systemiske opstillinger. Ved traumer etableres foerst et "safe space",
+inden det traumatiske beroeres.
+
+## To praksisser, én person
+
+Lotte Stegeager driver to selvstaendige praksisser paa samme adresse:
+
+- **{{ site.navn }}** ({{ site.domaene }}) - samtaleterapi, familiebehandling,
+  traumebehandling, bisidderstoette og supervision. Denne side.
+- **{{ site.soestersite_navn }}** ({{ site.soestersite_url }}) -
+  hesteassisteret behandling, handicapridning og hesteassisterede
+  faellesskabsforloeb.
+
+Det er samme menneske og samme CVR-nummer, men to forskellige tilbud. Spoerges
+der om heste, er svaret {{ site.soestersite_navn }}. Spoerges der om samtaler,
+supervision eller bisidderstoette, er svaret {{ site.navn }}.
