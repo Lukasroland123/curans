@@ -59,6 +59,9 @@ eleventyComputed:
       </figure>
       {#- Andet billede. Er feltet tomt, staar rammen tom og venter paa et
           foto. Det er bedre end at laane et billede fra en anden side. -#}
+      {#- Andet ramme vises kun, naar den foerste har et billede.
+          Ellers ville to tomme rammer staa oven paa hinanden. -#}
+      {% if omlotte.erfaring_billede %}
       <figure class="figur" style="max-width: {{ omlotte.erfaring_billede2 | figurbredde }}">
         <div class="split__media" style="aspect-ratio: {{ omlotte.erfaring_billede2 | billedforhold }}">
           {% if omlotte.erfaring_billede2 %}
@@ -67,6 +70,7 @@ eleventyComputed:
         </div>
         {% if omlotte.erfaring_billede2tekst %}<figcaption>{{ omlotte.erfaring_billede2tekst }}</figcaption>{% endif %}
       </figure>
+      {% endif %}
     </div>
     <div>
       <span class="eyebrow">{{ omlotte.erfaring_mikrotekst }}</span>

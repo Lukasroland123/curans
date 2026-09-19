@@ -39,6 +39,9 @@ eleventyComputed:
       </figure>
       {#- Andet billede. Er feltet tomt, staar rammen tom og venter paa et
           foto. Det er bedre end at laane et billede fra en anden side. -#}
+      {#- Andet ramme vises kun, naar den foerste har et billede.
+          Ellers ville to tomme rammer staa oven paa hinanden. -#}
+      {% if supervision.hero_billede %}
       <figure class="figur" style="max-width: {{ supervision.hero_billede2 | herobredde }}">
         <div class="hero__media" style="aspect-ratio: {{ supervision.hero_billede2 | billedforhold }}">
           {% if supervision.hero_billede2 %}
@@ -47,6 +50,7 @@ eleventyComputed:
         </div>
         {% if supervision.hero_billede2tekst %}<figcaption>{{ supervision.hero_billede2tekst }}</figcaption>{% endif %}
       </figure>
+      {% endif %}
     </div>
   </div>
 </section>

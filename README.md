@@ -100,31 +100,33 @@ for den bliver overskrevet.
       har aldrig haft en side. Enten skrives den, eller også ryger den ud
 - [ ] **Afbudsregler.** Stod ikke på den gamle side. Bør på prissiden, som på
       site 1
-- [ ] **Billederne: hvad er købt, og af hvem?** Billederne er hentet fra den
-      gamle side, men de er ikke alle Lottes egne. Ni af dem er stockfotos,
-      som Fokus formentlig har købt en licens til. En stocklicens følger den,
-      der købte den, og ofte det domæne, den blev brugt på — den følger altså
-      ikke automatisk med til curans.dk. **Spørg Fokus, hvad der er licenseret,
-      før I opsiger dem.**
+- [ ] **Der mangler billeder. 11 rammer står tomme.** Stockfotoene fra den
+      gamle side er slettet 19-09-2026. De var købt af Fokus, og en
+      stocklicens følger den, der købte den — ikke domænet. Vi ved ikke, hvad
+      der er købt, så de kunne ikke tages med over.
 
-      Lottes egne fotos er prioriteret, hvor de findes, og de ligger nu på
-      forsiden, terapisiden, familiesiden, om-siden og prissiden:
+      Tilbage er **ti billeder, som alle er Lottes egne**: hendes stue,
+      tavlerne, figurerne på bordet, flipoveren, portrættet og kunstværket.
 
-      | Eget | Stockfoto |
-      |---|---|
-      | `forside-samtale-i-stuen` | `bisidder-to-skygger` |
-      | `forside-praksis` | `supervision-postits-gruppe` |
-      | `terapi-tavle-eksternalisering` | `supervision-moede-om-bord` |
-      | `terapi-opstilling-figurer` | `traume-to-under-paraply` |
-      | `terapi-tavle-ung-skriver` | `traume-lys-for-enden` |
-      | `opstilling-figurer-paa-bord` | `familie-haandaftryk-hjerte` (usikker) |
-      | `familie-samtale-ved-bordet` | `forside-fodspor-voksen-barn` (ubrugt) |
-      | `terapi-noter-flipover` | `forside-haender-blade` (ubrugt) |
-      | `omlotte-portraet` | `supervision-postits-naer` (ubrugt) |
-      | `traume-vaerk-alene` (kunstværk, med tilladelse) | |
+      Sådan ser det ud nu:
 
-      Traume-, bisidder- og supervisionssiden kører i dag på stockfotos alene.
-      De skal enten erstattes af Lottes egne eller af nye, frit licenserede.
+      | Side | Billeder | Tomme rammer |
+      |---|---|---|
+      | Forside | 1 | 1 |
+      | Terapi | 2 | 2 |
+      | Traumebehandling | 1 | 2 |
+      | Familiebehandling | 2 | 1 |
+      | Bisidderstøtte | 1 | 1 |
+      | Supervision | **0** | 2 |
+      | Priser | 1 | 0 |
+      | Om Lotte | 2 | 1 |
+      | Kontakt | 0 | 1 |
+
+      Supervisionssiden har ingen billeder overhovedet. Traumesiden har kun
+      kunstværket. Lotte skal tage nogle fotos, eller også skal der købes nye
+      med en licens, I selv ejer — Unsplash og Pexels er gratis og frie.
+
+      Felterne står klar i CMS'et, så hun kan lægge dem ind selv.
 
 - [ ] **Billedernes opløsning.** Ingen af filerne er bredere end 1.423 px,
       fordi det er Fokus' nedskalerede kopier. Originalerne findes kun på
