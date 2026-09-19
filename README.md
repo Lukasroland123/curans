@@ -100,8 +100,34 @@ for den bliver overskrevet.
       har aldrig haft en side. Enten skrives den, eller også ryger den ud
 - [ ] **Afbudsregler.** Stod ikke på den gamle side. Bør på prissiden, som på
       site 1
-- [ ] **Billederne.** De 22 billeder her er Fokus' nedskalerede kopier fra den
-      gamle side, ingen bredere end 1.423 px. Originalerne findes kun på
+- [ ] **Billederne: hvad er købt, og af hvem?** Billederne er hentet fra den
+      gamle side, men de er ikke alle Lottes egne. Ni af dem er stockfotos,
+      som Fokus formentlig har købt en licens til. En stocklicens følger den,
+      der købte den, og ofte det domæne, den blev brugt på — den følger altså
+      ikke automatisk med til curans.dk. **Spørg Fokus, hvad der er licenseret,
+      før I opsiger dem.**
+
+      Lottes egne fotos er prioriteret, hvor de findes, og de ligger nu på
+      forsiden, terapisiden, familiesiden, om-siden og prissiden:
+
+      | Eget | Stockfoto |
+      |---|---|
+      | `forside-samtale-i-stuen` | `bisidder-to-skygger` |
+      | `forside-praksis` | `supervision-postits-gruppe` |
+      | `terapi-tavle-eksternalisering` | `supervision-moede-om-bord` |
+      | `terapi-opstilling-figurer` | `traume-to-under-paraply` |
+      | `terapi-tavle-ung-skriver` | `traume-lys-for-enden` |
+      | `opstilling-figurer-paa-bord` | `familie-haandaftryk-hjerte` (usikker) |
+      | `familie-samtale-ved-bordet` | `forside-fodspor-voksen-barn` (ubrugt) |
+      | `terapi-noter-flipover` | `forside-haender-blade` (ubrugt) |
+      | `omlotte-portraet` | `supervision-postits-naer` (ubrugt) |
+      | `traume-vaerk-alene` (kunstværk, med tilladelse) | |
+
+      Traume-, bisidder- og supervisionssiden kører i dag på stockfotos alene.
+      De skal enten erstattes af Lottes egne eller af nye, frit licenserede.
+
+- [ ] **Billedernes opløsning.** Ingen af filerne er bredere end 1.423 px,
+      fordi det er Fokus' nedskalerede kopier. Originalerne findes kun på
       Lottes telefon
 - [ ] Korrekturlæsning af det hele
 
