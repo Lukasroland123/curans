@@ -279,6 +279,7 @@ def main():
         "adresse": "Vej og husnummer",
         "postnr_by": "Postnummer og by",
         "facebook": "Link til Facebook",
+        "google_anmeldelser": "Link til anmeldelserne på Google",
         "soestersite_url": "Adressen på den anden hjemmeside",
         "soestersite_navn": "Navnet på den anden hjemmeside",
         "footer_beskrivelse": "Kort beskrivelse nederst på siden",

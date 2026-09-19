@@ -41,7 +41,7 @@ Kontakt                     /kontakt/
 /404.html                   teknisk fejlside, ikke i CMS'et
 ```
 
-**322 redigerbare felter** fordelt på 9 sider.
+**345 redigerbare felter** fordelt på 9 sider.
 
 ---
 
@@ -138,15 +138,50 @@ for den bliver overskrevet.
 
 ### Skal gøres på site 1, før site 2 går i luften
 
-- [ ] **Person-`@id` skal pege samme sted.** Schemaet her siger, at det
+**Alle tre er gjort 19-09-2026** (`2105e68` på site 1, `9754462` her).
+Teksten står tilbage, fordi den forklarer hvorfor.
+
+- [x] **Person-`@id` skal pege samme sted.** Schemaet her siger, at det
       kanoniske id for Lotte er `https://curans.dk/#lotte`, fordi Curans bliver
       det juridiske firmanavn for begge grene. Site 1 bruger i dag
       `https://hesteassisteret-praksis.dk/#lotte`. Peger de ikke samme sted,
       ser en maskine to forskellige mennesker
-- [ ] `site.json` på site 1: `email`, `juridisk_navn`, `soestersite_navn`,
-      `soestersite_url` og `google_anmeldelser`
-- [ ] Søsterblokken på site 1 nævner i dag gren 2's **ydelser**. Efter reglen i
-      `SEO-OG-GEO.md` må den kun nævne **praksissen** — én sætning og et link
+- [x] `site.json` på site 1: `juridisk_navn`, `soestersite_navn` og
+      `soestersite_url` følger navneskiftet. `google_anmeldelser` er lagt om,
+      se nedenfor. **`email` mangler stadig** — den venter på aliasset
+      `lotte@curans.dk`, og en død adresse må ikke udgives
+- [x] Søsterblokken på site 1 nævnte gren 2's **ydelser**. Alle fire blokke er
+      nu én sætning uden overskrift, efter reglen i `SEO-OG-GEO.md`
+
+---
+
+## Google-profilen og anmeldelserne
+
+Anmeldelserne er det eneste i hele flytningen, der **ikke kan genskabes**.
+De kan hverken flyttes, kopieres eller eksporteres mellem profiler. Derfor
+den ene regel, som ikke skal tages op igen: **profilen døbes om, den
+oprettes ikke forfra.** Et navneskift beholder anmeldelser, bedømmelse,
+billeder, spørgsmål og åbningsdato. En ny profil starter på nul og
+konkurrerer med den gamle om den samme adresse.
+
+Begrundelsen i sin fulde længde står i `../SEO-OG-GEO.md`, trin 3.
+
+**Linkændringen her, 19-09-2026.** Begge sites havde — og site 2 har nu —
+en knap "Læs anmeldelserne på Google" under udtalelserne. Den pegede på en
+Maps-søgning efter **navnet** `Narrativ Samtale`. Den slags link dør i det
+sekund, profilen døbes om. Den søger nu på **adressen** i stedet:
+
+    https://www.google.com/maps/search/?api=1&query=Gevninge+Bygade+26+4000+Roskilde
+
+Adressen skifter ikke, så linket overlever navneskiftet. Det er en
+midlertidig løsning, ikke den rigtige.
+
+- [ ] **Hent profilens eget delelink**, når der er adgang til
+      `business.google.com`: profilen → Del → kopiér. Det er et
+      `maps.app.goo.gl`- eller `g.page`-link bundet til profilens id, ikke til
+      dens navn eller adresse. Sæt det ind i ét felt i CMS'et —
+      **Indstillinger → Link til anmeldelserne på Google** — på begge sites.
+      Ingen kode skal røres
 
 ---
 

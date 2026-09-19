@@ -73,6 +73,7 @@ collections:
             fields:
               - { name: tekst, label: "Tekst", widget: text }
               - { name: hvem, label: "Hvem", widget: string }
+          - { name: udtalelser_knap, label: "Udtalelser · Tekst på knappen", widget: string }
           - { name: omlotte_mikrotekst, label: "Om Lotte-afsnittet · Lille tekst over overskriften", widget: string }
           - { name: omlotte_overskrift, label: "Om Lotte-afsnittet · Overskrift", widget: string }
           - { name: omlotte_tekst, label: "Om Lotte-afsnittet · Tekst", widget: text }
@@ -606,6 +607,7 @@ collections:
           - { name: adresse, label: "Vej og husnummer", widget: string }
           - { name: postnr_by, label: "Postnummer og by", widget: string }
           - { name: facebook, label: "Link til Facebook", widget: string }
+          - { name: google_anmeldelser, label: "Link til anmeldelserne på Google", widget: string }
           - { name: soestersite_url, label: "Adressen på den anden hjemmeside", widget: string }
           - { name: soestersite_navn, label: "Navnet på den anden hjemmeside", widget: string }
           - { name: footer_beskrivelse, label: "Kort beskrivelse nederst på siden", widget: text }
