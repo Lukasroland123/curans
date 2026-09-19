@@ -29,27 +29,22 @@ eleventyComputed:
       </div>
     </div>
     <div class="billedstak">
-      <figure class="figur" style="max-width: {{ traumebehandling.hero_billede | herobredde }}">
+      <figure class="figur{% if not traumebehandling.hero_billede %} figur--tom{% endif %}" style="max-width: {{ traumebehandling.hero_billede | herobredde }}">
         <div class="hero__media" style="aspect-ratio: {{ traumebehandling.hero_billede | billedforhold }}">
-          {% if traumebehandling.hero_billede %}
-          <img src="{{ traumebehandling.hero_billede }}" alt="{{ traumebehandling.hero_billede_alt }}">
-          {% endif %}
+          {% if traumebehandling.hero_billede %}<img src="{{ traumebehandling.hero_billede }}" alt="{{ traumebehandling.hero_billede_alt }}">{% endif %}
         </div>
-        {% if traumebehandling.hero_billedetekst %}<figcaption>{{ traumebehandling.hero_billedetekst }}</figcaption>{% endif %}
+        {% if traumebehandling.hero_billedtekst %}<figcaption>{{ traumebehandling.hero_billedtekst }}</figcaption>{% endif %}
       </figure>
-      {#- Andet billede. Er feltet tomt, staar rammen tom og venter paa et
-          foto. Det er bedre end at laane et billede fra en anden side. -#}
-      {#- Andet ramme vises kun, naar den foerste har et billede.
-          Ellers ville to tomme rammer staa oven paa hinanden. -#}
+      {#- Billede nummer to. Er feltet tomt, staar her en tom ramme, der
+          venter paa et foto. Kun naar det FOERSTE felt har et foto: to
+          tomme rammer oven paa hinanden er ikke en pladsholder. -#}
       {% if traumebehandling.hero_billede %}
-      <figure class="figur" style="max-width: {{ traumebehandling.hero_billede2 | herobredde }}">
-        <div class="hero__media" style="aspect-ratio: {{ traumebehandling.hero_billede2 | billedforhold }}">
-          {% if traumebehandling.hero_billede2 %}
-          <img src="{{ traumebehandling.hero_billede2 }}" alt="{{ traumebehandling.hero_billede2_alt }}">
-          {% endif %}
-        </div>
-        {% if traumebehandling.hero_billede2tekst %}<figcaption>{{ traumebehandling.hero_billede2tekst }}</figcaption>{% endif %}
-      </figure>
+        <figure class="figur{% if not traumebehandling.hero_billede2 %} figur--tom{% endif %}" style="max-width: {{ traumebehandling.hero_billede2 | herobredde }}">
+          <div class="hero__media" style="aspect-ratio: {{ traumebehandling.hero_billede2 | billedforhold }}">
+            {% if traumebehandling.hero_billede2 %}<img src="{{ traumebehandling.hero_billede2 }}" alt="{{ traumebehandling.hero_billede2_alt }}">{% endif %}
+          </div>
+          {% if traumebehandling.hero_billede2tekst %}<figcaption>{{ traumebehandling.hero_billede2tekst }}</figcaption>{% endif %}
+        </figure>
       {% endif %}
     </div>
   </div>
@@ -78,11 +73,9 @@ eleventyComputed:
 
 <section class="section">
   <div class="wrap split">
-    <figure class="figur" style="max-width: {{ traumebehandling.metode_billede | figurbredde }}">
+    <figure class="figur{% if not traumebehandling.metode_billede %} figur--tom{% endif %}" style="max-width: {{ traumebehandling.metode_billede | figurbredde }}">
       <div class="split__media" style="aspect-ratio: {{ traumebehandling.metode_billede | billedforhold }}">
-        {% if traumebehandling.metode_billede %}
-        <img src="{{ traumebehandling.metode_billede }}" alt="{{ traumebehandling.metode_billede_alt }}">
-        {% endif %}
+        {% if traumebehandling.metode_billede %}<img src="{{ traumebehandling.metode_billede }}" alt="{{ traumebehandling.metode_billede_alt }}">{% endif %}
       </div>
       {% if traumebehandling.metode_billedtekst %}<figcaption>{{ traumebehandling.metode_billedtekst }}</figcaption>{% endif %}
     </figure>
@@ -104,16 +97,16 @@ eleventyComputed:
       <h2>{{ traumebehandling.etik_overskrift }}</h2>
       {{ traumebehandling.etik_tekst | afsnit | safe }}
     </div>
-    <figure class="figur" style="max-width: {{ traumebehandling.etik_billede | figurbredde }}">
-      <div class="split__media" style="aspect-ratio: {{ traumebehandling.etik_billede | billedforhold }}">
-        {% if traumebehandling.etik_billede %}
-        <img src="{{ traumebehandling.etik_billede }}" alt="{{ traumebehandling.etik_billede_alt }}">
-        {% endif %}
-      </div>
-      {#- Kunstnerens navn SKAL blive staaende. Vaerket er gengivet med
-          saerlig tilladelse, og den tilladelse er knyttet til krediteringen. -#}
-      {% if traumebehandling.etik_billedtekst %}<figcaption>{{ traumebehandling.etik_billedtekst }}</figcaption>{% endif %}
-    </figure>
+    {% if traumebehandling.etik_billede %}
+      <figure class="figur{% if not traumebehandling.etik_billede %} figur--tom{% endif %}" style="max-width: {{ traumebehandling.etik_billede | figurbredde }}">
+        <div class="split__media" style="aspect-ratio: {{ traumebehandling.etik_billede | billedforhold }}">
+          <img src="{{ traumebehandling.etik_billede }}" alt="{{ traumebehandling.etik_billede_alt }}">
+        </div>
+        {#- Kunstnerens navn SKAL blive staaende. Vaerket er gengivet med
+            saerlig tilladelse, og den tilladelse er knyttet til krediteringen. -#}
+        {% if traumebehandling.etik_billedtekst %}<figcaption>{{ traumebehandling.etik_billedtekst }}</figcaption>{% endif %}
+      </figure>
+    {% endif %}
   </div>
 </section>
 

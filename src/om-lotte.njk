@@ -20,13 +20,11 @@ eleventyComputed:
         <a class="btn btn--primary" href="/kontakt/">{{ site.cta_knap }}</a>
       </div>
     </div>
-    <figure class="figur">
+    <figure class="figur{% if not omlotte.hero_billede %} figur--tom{% endif %}">
       {#- Portraettet er staaende. Rammen faar fotoets eget forhold, saa der
           ikke skaeres i ansigtet. Se billedforhold-filteret. -#}
       <div class="hero__media hero__media--portraet" style="aspect-ratio: {{ omlotte.hero_billede | billedforhold }}">
-        {% if omlotte.hero_billede %}
-        <img src="{{ omlotte.hero_billede }}" alt="{{ omlotte.hero_billede_alt }}">
-        {% endif %}
+        {% if omlotte.hero_billede %}<img src="{{ omlotte.hero_billede }}" alt="{{ omlotte.hero_billede_alt }}">{% endif %}
       </div>
       {% if omlotte.hero_billedtekst %}<figcaption>{{ omlotte.hero_billedtekst }}</figcaption>{% endif %}
     </figure>
@@ -49,27 +47,21 @@ eleventyComputed:
 <section class="section">
   <div class="wrap split">
     <div class="billedstak">
-      <figure class="figur" style="max-width: {{ omlotte.erfaring_billede | figurbredde }}">
+      <figure class="figur{% if not omlotte.erfaring_billede %} figur--tom{% endif %}" style="max-width: {{ omlotte.erfaring_billede | figurbredde(572) }}">
         <div class="split__media" style="aspect-ratio: {{ omlotte.erfaring_billede | billedforhold }}">
-          {% if omlotte.erfaring_billede %}
-          <img src="{{ omlotte.erfaring_billede }}" alt="{{ omlotte.erfaring_billede_alt }}">
-          {% endif %}
+          {% if omlotte.erfaring_billede %}<img src="{{ omlotte.erfaring_billede }}" alt="{{ omlotte.erfaring_billede_alt }}">{% endif %}
         </div>
-        {% if omlotte.erfaring_billedetekst %}<figcaption>{{ omlotte.erfaring_billedetekst }}</figcaption>{% endif %}
+        {% if omlotte.erfaring_billedtekst %}<figcaption>{{ omlotte.erfaring_billedtekst }}</figcaption>{% endif %}
       </figure>
-      {#- Andet billede. Er feltet tomt, staar rammen tom og venter paa et
-          foto. Det er bedre end at laane et billede fra en anden side. -#}
-      {#- Andet ramme vises kun, naar den foerste har et billede.
-          Ellers ville to tomme rammer staa oven paa hinanden. -#}
-      {% if omlotte.erfaring_billede %}
-      <figure class="figur" style="max-width: {{ omlotte.erfaring_billede2 | figurbredde }}">
-        <div class="split__media" style="aspect-ratio: {{ omlotte.erfaring_billede2 | billedforhold }}">
-          {% if omlotte.erfaring_billede2 %}
-          <img src="{{ omlotte.erfaring_billede2 }}" alt="{{ omlotte.erfaring_billede2_alt }}">
-          {% endif %}
-        </div>
-        {% if omlotte.erfaring_billede2tekst %}<figcaption>{{ omlotte.erfaring_billede2tekst }}</figcaption>{% endif %}
-      </figure>
+      {#- Billede nummer to. Er feltet tomt, staar fotoet ovenfor alene.
+          En tom kasse under et foto ser ud som en fejl. -#}
+      {% if omlotte.erfaring_billede2 %}
+        <figure class="figur{% if not omlotte.erfaring_billede2 %} figur--tom{% endif %}" style="max-width: {{ omlotte.erfaring_billede2 | figurbredde }}">
+          <div class="split__media" style="aspect-ratio: {{ omlotte.erfaring_billede2 | billedforhold }}">
+            {% if omlotte.erfaring_billede2 %}<img src="{{ omlotte.erfaring_billede2 }}" alt="{{ omlotte.erfaring_billede2_alt }}">{% endif %}
+          </div>
+          {% if omlotte.erfaring_billede2tekst %}<figcaption>{{ omlotte.erfaring_billede2tekst }}</figcaption>{% endif %}
+        </figure>
       {% endif %}
     </div>
     <div>

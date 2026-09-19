@@ -29,27 +29,21 @@ eleventyComputed:
       </div>
     </div>
     <div class="billedstak">
-      <figure class="figur" style="max-width: {{ familiebehandling.hero_billede | herobredde }}">
+      <figure class="figur{% if not familiebehandling.hero_billede %} figur--tom{% endif %}" style="max-width: {{ familiebehandling.hero_billede | herobredde(543) }}">
         <div class="hero__media" style="aspect-ratio: {{ familiebehandling.hero_billede | billedforhold }}">
-          {% if familiebehandling.hero_billede %}
-          <img src="{{ familiebehandling.hero_billede }}" alt="{{ familiebehandling.hero_billede_alt }}">
-          {% endif %}
+          {% if familiebehandling.hero_billede %}<img src="{{ familiebehandling.hero_billede }}" alt="{{ familiebehandling.hero_billede_alt }}">{% endif %}
         </div>
-        {% if familiebehandling.hero_billedetekst %}<figcaption>{{ familiebehandling.hero_billedetekst }}</figcaption>{% endif %}
+        {% if familiebehandling.hero_billedtekst %}<figcaption>{{ familiebehandling.hero_billedtekst }}</figcaption>{% endif %}
       </figure>
-      {#- Andet billede. Er feltet tomt, staar rammen tom og venter paa et
-          foto. Det er bedre end at laane et billede fra en anden side. -#}
-      {#- Andet ramme vises kun, naar den foerste har et billede.
-          Ellers ville to tomme rammer staa oven paa hinanden. -#}
-      {% if familiebehandling.hero_billede %}
-      <figure class="figur" style="max-width: {{ familiebehandling.hero_billede2 | herobredde }}">
-        <div class="hero__media" style="aspect-ratio: {{ familiebehandling.hero_billede2 | billedforhold }}">
-          {% if familiebehandling.hero_billede2 %}
-          <img src="{{ familiebehandling.hero_billede2 }}" alt="{{ familiebehandling.hero_billede2_alt }}">
-          {% endif %}
-        </div>
-        {% if familiebehandling.hero_billede2tekst %}<figcaption>{{ familiebehandling.hero_billede2tekst }}</figcaption>{% endif %}
-      </figure>
+      {#- Billede nummer to. Er feltet tomt, staar fotoet ovenfor alene.
+          En tom kasse under et foto ser ud som en fejl. -#}
+      {% if familiebehandling.hero_billede2 %}
+        <figure class="figur{% if not familiebehandling.hero_billede2 %} figur--tom{% endif %}" style="max-width: {{ familiebehandling.hero_billede2 | herobredde }}">
+          <div class="hero__media" style="aspect-ratio: {{ familiebehandling.hero_billede2 | billedforhold }}">
+            {% if familiebehandling.hero_billede2 %}<img src="{{ familiebehandling.hero_billede2 }}" alt="{{ familiebehandling.hero_billede2_alt }}">{% endif %}
+          </div>
+          {% if familiebehandling.hero_billede2tekst %}<figcaption>{{ familiebehandling.hero_billede2tekst }}</figcaption>{% endif %}
+        </figure>
       {% endif %}
     </div>
   </div>
@@ -57,11 +51,9 @@ eleventyComputed:
 
 <section class="section section--sand">
   <div class="wrap split">
-    <figure class="figur" style="max-width: {{ familiebehandling.metode_billede | figurbredde }}">
+    <figure class="figur{% if not familiebehandling.metode_billede %} figur--tom{% endif %}" style="max-width: {{ familiebehandling.metode_billede | figurbredde }}">
       <div class="split__media" style="aspect-ratio: {{ familiebehandling.metode_billede | billedforhold }}">
-        {% if familiebehandling.metode_billede %}
-        <img src="{{ familiebehandling.metode_billede }}" alt="{{ familiebehandling.metode_billede_alt }}">
-        {% endif %}
+        {% if familiebehandling.metode_billede %}<img src="{{ familiebehandling.metode_billede }}" alt="{{ familiebehandling.metode_billede_alt }}">{% endif %}
       </div>
       {% if familiebehandling.metode_billedtekst %}<figcaption>{{ familiebehandling.metode_billedtekst }}</figcaption>{% endif %}
     </figure>

@@ -26,13 +26,11 @@ eleventyComputed:
         {% endfor %}
       </div>
     </div>
-    <figure class="figur" style="max-width: {{ forside.hero_billede | herobredde }}">
+    <figure class="figur{% if not forside.hero_billede %} figur--tom{% endif %}" style="max-width: {{ forside.hero_billede | herobredde }}">
       <div class="hero__media" style="aspect-ratio: {{ forside.hero_billede | billedforhold }}">
-        {% if forside.hero_billede %}
-        <img src="{{ forside.hero_billede }}" alt="{{ forside.hero_billede_alt }}">
-        {% endif %}
+        {% if forside.hero_billede %}<img src="{{ forside.hero_billede }}" alt="{{ forside.hero_billede_alt }}">{% endif %}
       </div>
-      {% if forside.hero_billedetekst %}<figcaption>{{ forside.hero_billedetekst }}</figcaption>{% endif %}
+      {% if forside.hero_billedtekst %}<figcaption>{{ forside.hero_billedtekst }}</figcaption>{% endif %}
     </figure>
   </div>
 </section>
@@ -74,11 +72,9 @@ eleventyComputed:
 
 <section class="section">
   <div class="wrap split">
-    <figure class="figur" style="max-width: {{ forside.omlotte_billede | figurbredde | default("340px", true) }}">
+    <figure class="figur{% if not forside.omlotte_billede %} figur--tom{% endif %}" style="max-width: {{ forside.omlotte_billede | figurbredde }}">
       <div class="split__media" style="aspect-ratio: {{ forside.omlotte_billede | billedforhold }}">
-        {% if forside.omlotte_billede %}
-        <img src="{{ forside.omlotte_billede }}" alt="{{ forside.omlotte_billede_alt }}">
-        {% endif %}
+        {% if forside.omlotte_billede %}<img src="{{ forside.omlotte_billede }}" alt="{{ forside.omlotte_billede_alt }}">{% endif %}
       </div>
     </figure>
     <div>

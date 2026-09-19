@@ -124,10 +124,8 @@ module.exports = function (eleventyConfig) {
   // og falder tilbage til stylesheetets standardformat, hvis filen mangler.
   eleventyConfig.addFilter("billedforhold", function (sti) {
     const maal = billedMaal(sti);
-    // Tomt felt: rammen staar tom og venter paa et foto. Den faar et liggende
-    // format, for en tom ramme paa hoejkant goer billedspalten dobbelt saa
-    // hoej som teksten ved siden af.
-    if (!maal || !maal.bredde || !maal.hoejde) return "4 / 3";
+    // Filen kan ikke laeses: lad stylesheetets standardformat staa.
+    if (!maal || !maal.bredde || !maal.hoejde) return "auto";
     return `${maal.bredde} / ${maal.hoejde}`;
   });
 
@@ -143,25 +141,34 @@ module.exports = function (eleventyConfig) {
   //
   // Derfor: aldrig bredere end fotoet selv, og aldrig bredere end loftet
   // for sin orientering.
-  eleventyConfig.addFilter("figurbredde", function (sti) {
+  // Loftet for staaende fotos kan haeves pr. kaldested. 320 px er sat lavt,
+  // fordi et staaende foto ellers bliver hoejere end teksten ved siden af -
+  // men er teksten lang nok til at baere det, ser 320 px bare tyndt og
+  // sammenklemt ud i en spalte paa 572 px. Skabelonen ved, hvor lang
+  // teksten er; filteret goer ikke.
+  eleventyConfig.addFilter("figurbredde", function (sti, staaendeLoft) {
     const maal = billedMaal(sti);
-    // Tomt felt eller fil der ikke kan laeses: rammen staar tom og venter paa
-    // et foto. Den skal stadig have en bredde, ellers fylder den tomme,
-    // groenne kasse hele spalten.
-    if (!maal || !maal.bredde || !maal.hoejde) return "460px";
+    // Tomt felt: rammen staar tom og venter paa et foto. Bredden saettes i
+    // stylesheetet (--tom-ramme-bredde), for en style="" i selve taggen
+    // slaar ethvert stylesheet, og saa kan rammen ikke klemmes sammen paa
+    // en smal skaerm.
+    if (!maal || !maal.bredde || !maal.hoejde) return "";
     const staaende = maal.hoejde > maal.bredde;
-    const loft = staaende ? 320 : 640;
+    const loft = staaende ? staaendeLoft || 320 : 640;
     return Math.min(maal.bredde, loft) + "px";
   });
 
   // Samme idé for billederne oeverst paa siden. Her er spalten bredere, saa
   // loftet er hoejere - men et staaende foto i fuld spaltebredde bliver
   // stadig hoejere end teksten ved siden af.
-  eleventyConfig.addFilter("herobredde", function (sti) {
+  // Loftet kan haeves pr. kaldested. Staar fotoet ALENE i spalten, uden en
+  // ramme under sig, maa det gerne fylde hele spalten - ellers staar der et
+  // baelte tomt ved siden af teksten.
+  eleventyConfig.addFilter("herobredde", function (sti, loft) {
     const maal = billedMaal(sti);
     if (!maal || !maal.bredde || !maal.hoejde) return "";
     const staaende = maal.hoejde > maal.bredde;
-    return Math.min(maal.bredde, staaende ? 440 : 900) + "px";
+    return Math.min(maal.bredde, staaende ? 520 : 900) + "px";
   });
 
   // Dato som ren YYYY-MM-DD til <lastmod> i sitemap'et. Soegemaskiner og

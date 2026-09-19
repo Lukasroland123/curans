@@ -30,6 +30,21 @@
 
   /* --- Mål --- */
   --wrap: 1200px;
+
+  /* Bredden paa en tom ramme. Den har intet indhold at faa sin bredde fra,
+     saa den skal have den her. Samme stoerrelse som et staaende foto faar
+     i toppen af siden, saa en tom ramme og et foto ser lige store ud. */
+  --tom-ramme-bredde: 520px;
+
+  /* Afstanden fra tekstspaltens top ned til selve overskriften. Mikroteksten
+     over overskriften fylder den. Rammen ved siden af rykkes lige saa meget
+     ned, saa den ikke starter hoejere oppe end overskriften. Maalt til
+     39 px paa alle sider. */
+  --mikrotekst-plads: 39px;
+
+  /* Tekstspalten i en to-spaltet sektion: den halve bredde minus det halve
+     mellemrum, saa den bliver praecis saa bred som foer. */
+  --tekstspalte: minmax(0, calc(50% - clamp(1rem, 2vw, 1.75rem)));
   /* Topbjaelken maa vaere bredere end tekstspalten: den skal rumme logo,
      to forloebsmenuer, fire punkter og en knap. Maalt behov er 1215px. */
   --wrap-header: 1380px;
@@ -737,7 +752,11 @@ blockquote {
    Det betyder, at figuren og ikke rammen er grid-element. De to regler
    nederst i filen, der placerede rammen, kender derfor ogsaa figuren. */
 
-.figur { margin: 0; display: grid; grid-template-rows: 1fr auto; gap: .7rem; }
+/* width: 100% er ikke overfloedig. En TOM ramme har intet indhold at faa
+   sin bredde fra, saa den faar den fra stretch - og stretch slaar fra,
+   saa snart figuren faar en auto-margin eller et justify-self. Uden den
+   her linje bliver den tomme ramme 0 x 0 px. */
+.figur { margin: 0; width: 100%; display: grid; grid-template-rows: 1fr auto; gap: .7rem; }
 .figur figcaption {
   color: var(--ink-soft);
   font-size: .95rem;
@@ -979,6 +998,44 @@ blockquote {
   .grid--5-fast .card p { font-size: .9375rem; }
 }
 
+
+/* =========================================================
+   Billedspalten: taet paa teksten og midt paa siden
+   =========================================================
+   Rammen er smallere end sin spalte, fordi et staaende foto ellers bliver
+   meterhoejt. Er spalten 572 px og billedet 320 px, skal de 252 px tomrum
+   ligge et sted, og begge de nemme svar er forkerte:
+
+     - Laegges de mellem billedet og teksten, ser billedet ud til at hoere
+       et andet sted hen. Paa bisidder-siden blev hullet 308 px.
+     - Laegges de yderst i den ene side, staar hele sektionen skaevt paa
+       siden. Paa terapisiden laa den 111 px for langt til hoejre.
+
+   Derfor: billedspalten er praecis saa bred som billedet, tekstspalten
+   beholder sin halve bredde, og de to centreres tilsammen.
+
+   minmax(0, max-content) og ikke bare max-content: et bredt foto maa
+   hellere klemmes sammen end skubbe sektionen ud over sidens kant. */
+@media (min-width: 860px) {
+  .split:has(> .figur:first-child),
+  .split:has(> .billedstak:first-child) {
+    grid-template-columns: minmax(0, max-content) var(--tekstspalte);
+    justify-content: center;
+  }
+  .split:has(> .figur:last-child:not(:first-child)),
+  .split:has(> .billedstak:last-child:not(:first-child)) {
+    grid-template-columns: var(--tekstspalte) minmax(0, max-content);
+    justify-content: center;
+  }
+
+  /* Billedet staar lodret midt for teksten. Starter det oppe ved kanten,
+     rager det op over overskriften, og saa ser sektionen skaev ud. */
+  .hero__inner > .figur,
+  .hero__inner > .billedstak,
+  .split > .figur,
+  .split > .billedstak { align-self: center; }
+}
+
 /* =========================================================
    To billeder i en spalte
    =========================================================
@@ -986,10 +1043,67 @@ blockquote {
    staar der et stort hul. Loesningen er et billede mere i samme spalte -
    ikke at straekke det foerste, for saa bliver motivet beskaaret.
 
-   Er det andet felt tomt, staar rammen tom og venter paa et foto. Det er
-   bevidst: hellere en tom ramme end det samme billede to steder paa sitet. */
+   Er det andet felt tomt, staar der bare ét billede. En tom ramme er
+   proevet af og saa forkert ud. */
 .billedstak {
   display: grid;
   gap: 1.25rem;
   align-content: start;
+}
+
+@media (min-width: 860px) {
+  /* Stakken er praecis saa bred som det bredeste foto i den. */
+  .billedstak { width: max-content; max-width: 100%; }
+}
+
+/* =========================================================
+   Den tomme ramme
+   =========================================================
+   Er feltet tomt, staar der en groen ramme og venter paa et foto. Den skal
+   passe til teksten ved siden af: samme hoejde, fra overskriften og ned til
+   sidste linje. Et foto beholder sit eget format, for ellers skaeres der i
+   motivet - men en tom ramme har intet motiv at tage hensyn til, og derfor
+   maa den gerne straekkes. Saa passer den ogsaa, naar Lotte retter teksten.
+
+   Bredden staar i --tom-ramme-bredde og ikke i taggen: en style="" kan ikke
+   klemmes sammen, og saa laa kontaktsiden ud over kanten paa en smal
+   skaerm. */
+.figur--tom .hero__media,
+.figur--tom .split__media {
+  aspect-ratio: auto;
+  height: 100%;
+  min-height: 160px;
+}
+
+@media (min-width: 860px) {
+  /* Spalten er lige saa bred som rammen - minmax, saa den kan klemmes
+     sammen, naar vinduet bliver smalt. */
+  .split:has(> .figur--tom:first-child) {
+    grid-template-columns: minmax(0, var(--tom-ramme-bredde)) var(--tekstspalte);
+  }
+  .split:has(> .figur--tom:last-child:not(:first-child)) {
+    grid-template-columns: var(--tekstspalte) minmax(0, var(--tom-ramme-bredde));
+  }
+  .billedstak:not(:has(img)) { width: var(--tom-ramme-bredde); max-width: 100%; }
+
+  /* Rammen straekker sig fra overskriften og ned til tekstens sidste linje.
+     Et foto goer det ikke: det beholder sin egen stoerrelse og staar
+     lodret midt for. */
+  .hero__inner > .figur--tom,
+  .split > .figur--tom,
+  .hero__inner > .billedstak:has(.figur--tom),
+  .split > .billedstak:has(.figur--tom) {
+    align-self: stretch;
+    margin-top: var(--mikrotekst-plads);
+  }
+  .split > .figur--tom,
+  .split > .billedstak:has(.figur--tom) { margin-top: 0; }
+
+  /* Staar den tomme ramme under et foto, faar fotoet sin egen hoejde, og
+     rammen tager resten. Er den alene i stakken, faar den det hele. */
+  .billedstak:has(> .figur--tom:only-child) { grid-template-rows: 1fr; }
+  .billedstak:has(> .figur--tom:last-child:not(:only-child)) {
+    grid-template-rows: auto 1fr;
+  }
+  .billedstak:has(.figur--tom) { align-content: stretch; }
 }

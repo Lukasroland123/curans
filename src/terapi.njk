@@ -29,27 +29,21 @@ eleventyComputed:
       </div>
     </div>
     <div class="billedstak">
-      <figure class="figur" style="max-width: {{ terapi.hero_billede | herobredde }}">
+      <figure class="figur{% if not terapi.hero_billede %} figur--tom{% endif %}" style="max-width: {{ terapi.hero_billede | herobredde(543) }}">
         <div class="hero__media" style="aspect-ratio: {{ terapi.hero_billede | billedforhold }}">
-          {% if terapi.hero_billede %}
-          <img src="{{ terapi.hero_billede }}" alt="{{ terapi.hero_billede_alt }}">
-          {% endif %}
+          {% if terapi.hero_billede %}<img src="{{ terapi.hero_billede }}" alt="{{ terapi.hero_billede_alt }}">{% endif %}
         </div>
-        {% if terapi.hero_billedetekst %}<figcaption>{{ terapi.hero_billedetekst }}</figcaption>{% endif %}
+        {% if terapi.hero_billedtekst %}<figcaption>{{ terapi.hero_billedtekst }}</figcaption>{% endif %}
       </figure>
-      {#- Andet billede. Er feltet tomt, staar rammen tom og venter paa et
-          foto. Det er bedre end at laane et billede fra en anden side. -#}
-      {#- Andet ramme vises kun, naar den foerste har et billede.
-          Ellers ville to tomme rammer staa oven paa hinanden. -#}
-      {% if terapi.hero_billede %}
-      <figure class="figur" style="max-width: {{ terapi.hero_billede2 | herobredde }}">
-        <div class="hero__media" style="aspect-ratio: {{ terapi.hero_billede2 | billedforhold }}">
-          {% if terapi.hero_billede2 %}
-          <img src="{{ terapi.hero_billede2 }}" alt="{{ terapi.hero_billede2_alt }}">
-          {% endif %}
-        </div>
-        {% if terapi.hero_billede2tekst %}<figcaption>{{ terapi.hero_billede2tekst }}</figcaption>{% endif %}
-      </figure>
+      {#- Billede nummer to. Er feltet tomt, staar fotoet ovenfor alene.
+          En tom kasse under et foto ser ud som en fejl. -#}
+      {% if terapi.hero_billede2 %}
+        <figure class="figur{% if not terapi.hero_billede2 %} figur--tom{% endif %}" style="max-width: {{ terapi.hero_billede2 | herobredde }}">
+          <div class="hero__media" style="aspect-ratio: {{ terapi.hero_billede2 | billedforhold }}">
+            {% if terapi.hero_billede2 %}<img src="{{ terapi.hero_billede2 }}" alt="{{ terapi.hero_billede2_alt }}">{% endif %}
+          </div>
+          {% if terapi.hero_billede2tekst %}<figcaption>{{ terapi.hero_billede2tekst }}</figcaption>{% endif %}
+        </figure>
       {% endif %}
     </div>
   </div>
@@ -58,27 +52,22 @@ eleventyComputed:
 <section class="section section--sand">
   <div class="wrap split">
     <div class="billedstak">
-      <figure class="figur" style="max-width: {{ terapi.metode_billede | figurbredde }}">
+      <figure class="figur{% if not terapi.metode_billede %} figur--tom{% endif %}" style="max-width: {{ terapi.metode_billede | figurbredde }}">
         <div class="split__media" style="aspect-ratio: {{ terapi.metode_billede | billedforhold }}">
-          {% if terapi.metode_billede %}
-          <img src="{{ terapi.metode_billede }}" alt="{{ terapi.metode_billede_alt }}">
-          {% endif %}
+          {% if terapi.metode_billede %}<img src="{{ terapi.metode_billede }}" alt="{{ terapi.metode_billede_alt }}">{% endif %}
         </div>
-        {% if terapi.metode_billedetekst %}<figcaption>{{ terapi.metode_billedetekst }}</figcaption>{% endif %}
+        {% if terapi.metode_billedtekst %}<figcaption>{{ terapi.metode_billedtekst }}</figcaption>{% endif %}
       </figure>
-      {#- Andet billede. Er feltet tomt, staar rammen tom og venter paa et
-          foto. Det er bedre end at laane et billede fra en anden side. -#}
-      {#- Andet ramme vises kun, naar den foerste har et billede.
-          Ellers ville to tomme rammer staa oven paa hinanden. -#}
+      {#- Billede nummer to. Er feltet tomt, staar her en tom ramme, der
+          venter paa et foto. Kun naar det FOERSTE felt har et foto: to
+          tomme rammer oven paa hinanden er ikke en pladsholder. -#}
       {% if terapi.metode_billede %}
-      <figure class="figur" style="max-width: {{ terapi.metode_billede2 | figurbredde }}">
-        <div class="split__media" style="aspect-ratio: {{ terapi.metode_billede2 | billedforhold }}">
-          {% if terapi.metode_billede2 %}
-          <img src="{{ terapi.metode_billede2 }}" alt="{{ terapi.metode_billede2_alt }}">
-          {% endif %}
-        </div>
-        {% if terapi.metode_billede2tekst %}<figcaption>{{ terapi.metode_billede2tekst }}</figcaption>{% endif %}
-      </figure>
+        <figure class="figur{% if not terapi.metode_billede2 %} figur--tom{% endif %}" style="max-width: {{ terapi.metode_billede2 | figurbredde }}">
+          <div class="split__media" style="aspect-ratio: {{ terapi.metode_billede2 | billedforhold }}">
+            {% if terapi.metode_billede2 %}<img src="{{ terapi.metode_billede2 }}" alt="{{ terapi.metode_billede2_alt }}">{% endif %}
+          </div>
+          {% if terapi.metode_billede2tekst %}<figcaption>{{ terapi.metode_billede2tekst }}</figcaption>{% endif %}
+        </figure>
       {% endif %}
     </div>
     <div>

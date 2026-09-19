@@ -64,11 +64,9 @@ eleventyComputed:
       {{ priser.beliggenhed_tekst | afsnit | safe }}
       <p><a class="btn btn--ghost" href="/kontakt/">Se rutevejledning</a></p>
     </div>
-    <figure class="figur" style="max-width: {{ priser.beliggenhed_billede | figurbredde }}">
+    <figure class="figur{% if not priser.beliggenhed_billede %} figur--tom{% endif %}" style="max-width: {{ priser.beliggenhed_billede | figurbredde }}">
       <div class="split__media" style="aspect-ratio: {{ priser.beliggenhed_billede | billedforhold }}">
-        {% if priser.beliggenhed_billede %}
-        <img src="{{ priser.beliggenhed_billede }}" alt="{{ priser.beliggenhed_billede_alt }}">
-        {% endif %}
+        {% if priser.beliggenhed_billede %}<img src="{{ priser.beliggenhed_billede }}" alt="{{ priser.beliggenhed_billede_alt }}">{% endif %}
       </div>
       {% if priser.beliggenhed_billedtekst %}<figcaption>{{ priser.beliggenhed_billedtekst }}</figcaption>{% endif %}
     </figure>
