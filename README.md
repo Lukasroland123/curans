@@ -4,7 +4,7 @@ Psykoterapi, familiebehandling, traumebehandling, bisidderstøtte og
 supervision ved Lotte Stegeager. Søstersite til `../site/`
 (Hesteassisteret Praksis), bygget på præcis samme opskrift.
 
-**Status: bygget lokalt, ikke i luften.** Den venter på domænet.
+**Status: I LUFTEN på `https://curans.dk` siden 20-09-2026.**
 
 ---
 
@@ -67,26 +67,38 @@ for den bliver overskrevet.
 
 ## Det mangler, før den kan gå i luften
 
-### Venter på domænet
+### ✅ Gjort 20-09-2026 — den gik i luften
 
-- [ ] **`curans.dk` er ikke aktiv endnu.** DK Hostmaster har den som
-      *Reserved*. Registranten kan hverken ses eller ændres, før den er Active
-- [ ] **Ejerskifte.** one.com har `Lukas Stegeager` som ejer. Den skal stå i
-      **Lottes** navn som de to andre domæner. Rettes under Mine produkter →
-      Administrer → Skift domænets ejerinformationer, når domænet er aktivt
-- [ ] Zonen i Cloudflare, Pages-projekt, custom domain
-- [ ] **`curans.dk` og `www.curans.dk` skal tilføjes `ALLOWED_DOMAINS`** i
-      Cloudflare-workeren `sveltia-cms-auth`. Den matcher ikke underdomæner,
-      og uden dem dør Lottes login uden en fejlbesked — den slags tog en time
-      sidste gang
+- [x] **`curans.dk` er aktiv** og står i **Lottes** navn i DK Hostmasters
+      register. Kontrolleret i whois, ikke gættet. one.coms
+      "Overdragelse af webhotel og domæne" er en anden ting og skal ikke
+      bruges — den flytter one.com-kontoen, ikke registranten
+- [x] **Zonen, Pages-projektet og custom domain.** `curans.dk` og
+      `www.curans.dk` er Active med gyldigt certifikat.
+      **Fælde, hvis det skal gøres igen:** one.coms gamle A-poster følger
+      med ved importen og vinder over Pages. De skal slettes, før custom
+      domain kan slå igennem. Det samme gælder deres `MX .`, som betyder
+      "her modtages ingen mail" og spærrer for mailopsætningen
+- [x] **Lotte er tilføjet som medarbejder på repoet** 20-09-2026 med
+      skriveadgang, som på site 1. **Invitationen skal accepteres i mailen
+      fra GitHub** — før det kan hun logge ind i `/admin` og se det hele,
+      men ikke gemme
+
+### Mangler stadig
+
+- [ ] **`ALLOWED_DOMAINS` i workeren `sveltia-cms-auth` er aldrig
+      afprøvet på `curans.dk`.** Log ind på `curans.dk/admin` én gang og se
+      om det virker, **før** Lotte får adressen. Uden `curans.dk` og
+      `www.curans.dk` i listen dør login uden en fejlbesked — det tog en
+      time sidste gang
+- [ ] `lotte@curans.dk`. **Blokeret** — se `../TO-DO-LISTE.md`, afsnittet
+      om MFA og fejl 399287
+
 - [x] ~~Nyt **offentligt** GitHub-repo `Lukasroland123/curans`.~~ Oprettet
       19-09-2026, præcis som site 1. Det lå privat en halv time, men blev
       lagt offentligt igen: privat kræver, at Cloudflare Pages får adgang
       til netop det repo, og at workeren `sveltia-cms-auth` beder om
       `repo`-scope og ikke `public_repo`. Offentligt sparer begge dele
-- [ ] `lotte@curans.dk` som **alias på den eksisterende Microsoft 365-postkasse**
-      gennem DanDomain. Adressen står allerede i `site.json`, så den skal
-      virke, før siden går i luften
 
 ### Venter på Lotte
 
