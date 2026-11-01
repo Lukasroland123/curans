@@ -91,7 +91,8 @@
           vide, at hestearbejdet og samtaleterapien er samme menneske. -#}
       "sameAs": [
         {{ (site.soestersite_url + "/om-lotte/") | dump | safe }},
-        {{ site.facebook | dump | safe }}
+        {{ site.facebook | dump | safe }}{% if site.instagram %},
+        {{ site.instagram | dump | safe }}{% endif %}
       ]
     },
 
@@ -140,7 +141,8 @@
       },
       "sameAs": [
         {{ site.soestersite_url | dump | safe }},
-        {{ site.facebook | dump | safe }}
+        {{ site.facebook | dump | safe }}{% if site.instagram %},
+        {{ site.instagram | dump | safe }}{% endif %}
       ]
     },
 
