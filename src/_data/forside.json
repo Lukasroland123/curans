@@ -1,10 +1,10 @@
 {
   "titel": "Curans | Narrativ terapi og supervision ved Roskilde",
-  "beskrivelse": "Narrativ psykoterapi, familiebehandling, traumebehandling, bisidderstøtte og supervision ved Lotte Stegeager. Gevninge, 10 km fra Roskilde. Første samtale uden beregning.",
+  "beskrivelse": "Narrativ Psykoterapi, familiebehandling, traumebehandling, bisidderstøtte og supervision ved Lotte Stegeager. Gevninge, 10 km fra Roskilde. Første samtale uden beregning.",
   "hero_mikrotekst": "Curans v/ Lotte Stegeager",
   "hero_overskrift": "Når noget står i vejen for det liv, du gerne vil leve",
   "hero_tekst": "Måske står angsten, stressen eller depressionen i vejen. Måske bærer du rundt på tyngende tanker. Måske er I som familie væltet omkuld af sygdom, tab eller uretfærdighed. Eller måske er det arbejdslivet, der presser sig på.",
-  "svar": "Jeg tilbyder narrativ terapi, familiebehandling, traumebehandling, bisidderstøtte og supervision i Gevninge, 10 km fra Roskilde. De første 20 minutter er uden beregning.",
+  "svar": "Jeg tilbyder individuel terapi, familiebehandling, traumebehandling, bisidderstøtte og supervision i Gevninge, 10 km fra Roskilde. De første 20 minutter er uden beregning.",
   "hero_maerkater": [
     {
       "tekst": "Børn, unge, voksne og familier"
@@ -17,7 +17,7 @@
     }
   ],
   "hero_billede": "/billeder/Iris.jpg",
-  "hero_billede_alt": "To kvinder sidder og taler sammen i to stole ved et vindue med udsigt over marker.",
+  "hero_billede_alt": "Smukke Iris blomster.",
   "hero_billedtekst": "Samtalerne foregår i praksissen i Gevninge.",
   "ydelser_overskrift": "Det tilbyder jeg",
   "ydelser_intro": "Fem indgange. De hænger sammen, og de kan kombineres. Mange forløb starter ét sted og bevæger sig et andet sted hen.",
@@ -25,25 +25,25 @@
     {
       "overskrift": "Individuel terapi",
       "underrubrik": "Stress, angst, depression",
-      "tekst": "Noget spænder ben, eller du mærker et ubehag uden at vide hvorfra. Vi undersøger det sammen.",
+      "tekst": "Noget spænder ben, eller du mærker et ubehag, afmagt eller opgivenhed, måske uden at vide hvorfra. Vi undersøger det sammen.",
       "url": "/terapi/"
     },
     {
       "overskrift": "Traumebehandling",
       "underrubrik": "PTSD og kompleks PTSD",
-      "tekst": "Konstant på vagt? Vi arbejder nænsomt og i dit tempo, og vi begynder med de trygge steder.",
+      "tekst": "Konstant på vagt? frygtsom eller skamfuld? Vi arbejder nænsomt og i dit tempo, og vi begynder med de trygge steder.",
       "url": "/traumebehandling/"
     },
     {
       "overskrift": "Familiebehandling",
       "underrubrik": "Konflikter i familien",
-      "tekst": "Når familien er rystet så meget, at det er svært at finde fælles fodfæste igen.",
+      "tekst": "Er familien 'ramt' af sorg eller krise? går nogen på 'listefødder' eller 'æggeskaller', kan det være at bevæge sig gennem et minefelt? Er det svært at finde fælles fodfæste igen?",
       "url": "/familiebehandling/"
     },
     {
       "overskrift": "Bisidderstøtte",
-      "underrubrik": "Møder på kommunen",
-      "tekst": "Jeg går med til mødet på kommunen, holder overblikket og hjælper med det skriftlige bagefter.",
+      "underrubrik": "Til møder med myndigheder, institutioner og arbejdspladser",
+      "tekst": "Har du brug for en faglig bisidder til  et mødet f.eks. i kommunalt regi? Ønsker du støtte til at tydeliggøre dine perspektiver, stille relevante spørgsmål og skabe overblik over din sag?",
       "url": "/bisidderstoette/"
     },
     {
