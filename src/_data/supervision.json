@@ -1,13 +1,13 @@
 {
   "titel": "Narrativ supervision af personalegrupper | Curans",
-  "beskrivelse": "Narrativ og systemisk supervision af mindre personalegrupper. Reflekterende team, stafetmodel og systemiske opstillinger. Roskilde, Lejre og Holbæk.",
+  "beskrivelse": "Narrativ og systemisk supervision af personalegrupper. Med brug af Reflekterende team, Stafetmodellen og Eksternalisering. Sjælland og øerne.",
   "ydelse_navn": "Supervision og faglig sparring",
   "hero_mikrotekst": "For arbejdspladser",
-  "hero_overskrift": "Supervision af mindre personalegrupper",
+  "hero_overskrift": "Supervision af personalegrupper",
   "hero_tekst": "Et trygt og professionelt rum, hvor en personalegruppe kan udforske og reflektere over sin egen praksis: de konkrete hverdagsbegivenheder, udfordringerne og det, der faktisk lykkes.",
   "svar": "Supervisionsforløb kan have meget forskellige formål og tilrettelægges derfor i tæt dialog med deltagerne. Der er mulighed for supervision i mindre grupper eller individuelt. Prisen aftales fra gang til gang, fordi omfanget varierer.",
   "hvad_tekst": "Med afsæt i en narrativ og systemisk optik arbejder vi med at understøtte personalegruppens mulighed for at reflektere over egen praksis.\n\nNarrativ supervision handler om at identificere og udfolde de historier, vi fortæller om os selv, vores arbejde og de relationer, vi indgår i. Ved at undersøge de fortællinger skabes der plads til nye perspektiver og nye handlemuligheder.",
-  "hvad_boks_titel": "Målet er ikke at finde fejl.",
+  "hvad_boks_titel": "Fælles refleksion, nuancerede forståelser og handlemuligheder",
   "hvad_boks_tekst": "Det er at styrke personalets forståelse af egne ressourcer og handlemuligheder i mødet med de mennesker, de arbejder med, og at have fokus på trivsel og faglig udvikling samtidig.",
   "hero_maerkater": [
     {
@@ -34,25 +34,25 @@
       "tekst": "Reflekterende team: en del af gruppen lytter og derefter taler sammen om det, de hørte, mens de andre lytter med."
     },
     {
-      "tekst": "Stafetmodellen: ordet gives videre, så flere stemmer kommer i spil end de sædvanlige."
+      "tekst": "Stafetmodellen: ordet gives videre, så flere stemmer kommer i spil end de sædvanlige,"
     },
     {
-      "tekst": "Systemiske opstillinger: et værktøj til at visualisere og forstå relationelle dynamikker og samspil."
+      "tekst": "Eksternaliserende sprogbrug:  som adskiller mennesker fra problemer, så vi sammen kan undersøge det, der udfordrer, uden at gøre den enkelte til problemet."
     },
     {
       "tekst": "Narrative spørgsmål, der udfolder de fortællinger, gruppen har om sig selv og sit arbejde."
     }
   ],
-  "metode_afslutning": "Opstillinger er særligt hjælpsomme, når gruppen ønsker at arbejde med komplekse problemstillinger eller relationer, for eksempel i forhold til eleverne og deres familier. Tilgangen fremmer en fælles refleksion, som styrker både den kollektive læring og samarbejdet i gruppen.",
+  "metode_afslutning": "I supervisionen arbejder vi med samtaleformer, der giver plads til forskellige perspektiver og fælles refleksion over hverdagens dilemmaer. Gennem nysgerrige spørgsmål, opmærksom lytning og en adskillelse af mennesker fra problemer undersøger vi de forståelser og relationer, der er i spil. Det kan åbne nye handlemuligheder i arbejdet med elever og deres familier og styrke den fælles læring og samarbejdet i personalegruppen.",
   "metode_billede": "",
   "metode_billede_alt": "",
   "metode_billedtekst": "",
   "hvem_overskrift": "Hvem henvender det sig til?",
-  "hvem_intro": "Jeg superviserer mindre personalegrupper. Erfaringen kommer især fra uddannelsesverdenen og fra arbejdet med børn og unge i vanskeligheder.",
+  "hvem_intro": "Jeg superviserer personalegrupper. Erfaringen kommer især fra uddannelsesverdenen og fra arbejdet med børn, unge og familier i vanskeligheder.",
   "hvem_kort": [
     {
       "overskrift": "Skoler og efterskoler",
-      "tekst": "Jeg har været tilknyttet som konsulent på en specialefterskole med henblik på at skabe bedre trivsel gennem personalesupervision."
+      "tekst": "Jeg har været tilknyttet som supervisor og konsulent på en specialefterskole gennem flere år, med henblik på at skabe bedre trivsel gennem personalesupervision. \nSamt været tilknyttet plejefamilier som supervisor.\nJeg er aktuelt tilknyttet flere personalegrupper inden for Center for Specialpædagogik / STU."
     },
     {
       "overskrift": "Uddannelsesinstitutioner",
