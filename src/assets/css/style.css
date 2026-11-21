@@ -401,7 +401,10 @@ blockquote {
   padding: clamp(2.5rem, 5vw, 4.5rem) 0;
 }
 @media (min-width: 860px) {
-  .hero__inner { grid-template-columns: 1.05fr .95fr; }
+  /* minmax(0, ...): et stort foto (fx 1280 px fra Pixabay) maa ikke
+     skubbe billedspalten bredere og klemme teksten. Spalterne holder
+     altid samme forhold, og billedet skaleres ned til spalten. */
+  .hero__inner { grid-template-columns: minmax(0, 1.05fr) minmax(0, .95fr); }
   /* Hvor tekstsoejlen er lang, skal den flugte med billedets top i stedet
      for at blive midterstillet — ellers opstaar der et tomrum oeverst. */
   .hero--top .hero__inner { align-items: start; }

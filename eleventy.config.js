@@ -168,7 +168,9 @@ module.exports = function (eleventyConfig) {
     const maal = billedMaal(sti);
     if (!maal || !maal.bredde || !maal.hoejde) return "";
     const staaende = maal.hoejde > maal.bredde;
-    return Math.min(maal.bredde, staaende ? 520 : 900) + "px";
+    // Et loft fra skabelonen gaelder for begge orienteringer. Uden loft
+    // bruges standarden: 520 px for staaende og 900 px for liggende.
+    return Math.min(maal.bredde, loft || (staaende ? 520 : 900)) + "px";
   });
 
   // Dato som ren YYYY-MM-DD til <lastmod> i sitemap'et. Soegemaskiner og

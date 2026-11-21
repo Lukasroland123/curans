@@ -38,7 +38,7 @@ eleventyComputed:
       {#- Billede nummer to. Er feltet tomt, staar fotoet ovenfor alene.
           En tom kasse under et foto ser ud som en fejl. -#}
       {% if familiebehandling.hero_billede2 %}
-        <figure class="figur{% if not familiebehandling.hero_billede2 %} figur--tom{% endif %}" style="max-width: {{ familiebehandling.hero_billede2 | herobredde }}">
+        <figure class="figur{% if not familiebehandling.hero_billede2 %} figur--tom{% endif %}" style="max-width: {{ familiebehandling.hero_billede2 | herobredde(340) }}">
           <div class="hero__media" style="aspect-ratio: {{ familiebehandling.hero_billede2 | billedforhold }}">
             {% if familiebehandling.hero_billede2 %}<img src="{{ familiebehandling.hero_billede2 }}" alt="{{ familiebehandling.hero_billede2_alt }}">{% endif %}
           </div>
