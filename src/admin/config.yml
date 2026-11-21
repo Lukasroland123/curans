@@ -233,15 +233,6 @@ collections:
             fields:
               - { name: spoergsmaal, label: "Spoergsmaal", widget: string }
               - { name: svar, label: "Det korte svar (den grå boks øverst)", widget: text }
-          - { name: litteratur_overskrift, label: "Litteraturlisten · Overskrift", widget: string }
-          - { name: litteratur_intro, label: "Litteraturlisten · Introtekst", widget: text }
-          - name: litteratur
-            label: "Litteraturlisten"
-            widget: list
-            allow_add: false
-            allow_remove: false
-            fields:
-              - { name: tekst, label: "Tekst", widget: string }
           - { name: kryds_overskrift, label: "Boks med link til den anden hjemmeside · Overskrift", widget: string }
           - { name: kryds_tekst, label: "Boks med link til den anden hjemmeside · Tekst", widget: text }
           - { name: kryds_knap, label: "Boks med link til den anden hjemmeside · Tekst på knappen", widget: string }
