@@ -20,12 +20,12 @@
       "tekst": "Forberedelse før og efter mødet"
     }
   ],
-  "hero_billede": "/billeder/waterfall-2779032_1280.jpg",
-  "hero_billede_alt": "et vandfald, nogle trædesten og roligt vand på den anden side.",
-  "hero_billedtekst": "På den anden side af broen er vandet roligt.",
-  "hero_billede2": "/billeder/creek-2530798_1280.jpg",
-  "hero_billede2_alt": "Trædesten i brusende vand.",
-  "hero_billede2tekst": "Sammen finder vi de rette trædesten.",
+  "hero_billede": "",
+  "hero_billede_alt": "",
+  "hero_billedtekst": "",
+  "hero_billede2": "/billeder/hand-3035665_1280.jpg",
+  "hero_billede2_alt": "",
+  "hero_billede2tekst": "",
   "metode_mikrotekst": "Sådan foregår det",
   "metode_overskrift": "Før, under og efter mødet",
   "metode_indledning": "Vi holder et forberedende møde, hvor du giver mig indblik i, hvad der er særligt vigtigt for dig at få drøftet på den kommende samtale.",
@@ -44,9 +44,9 @@
     }
   ],
   "metode_afslutning": "Det er ikke bisidderens rolle at føre, overtage eller styre din sag. En bisidder kan derfor ikke træffe beslutninger eller forhandle på dine vegne.",
-  "metode_billede": "",
-  "metode_billede_alt": "Håndskrevne noter på et stykke flipoverpapir hængt op på en væg.",
-  "metode_billedtekst": "",
+  "metode_billede": "/billeder/creek-2530798_1280.jpg",
+  "metode_billede_alt": "Trædesten i brusende vand",
+  "metode_billedtekst": "Sammen finder vi balance og retning på de glatte trædesten.",
   "hvem_overskrift": "Hvad kan jeg hjælpe med?",
   "hvem_intro": "Ud over at gå med til selve mødet.",
   "hvem_kort": [
