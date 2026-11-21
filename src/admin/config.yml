@@ -89,7 +89,7 @@ collections:
           - { name: cta_tekst, label: "Grøn boks nederst · Tekst", widget: text }
 
       - name: terapi
-        label: "Individuel terapi"
+        label: "Psykoterapi"
         file: "src/_data/terapi.json"
         description: "Siden om samtaleforløb ved stress, angst og livskriser."
         fields:
