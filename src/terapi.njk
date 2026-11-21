@@ -58,10 +58,9 @@ eleventyComputed:
         </div>
         {% if terapi.metode_billedtekst %}<figcaption>{{ terapi.metode_billedtekst }}</figcaption>{% endif %}
       </figure>
-      {#- Billede nummer to. Er feltet tomt, staar her en tom ramme, der
-          venter paa et foto. Kun naar det FOERSTE felt har et foto: to
-          tomme rammer oven paa hinanden er ikke en pladsholder. -#}
-      {% if terapi.metode_billede %}
+      {#- Billede nummer to. Er feltet tomt, vises ingen ramme; fotoet
+          ovenfor staar alene. Lotte valgte den groenne ramme fra her. -#}
+      {% if terapi.metode_billede2 %}
         <figure class="figur{% if not terapi.metode_billede2 %} figur--tom{% endif %}" style="max-width: {{ terapi.metode_billede2 | figurbredde }}">
           <div class="split__media" style="aspect-ratio: {{ terapi.metode_billede2 | billedforhold }}">
             {% if terapi.metode_billede2 %}<img src="{{ terapi.metode_billede2 }}" alt="{{ terapi.metode_billede2_alt }}">{% endif %}
