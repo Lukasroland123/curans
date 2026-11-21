@@ -20,12 +20,12 @@
       "tekst": "Forberedelse før og efter mødet"
     }
   ],
-  "hero_billede": "",
-  "hero_billede_alt": "",
-  "hero_billedtekst": "",
-  "hero_billede2": "",
-  "hero_billede2_alt": "",
-  "hero_billede2tekst": "",
+  "hero_billede": "/billeder/waterfall-2779032_1280.jpg",
+  "hero_billede_alt": "et vandfald, nogle trædesten og roligt vand på den anden side.",
+  "hero_billedtekst": "På den anden side af broen er vandet roligt.",
+  "hero_billede2": "/billeder/creek-2530798_1280.jpg",
+  "hero_billede2_alt": "Trædesten i brusende vand.",
+  "hero_billede2tekst": "Sammen finder vi de rette trædesten.",
   "metode_mikrotekst": "Sådan foregår det",
   "metode_overskrift": "Før, under og efter mødet",
   "metode_indledning": "Vi holder et forberedende møde, hvor du giver mig indblik i, hvad der er særligt vigtigt for dig at få drøftet på den kommende samtale.",
